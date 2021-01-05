@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site CSS, inkl. Bootstrap-->
+    <link href="./assets/css/site.min.css" rel="stylesheet">
+
+    <!--jQuery-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+    <!--MathJax Integration-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+    <title>Titel</title>
+  </head>
+
+  <body class="bg-lightgray">
+
+    <nav class="navbar navbar-expand-lg shadow navbar-dark bg-gray text-white py-3">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">
+            <img class="img-fluid" src="/assets/img/logo_icon_xs.png"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link"  href="/formelübersicht.html" style="font-size: large;">Formelübersicht</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/magnetische-feld.html" style="font-size: large;" >II. Magnetisches Feld</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/teilchen-in-feldern.html" style="font-size: large;">III. Teilchen in Feldern</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="container">
+        
+      <h1 class="text-center my-4">III. Teilchen in Feldern</h1>
+      
+
+      <!--1. Der Milikanversuch-->
+      <div class="topic-card">
+        <div class="topic-card-header">
+          1. Der Milikanversuch (Messung der Elementarladung - 1913)
+        </div>
+        <div class="topic-card-body">
+           
+          <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <img class="img-fluid" src="/assets/img/img-teilchen_in_feldern/millikan-experiment-basic-setup.png"/>
+                <p class="text-black-50 text-center mt-2" style="font-size: small;">Quelle: <a class="text-black-50" href="https://de.universaldenker.org/files/pixelgraphics/2020-06/millikan-experiment-basic-setup.png">universaldenker.org</a> | Name: Aufbau des Milikanversuchs</p>
+              </div>
+          </div>
+
+          <h4>a) Schwebemethode</h4>
+    
+          <p>Ein Öltröpfchen soll zwischen den Platten des Plattenkondensators schweben:</p>
+          <p>\[ F_{el} = F_{G}\]</p>
+          <p>\[ Q*E = m*g\]</p>
+          <p>\[Q*\dfrac{U}{d} = m*g\]</p>
+          <p>Außerdem ist bekannt, dass \(\rho = \dfrac{m}{V}\) und in diesem Fall sind die Tröpfchen Kugeln, folglich gilt \(m = \rho_{Öl} * \dfrac{4}{3}*\pi*r^3\)</p>
+          <p>\[Q*\dfrac{U}{d} = \rho_{Öl}*\dfrac{4}{3}*\pi*r^3*g\]</p>
+          <p>\[Q = \dfrac{4*\pi*r^3*\rho_{Öl}*g*d}{3*U}\]</p>
+          <p>Der Fehler ist allerdings sehr groß, da \(r\) sehr klein ist und folglich nur äußerst ungenau gemessen werden kann. Dieser Fehler geht dann in dritter Potenz ein, wehalb man einen neuen Versuch unabhängig von \(r\) machen will.</p>
+    
+          <h4>b) Feldmethode</h4>
+          <p>Hierbei sinkt das Teilchen im Kondensator. Es sinkt mit konstanter Geschiwndigkeit \(v\), wenn die resultierende Kraft gleich 0 ist (1. Newtonsches Axiom). Es ergibt sich folgendes Kräftegleichgewicht:</p>
+          <p>\[F_{G} = F_{R}+F_{A}\]</p>
+          <p>Hier ist \(F_{G} = m*g\) die Gewichtskraft, \(F_{R} = 6*\pi*\eta*r*v\) die Stokessche Reibungskraft, wobei \(\eta\) die Zähigkeit von Luft ist (Konstante), und \(F_{A} = \frac{4}{3}*\pi*r^3*\rho_{Luft}*g\) die Auftriebskraft. Setzt man dies ein, so erhält man folgende Gleichung:</p>
+          <p>\[\dfrac{4}{3}*\pi*r^3*\rho_{Öl}*g =\dfrac{4}{3}*\pi*r^3*\rho_{Luft}*g + 6*\pi*\eta*r*v\]</p>
+          <p>\[\dfrac{4}{3}*r^2*g*(\rho_{Öl}-\rho_{Luft})=6*\eta*v\]</p>
+          <p>Wir definieren hier: \[\rho := \rho_{Öl} - \rho_{Luft} \]</p>
+          <p>\[\dfrac{4}{3}*r^2*g*\rho = 6*\eta*v \]</p>
+          <p>\[\Leftrightarrow r = \sqrt{\dfrac{18*\eta*v}{4*g*\rho}} = \sqrt{\dfrac{9*\eta*v}{2*g*\rho}}\]</p>
+          
+          <h5>Durchführung:</h5>
+          <ul>
+            <li>Spannung wird so eingestellt, dass das Tröpfchen schwebt \(\rightarrow U\)</li>
+            <li>Feld wird abgeschaltet; \(v\) wird gemessen durch die Strecke \(x\) und die Zeit \(t\)</li>
+            <li>bekannte Größen:
+              <ul>
+                <li>\(\eta = 1,81 * 10^{-5} \frac{Ns}{m^2}\)</li>
+                <li>\(d = 6,0 mm\)</li>
+                <li>\(\rho_{Öl} = 875,3 \frac{kg}{m^3}\)</li>
+                <li>\(\rho_{Luft} = 1,29 \frac{kg}{m^3}\)</li>
+                <li>\(\rightarrow \rho \approx 874\frac{kg}{m^3}\)</li>
+              </ul>
+            </li>
+            <li>Für die Umrechnung der Skalenteile gilt: \(s = \frac{x}{1,875}*10^{-4}m\)</li>
+          </ul>
+          <p>Mit der Formel für \(Q\) aus a) und der Formel für \(r\) von oben ergibt sich folgender von \(r\) unabhängiger Zusammenhang für \(Q\):</p>
+          <p>\[Q = \dfrac{4*\pi*r^3*\rho*g*d}{3*U} = \dfrac{4*\pi*\rho*g*d}{3*U} *  \dfrac{9*\eta*v}{2*g*\rho} * \sqrt{\dfrac{9*\eta*v}{2*g*\rho}}\]</p>
+          <p>\[Q =\dfrac{18*\pi*\eta*d*v}{U}*\sqrt{\dfrac{\eta*v}{2*g*\rho}}\]</p>
+          <p>Setzt man nun noch alle Konstanten ein und vereinfacht, ergibt sich folgender Term:</p>
+          <p>\[Q \approx 2,0 * 10^{-10}*\dfrac{v^{\frac{3}{2}}}{U}\]</p>
+          <p>Führt man den Versuch nun durch, misst \(U\) und \(v\) und berechnet damit die Ladungen der Öltröpfchen, ergibt sich folgendes Bild:</p>
+          
+          <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+              <img class="img-fluid" src="/assets/img/img-teilchen_in_feldern/millikan-experiment-chart.png"/>
+              <p class="text-black-50 text-center mt-2" style="font-size: small;">Quelle: <a class="text-black-50" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Millikan-experiment-result-chart.svg/2000px-Millikan-experiment-result-chart.svg.png">wikipedia.org</a> | Name: Ladungen im Milikanversuch</p>
+            </div>
+        </div>
+
+
+          <h5>Beobachtung</h5>
+          <p>Es werden nur ganzzahlige Vielfache einer bestimmten Ladungsmenge gemessen.</p>
+
+
+          <div class="highlite-card-remember">
+            <div class="highlite-card-header-remember">
+              Erklärung
+            </div>
+            <div class="card-body">
+              <ol>
+                <li>Es gibt eine kleinste Ladung, die <b>Elementarladung</b>. Sie beträgt in etwa \(1,60 * 10^{-19}C\) und entspricht der Ladung eines Elektrons (bzw. Protons).</li>
+                <li>Bruchteile der Elementarladung sind nicht möglich. Die Ladung ist also <b>gequantelt</b>. (Ausnahme: Quarks \(\rightarrow\) Bestandteile des Protons und Neutrons mit \(\pm \frac{e}{3}\) Ladung)</li>
+                <li>Es gilt das Erhaltungsgesetz der Ladungen.</li>
+              </ol>
+            </div>
+        </div>
+        </div>
+      </div>
+
+      <!--2. Bewegung eines Elektrons im el. Feld-->
+      <div class="topic-card">
+        <div class="topic-card-header">
+          2. Bewegung eines Elektrons im elektrischen Feld
+        </div>
+        <div class="topic-card-body">
+          <p>Da wir hier Elektronen betrachten, gilt \(q = e\).</p>
+
+          <h4>a) Längsfeld: Bewegung entgegen der Feldrichtung</h4>
+
+          <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+              <img class="img-fluid" src="/assets/img/img-teilchen_in_feldern/electron-against_field_direction.png"/>
+            </div>
+        </div>
+
+          <p>Für die beschleunigte Bewegung gilt:</p>
+          <p>\[F_{el} = e*E = m*a\]</p>
+          <p>\[\Rightarrow a = \dfrac{e*E}{m} = \dfrac{e*U}{m*d}\]</p>
+
+          <div class="d-flex">
+            <p class="equation-border mx-auto">\[a = \dfrac{e*U}{m*d}\]</p>
+          </div>
+
+
+          <p>Außerdem gilt für die gleichmäßig beschleunigte Bewegung:</p>
+          <p>\begin{aligned}s(t) &= \frac{1}{2}*a*t^2+v_{0}*t \\ v(t) &= a*t + v_{0}\end{aligned}</p>
+          <p>Es gilt:</p>
+          <p>\begin{aligned}E_{kin} &= E_{el} \\
+            \frac{1}{2}*m*v^2 &= e*U \\ \end{aligned}</p>
+
+          <div class="d-flex">
+            <p class="equation-border mx-auto">\[\Rightarrow v = \sqrt{\dfrac{2*e*U}{m}}\]</p>
+          </div>
+
+
+          <h4>b) Längsfeld: Bewegung in Feldrichtung</h4>
+
+          <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+              <img class="img-fluid" src="/assets/img/img-teilchen_in_feldern/electron-in_field_direction.png"/>
+            </div>
+        </div>
+
+          <p>Bei der Bewegung in Feldrichtung wird das Elektron vom Feld gebremst, da die Feldlinien immer die Bewegungsrichtung eines <i>positiven</i> Ladungsträgers beschreiben. Folglich ändert sich nur die Richtung und somit das Vorzeichen der Beschleunigung.</p>
+          <p class="text-center">\begin{aligned}s(t) &= v_{0}*t-\frac{1}{2}*a*t^2 \\ v(t) &= v_{0} - a*t\end{aligned}</p>
+          
+          <h4>c) Querfeld</h4>
+
+          <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+              <img class="img-fluid" src="/assets/img/img-teilchen_in_feldern/electron-orthogonal_to_field.png"/>
+            </div>
+        </div>
+
+          <p>Im Querfeld hat das Teilchen in x-Richtung eine konstante Geschwindigkeit, die x-Komponente folgt also folgender Vorschrift:</p>
+          <p>\[x = v_{0}*t\]</p>
+          <p>Die Beschleunigung aufgrund von der elektrischen Kraft durch den Kondensator wirkt in y-Richtung. Die y-Komponente ergibt sich durch folgende Bedingung:</p>
+          <p>\[y = \frac{1}{2}*a*t^2 = \frac{e*U}{2*m*d}*t^2\]</p>
+          <p>Mit der x-Komponente ergibt sich für \(t\) folgende Form: \(t = \frac{x}{v_{0}}\). Setzt man dies in die Gleichung für \(y\) ein ergibt sich die folgende Gleichung für die Bahnkurve:</p>
+
+          <div class="d-flex">
+            <p class="equation-border mx-auto">\[y = \dfrac{e*U}{2*m*d*v_{0}^2}*x^2\]</p>
+          </div>
+
+          <p>Der Koeffizient \(\frac{e*U}{2*m*d*v_{0}^2}\) ist konstant und so sieht man, dass die Bahnkurve eine Parabel beschreibt.</p>
+
+        </div>
+      </div>
+
+      <!--3. Das Zyklotron-->
+      <div class="topic-card">
+        <div class="topic-card-header">
+          3. Das Zyklotron
+        </div>
+        <div class="topic-card-body">
+          
+          <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+              <img class="img-fluid" src="/assets/img/img-teilchen_in_feldern/zyklotron-setup.png"/>
+              <p class="text-black-50 text-center mt-2" style="font-size: small;">Quelle: <a class="text-black-50" href="https://blog.studyflix.de/wp-content/uploads/2020/10/Zyklotron_WordPress_Bilder_Zyklotron-Schema-1024x576.png">studyflix.de</a> | Name: Zyklotron-Setup</p>
+            </div>
+        </div>
+
+          <p>Ein Zyklotron besteht aus zwei Elektroden, den sogenanten Duanden. An ihnen liegt eine Wechselspannung mit sehr hoher Frequenz \(f\) an. Im schmalen Spalt zwischen den Duanden befindet sich eine Ionenquelle, die beispielsweise Protonen emittiert. Senkrecht zum elektrischen Feld wird das gesamte Zyklotron von einem homogenen Magnetfeld durchzogen.</p>
+          <p>Zwischen den Duanden wirkt sowohl die elektrische Kraft als auch die Lorentzkraft auf die Ladungen, aber die elektrische Kraft dominiert. In den Duanden wirkt nur die Lorentzkraft, da das elektrische Feld durch die Duanden, die wie ein Faradayscher Käfig wirken, abgeschirmt wird. Die Ladungen werden also nur zwischen den Duanden beschleunigt und nehmen dort jede Umrundung die Enegie \(W = 2*q*U\) auf. In den Duanden werden sie durch die Lorentzkraft auf einer Kreisbahn gehalten.</p>
+          <p>Die Lorentzkraft \(F_{L}\) ist die notwendige Zentripetalkraft \(F_{ZP}\) für die Kreisbahn</p>
+          <p>\[F_{L} = F_{ZP}\]
+          <p>\[\Leftrightarrow q*v*B = \dfrac{m*v^2}{r}\]</p>
+
+          <div class="d-flex">
+            <p class="equation-border mx-auto">\[ \Leftrightarrow v = \dfrac{r*q*B}{m}\]</p>
+          </div>
+
+
+          <p>Mit \(v = \omega*r = 2\pi*f*r\), ergibt sich für die Frequenz \(f\)</p>
+          <p>\begin{aligned}&\dfrac{r*q*B}{m} = 2\pi*f*r \\ \Rightarrow &f = \dfrac{q*B}{2\pi*m}\end{aligned}</p>
+          <p> und für die Umlaufdauer \(T\)</p>
+          <p>\[T =\dfrac{1}{f} = \dfrac{2\pi*m}{q*B}\]</p>
+          <p>Man sieht also, dass sich die Teilchen unabhängig von ihrer Geschwindigkeit immer gleich lang in einem Duanden aufhalten.  Das heißt bei passender Frequenz werden Ladungen, die zum rechten Zeitpunkt starten, auch immer wieder durch das elektrische Feld beschleunigt.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <br/>
+    <br/>
+
+    <div class="footer_container">
+
+    </div>
+
+    <!--Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <script>
+        $(".footer_container").load("/assets/common/footer.html"); 
+    </script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    CommonHTML: { linebreaks: { automatic: true } },
+    "HTML-CSS": { linebreaks: { automatic: true } },
+           SVG: { linebreaks: { automatic: true } }
+  });
+  </script>
+
+  </body>
+</html>

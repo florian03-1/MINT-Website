@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site CSS, inkl. Bootstrap-->
+    <link href="/assets/css/site.min.css" rel="stylesheet">
+
+    <!--jQuery-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+    <!--MathJax Integration-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js">
+    </script>
+
+    <title>Titel</title>
+  </head>
+
+  <body class="bg-lightgray">
+
+    <nav class="navbar navbar-expand-lg shadow navbar-dark bg-gray text-white py-3">
+        <div class="container">
+          <a class="navbar-brand" href="/index.html">
+              <img class="img-fluid" src="/assets/img/logo_icon_xs.png"/>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/formelübersicht.html" style="font-size: large;">Formelübersicht</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/magnetische-feld.html" style="font-size: large;" >II. Magnetisches Feld</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/teilchen-in-feldern.html" style="font-size: large;">III. Teilchen in Feldern</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    <div class="container">
+
+        <h1 class="text-center my-4">Formelübersicht</h1>
+
+
+        <div class="topic-card">
+            <div class="topic-card-header">
+                Elektrizitätslehre Grundlagen
+            </div>
+            <div class="topic-card-body">
+               
+                <h5>Reihen- und Parallelschaltung:</h6>
+                <div class="table-responsive">
+                    <table class="table align-middle text-center table-bordered border-gray">
+                        <thead>
+                        <tr>
+                            <th scope="col">---</th>
+                            <th scope="col">Reihenschaltung</th>
+                            <th scope="col">Parallelschaltung</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr >
+                            <th class="py-4 px-4">Stromstärke:</th>
+                            <td class="py-4 px-4">bleibt gleich</td>
+                            <td class="py-4 px-4">teilt sich auf</td>>
+                        </tr>
+                        <tr>
+                            <th class="py-4 px-4">Spannung:</th>
+                            <td  class="py-4 px-4">teilt sich auf</th>
+                            <td class="py-4 px-4">bleibt gleich</td>
+                        </tr>
+                        <tr>
+                            <th class="py-4 px-4">Widerstand:</th>
+                            <td class="py-4 px-4">\(R_{ges} = \sum{ R_i}\)</td>
+                            <td class="py-4 px-4">\( \dfrac{1}{R_{ges}} = \sum{ \dfrac{1}{R_i} }\)</td>>
+                        </tr>
+                        <tr>
+                            <th class="py-4 px-4">Kapazität:</th>
+                            <td class="py-4 px-4">\( \dfrac{1}{C_{ges}} = \sum{ \dfrac{1}{C_i} }\)</td>
+                            <td class="py-4 px-4">\(C_{ges} = \sum{C_i}\)</td>>
+                        </tr>
+                      
+                        </tbody>
+                    </table>
+                </div>
+
+                <h5 class="mb-3">Allgemeine Formeln:</h6>
+                
+                <div class="row text-center">
+                    <div class="col-lg-3 col-md-6 mt-md-0 mt-4">
+                        <p><b>Stromstärke:</b> </p>
+                        <p class="mt-2"> \( I = \dfrac{U}{R} \)</p>
+                        <p class="mt-3">\( I = \dfrac{P}{U} \)</p>
+                        <p class="mt-2"> \( I = \sqrt{\frac{P}{R}} \)</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mt-md-0 mt-4">
+                        <p><b>Spannung:</b> </p>
+                        <p class="mt-2"> \( U = R * I \)</p>
+                        <p class="mt-3">\( U = \dfrac{P}{I} \)</p>
+                        <p class="mt-2"> \( U = \sqrt{P * R} \)</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mt-md-0 mt-4">
+                        <p><b>Widerstand:</b> </p>
+                        <p class="mt-2"> \( R = \dfrac{U}{I} \)</p>
+                        <p class="mt-2"> \( R = \dfrac{U^2}{P} \)</p>
+                        <p class="mt-3">\( R = \dfrac{P}{I^2} \)</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mt-md-0 mt-4">
+                        <p><b>Leistung:</b> </p>
+                        <p class="mt-2"> \( P = U * I \)</p>
+                        <p class="mt-3">\( P = \dfrac{U^2}{R} \)</p>
+                        <p class="mt-2"> \( P = R * I^2 \)</p>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+
+
+
+
+        <div class="topic-card">
+            <div class="topic-card-header">
+                I. Das elektrische Feld
+            </div>
+            <div class="topic-card-body">
+               
+                <h5>Elektrisches Feld:</h6>
+
+                <div class="table-responsive">
+                    <table class="table align-middle text-center table-bordered border-gray">
+                        <thead>
+                        <tr>
+                            <th scope="col">allgemein</th>
+                            <th scope="col">homogenes Feld</th>
+                            <th scope="col">radiales Feld</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr >
+                            <td class="py-4 px-4">\(E = \dfrac{F}{q}\)</th>
+                            <td class="py-4 px-4">\( E  = \dfrac{U}{d} \)</td>
+                            <td class="py-4 px-4">\( E = \dfrac{Q}{4 \pi \varepsilon_0 * r^2} \)</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="py-4 px-4">\(E = \dfrac{F}{q}\)</th>
+                            <td class="py-4 px-4">\( F = \dfrac{Q * q}{4 \pi \varepsilon_0 * r^2} \)</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="py-4 px-4">\(\sigma = \dfrac{Q}{A} = \varepsilon_0 * \varepsilon_r \dfrac{A}{d}\)</th>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="py-4 px-4">\(W = \dfrac{1}{2} * Q * U = \dfrac{1}{2} * C * U^2\)</th>
+                            <td class="py-4 px-4">\( W = \dfrac{Q * q}{4 \pi \varepsilon_0 * r} \)</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="py-4 px-4">---</th>
+                            <td class="py-4 px-4">\( \varphi(r) = \dfrac{Q}{4 \pi \varepsilon_0 * r} \)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-4">\( \rho = \dfrac{W}{V}\)</th>
+                            <td class="py-4 px-4">\( \rho = \dfrac{1}{2} * \varepsilon_0 \varepsilon_r * E^2 \)</td>
+                            <td class="py-4 px-4">---</th>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h5 class="mb-3">Kondensator:</h6>
+                
+                <div class="row text-center">
+                    <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+                        <p><b>Entladung:</b> </p>
+                        <p class="mt-2"> \( Q(t) = Q_0 * e^{- \frac{t}{R * C}} \)</p>
+                        <p class="mt-4">\( U(t) = \dfrac{Q_0}{C} * e ^{- \frac{t}{R * C}} \)</p>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+                        <p><b>Aufladung:</b> </p>
+                        <p class="mt-2"> \( Q(t) = Q_0 * (1 - e^{- \frac{t}{R * C}}) \)</p>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+                        <p><b>Feldkraft:</b> </p>
+                        <p class="mt-2"> \( F = \dfrac{\Delta W}{\Delta  s} * e^{- \frac{t}{R * C}} \)</p>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+      
+    </div>
+  
+
+    <br/>
+    <br/>
+
+    <div class="footer_container">
+
+    </div>
+
+    <!--Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <script>
+        $(".footer_container").load("/assets/common/footer.html"); 
+    </script>
+  </body>
+</html>

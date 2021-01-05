@@ -1,0 +1,124 @@
+// Required
+@import "../libs/bootstrap/scss/functions";
+@import "../libs/bootstrap/scss/variables";
+@import "../libs/bootstrap/scss/mixins";
+
+
+//Bootstrap Manipulation
+$custom-colors : (
+    "red":   $red,
+    "gray":  #1A1A1A,
+    "lightgray": #e9ecef,
+    "extralightgray": #f9fbfc,
+    "blue":  #008EFE,
+    "white": #fff,
+    "green": $success,
+    "black": #000
+) !default;
+
+$theme-colors: map-remove($theme-colors, "primary", "secondary", "success", "info", "warning", "danger", "light", "dark");
+
+$theme-colors: map-merge($theme-colors, $custom-colors );
+
+// Hole Bootstrap
+@import "../libs/bootstrap/scss/bootstrap.scss";
+
+
+
+.body{
+    @extend .mt-lg-5;
+    margin-bottom: 30px;
+}
+
+
+//Zusammenfassende Karten
+
+.topic-card{
+    @extend .card;
+    @extend .rounded;
+    @extend .border-gray;
+    @extend .my-5;
+    @extend .shadow;
+}
+
+.topic-card-header{
+    @extend .card-header;
+    @extend .bg-extralightgray ;
+    @extend .text-gray;
+    @extend .border-bottom;
+    @extend .border-gray;
+    @extend .text-center;
+    @extend .py-2;
+    @extend .h3;
+}
+
+.topic-card-body{
+    @extend .card-body;
+    @extend .bg-extralightgray;
+}
+
+
+ //Hervorhebenkarte
+
+.highlite-card{
+    @extend .card;
+    @extend .shadow;
+    @extend .rounded;
+    @extend .my-3;
+}
+
+.highlite-card-header{
+    @extend .card-header;
+    @extend .text-white;
+    @extend .h5;
+}
+
+.highlite-card-body{
+    @extend .card-body;
+    @extend .bg-white;
+}
+
+//Spezielle Regeln für Merke/Definition:
+
+.highlite-card-remember{
+    @extend .highlite-card;
+    @extend .border-red;
+} 
+
+.highlite-card-header-remember{
+    @extend .highlite-card-header;
+    @extend .bg-red;
+} 
+
+
+//Spezielle Regeln für Merke/Definition:
+
+.highlite-card-experiment{
+    @extend .highlite-card;
+    @extend .border-blue;
+} 
+
+.highlite-card-header-experiment{
+    @extend .highlite-card-header;
+    @extend .bg-blue;
+} 
+
+
+
+//Umrahmung für Formeln
+
+.equation-border{
+
+    @extend .badge;
+    @extend .bg-transparent;
+    @extend .border;
+    @extend .border-red;
+    @extend .text-black;
+
+    font-size: 1em !important;  
+    font-weight: normal !important;
+    
+}
+
+// Andere Manipulationen...
+
