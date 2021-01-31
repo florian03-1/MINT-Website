@@ -37,6 +37,9 @@
                 <a class="nav-link" href="/formelübersicht.html" style="font-size: large;">Formelübersicht</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link active" href="/elektrisches-feld.html.html" style="font-size: large;">I. Elektrisches Feld</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="/magnetische-feld.html" style="font-size: large;" >II. Magnetisches Feld</a>
               </li>
               <li class="nav-item">
@@ -51,7 +54,101 @@
     <div class="container">
         
       <h1 class="text-center my-4">I. Elektrisches Feld</h1>
-      <p>Hier fehlt noch Inhalt!</p>
+
+      <!--1. Elektrische Ladung und Stromstärke-->
+      <div class="topic-card">
+        <div class="topic-card-header">
+          1. Elektrische Ladung und Stromstärke
+        </div>
+        <div class="topic-card-body">
+          <div class="highlite-card-experiment">
+            <div class="highlite-card-header-experiment">Plastikstab und (Katzen-)fell</div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-4 offset-lg-4">
+                  <img class="img-fluid" src="/assets/img/img-elektrisches_feld/elektroskop.png"/>
+                  <p class="text-black-50 text-center mt-2" style="font-size: small;">Quelle: <a class="text-black-50" href="https://www.grund-wissen.de/physik/_images/elektroskop-funktionsweise.png">grund-wissen.de</a> | Name: Elektroskop</p>
+                </div>
+            </div>
+            <p>Durch das Reiben mit dem Fell wird der Stab polarisiert. Der Effekt der Influenz sorgt für Ladungstrennung im Elektroskop, was durch einen Ausschlag am Elektroskop zu sehen ist.</p>
+            </div> 
+          </div>
+          <div class="highlite-card-remember">
+            <div class="highlite-card-header-remember">Definition</div>
+            <div class="card-body">
+                <p>Die <b>Ladung</b> \(Q\) hat die Einheit Coulomb: \([Q] = 1C\). Ein Coulomb ist die Ladungsmenge von ca. \(6,242 * 10^{18}\) Protonen (oder Elektronen \(\rightarrow\) Vorzeichen ändert sich). Ist \(Q = 0\), so ist der Körper elektrisch neutral. Gleichnamige Ladungen soßen sich ab, ungleichnamige Ladungen ziehen sich an.</p>
+                <p>Übliche Ladungsträger sind Elektronen und Ionen. Elektronen tragen die Elementarladung \(e \approx 1,60*10^{-19} C\).</p>
+            </div>
+          </div>
+          <div class="highlite-card-experiment">
+            <div class="highlite-card-header-experiment">"Pendelkugel" zwischen Kondensatorplatten</div>
+            <div class="card-body">
+              <p>Eine Kugel hängt an einem Pendel zwischen zwei Kondensatorplatten an denen eine Gleichspannung \(U \approx 5kV\) anliegt.</p>
+              <h6>Beobachtung:</h6>
+              <p>Wird die Kugel einmal angestoßen, pendelt sie ohne Abschwächung zwischen den Platten hin und her.</p>
+              <h6>Erklärung:</h6>
+              <p>Sobald die Kugel die positive Platte berührt wird die positiv geladen. Die positive Kugel wird von der positiven Platte abgestoßen und von der negativen Platte angezogen. Berührt die Kugel die negative Platte, wird negativ geladen und der Prozess beginnt erneut \(\rightarrow\) <b>Es fließt ein elektrischer Strom!
+
+              </b></p>
+              <p></p>
+            </div> 
+          </div>
+
+          <div class="highlite-card-remember">
+            <div class="highlite-card-header-remember">Definition</div>
+            <div class="card-body">
+                <p>Fließende/bewegte Ladungen nennt man <b>Strom</b>. Die elektrische Stromstärke \(I\) gibt an, wie viele Ladungen pro Zeit fließen (pro Querschnitt).</p>
+                <div class="d-flex">
+                  <p class="equation-border mx-auto">\[ I = \lim_{\Delta t \to 0} \dfrac{\Delta Q}{\Delta t} = \dot{Q}\]</p>
+                </div>
+            </div>
+          </div>
+
+          <!--2. Der elektrische Widerstand-->
+          <div class="topic-card">
+            <div class="topic-card-header">
+              2. Der elektrische Widerstand
+            </div>
+            <div class="topic-card-body">
+              <h4>a) Reihenschaltung</h4>
+              <p>Die Stromstärke ist an allen Widerständen gleich: \(I_1 = I_2 = I\).</p>
+              <p>Es gilt:</p>
+              <p>\[U_{ges} = U_1 + U_2\]</p>
+              <p>\[R_{ges} * I = R_1 * I + R_2 * I\]</p>
+              <p>\[R_{ges} = R_1 * R_2\]</p>
+              <div class="d-flex">
+                <p class="equation-border mx-auto">\[\Rightarrow R_{ges} = \sum_{i} R_i\]</p>
+              </div>
+
+              <h4>a) Parallelschaltung</h4>
+              <p>An allen Widerständen liegt die gleiche Spannung an: \(U_1 = U_2 = U\).</p>
+              <p>Es gilt:</p>
+              <p>\[I_{ges} = I_1 + I_2\]</p>
+              <p>\[\dfrac{U}{R_{ges}} = \dfrac{U}{R_1} + \dfrac{U}{R_2}\]</p>
+              <p>\[\dfrac{1}{R_{ges}} = \dfrac{1}{R_1} + \dfrac{1}{R_2}\]</p>
+              <div class="d-flex">
+                <p class="equation-border mx-auto">\[\Rightarrow \dfrac{1}{R_{ges}} = \sum_{i} \dfrac{1}{R_{i}}\]</p>
+              </div>
+            </div>
+          </div>
+        
+          <!--3. Das elektrische Feld-->
+          <div class="topic-card">
+            <div class="topic-card-header">
+              3. Das elektrische Feld
+            </div>
+            <div class="topic-card-body">
+              <h4>Feldidee nach Michael Faraday</h4>
+              <p>Der Raum um elektrische Ladungen hat besondere Wirkungen auf andere Ladungen. Diese kann man durch die Flugbahn von  "Probelandungen" veranschaulichen \(\rightarrow\) <b>elektrische Feldlinien</b>.</p>
+            </div>
+          </div>
+
+
+
+         
+        </div>
+      </div>
+
 
     </div>
 
