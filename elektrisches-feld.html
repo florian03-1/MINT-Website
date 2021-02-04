@@ -516,11 +516,112 @@
 
           </div>
         </div>
+        
         <!--11. Auf- und Entladen eines Kondensators-->
+        <div class="topic-card">
+          <div class="topic-card-header">
+            11. Auf- und Entladen eines Kondensators
+          </div>
+          <div class="topic-card-body">
+            <div class="card-body">
+              <div class="col-lg-6 offset-lg-3">
+                <img class="img-fluid" src="/assets/img/img-elektrisches_feld/kondensator_entladung-schaltkreis.png"/>
+                <p class="text-black-50 text-center mt-2" style="font-size: small;">Quelle: <a class="text-black-50" href="https://www.grund-wissen.de/elektronik/_images/kondensator-messschaltung.png">grund-wissen.de</a> | Name: Schaltkreis für die Entladung eines Kondensators</p>
+              </div>
+              <p>Nach dem Beginn des Entladevorgangs fließt durch den Widerstand \(R_2\) ein bestimmter Strom. Das führt zu einem Ladungsverlust auf dem Kondensator, was wiederum eine kleinere Kondensatorspannung zu Folge hat. Die kleinere Kondensatorspannung bewirkt einen kleineren Entladungsstrom, usw.</p>
+              <div class="highlite-card-remember">
+                <div class="highlite-card-header-remember">
+                  Definition
+                </div>
+                <div class="card-body">
+                  <p>Die Zeit, nachder sich die Spannung bzw. die Ladung halbiert, heißt <b>Halbwertszeit</b> \(T_H\).</p>  
+                </div>
+              </div>
+              <p>Im folgenden Graph sieht man den Verlauf der Aufladung und Entladung des Kondensators.</p>
 
+              <div class="col-lg-6 offset-lg-3">
+                <img class="img-fluid" src="/assets/img/img-elektrisches_feld/kondensator_aufladung_entladung-graph.png"/>
+                <p class="text-black-50 text-center mt-2" style="font-size: small;">Quelle: <a class="text-black-50" href="https://www.elektronik-kompendium.de/sites/grd/diagramm/02053011.gif">elektronik-kompendium.de</a> | Name: Verlauf der Aufladung und Entladung eines Kondensators</p>
+              </div>
+              <p>Maschenregel: \[U_C + U_R = 0\]</p>
+              <p>\[\dfrac{Q}{C} + I*R = 0\]</p>
+              <p>\[\dfrac{Q}{C} + \dot{Q}*R = 0\]</p>
+              <p>\[\Rightarrow \dot{Q} = -\dfrac{Q}{C*R}\]</p>
+              <div class="highlite-card-remember">
+                <div class="highlite-card-header-remember">
+                  Definition
+                </div>
+                <div class="card-body">
+                  <p>Eine Gleichung in der sowohl die Variable selbst als auch irhe Ableitunge vorkommen, heißt <b>Differneitalgleichung</b>. Wenn nur die erste Ableitung vorkommt, heißt sie <b>Differentialgleichung erster Ordnung</b>. Die Lösungen von Differentialgleichungen sind Funktionen(scharen).</p>  
+                </div>
+              </div>
+              <p><b>Vermutung:</b> Da die Ableitung proportional zur Funktion selbst ist, vermuten wir: \(Q(t) = Q_0 * e^{k*t}\)</p>
+              <p><b>Probe:</b> \[\dot{Q}(t) = k * Q_0 * e^{k*t}\]</p>
+              <p>\[ k * Q_0 * e^{k*t} = \dfrac{Q_0*e^{k*t}}{C*R}\]</p>
+              <p>\[k = - \dfrac{1}{R*C}\]</p>
+              <div class="d-flex">
+                <p class="equation-border mx-auto">\[ Q(t) = Q_0 * e^{-\frac{t}{RC}}\] <b>Entladung des Kondensators</b></p>
+              </div>
+              <p>Für die Aufladung gilt:</p>
+              <div class="d-flex">
+                <p class="equation-border mx-auto">\[ Q(t) = Q_0 * (1-e^{-\frac{t}{RC}})\] <b>Aufladung des Kondensators</b></p>
+              </div>
+              <p>Diese Zusammenhänge gelten analog auch für die Spannung, da sich diese nur durch Multiplikation der Ladung mit der konstanten Kapazität ergibt.</p>
+              <div class="d-flex">
+                <p class="equation-border mx-auto">\[ U(t) = U_0 * (e^{-\frac{t}{RC}}\] <b>Entladung des Kondensators</b></p>
+              </div>
+              <div class="d-flex">
+                <p class="equation-border mx-auto">\[ U(t) = U_0 * (1-e^{-\frac{t}{RC}})\] <b>Aufladung des Kondensators</b></p>
+              </div>
+              <p>Wir untersuchen nun die Halbwertszeit bei der Aufladung (der Prozess für die Entladung ist analog und hat das gleiche Ergebnis):</p>
+              <p>\begin{aligned} \dfrac{U_0}{2} &= U_0 * (1-e^{-\frac{t}{RC}}) \\[10pt] U_0 &= 2*U_0 - 2*U_0 *e^{-\frac{t}{RC}} \\[10pt] 1 &= 2-2*e^{-\frac{t}{RC}} \\[10pt] \dfrac{1}{2} &= 1-e^{-\frac{t}{RC}} \\[10pt] \dfrac{1}{2} &= e^{-\frac{t}{RC}} \\[10pt] ln \left( \frac{1}{2} \right) &= -\dfrac{t}{RC} \\[10pt] t &= -ln(2)*(-1) * R * C \end{aligned}</p>
+              <div class="d-flex">
+                <p class="equation-border mx-auto">\[T_H = ln(2)* R*C\] <b>Halbwertszeit - Auf- & Entladung</b></p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
 
 
         <!--12. Die Energie elektrischer Felder-->
+        <div class="topic-card">
+          <div class="topic-card-header">
+            12. Die Energie elektrischer Felder
+          </div>
+          <div class="topic-card-body">
+            <h5>1. Frage: Wie viel Enegie ist in einem Kondensator geladen?</h5>
+            <p>Es gilt: \[W = U*Q = \int U \ dQ\]</p>
+
+            <div class="col-lg-4 offset-lg-4">
+              <img class="img-fluid" src="/assets/img/img-elektrisches_feld/energie_im_kondensator-graph.png"/>
+              <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Verlauf der Aufladung und Entladung eines Kondensators</p>
+            </div>
+            <p>Da der Zusammenhang zwischen Ladung \(Q\) und Spannung \(U\) im Plattenkondensator ein linearer ist (Kapazität ist konstant), lässt sich wie in der Grafik zu sehen die Energie \(W\), also die Fläche unter dem Graphen, mit \(W = \dfrac{1}{2}*Q*U\) berechnen.</p>
+            <p>Mit \(Q = U*C\) ergibt sich</p>
+            <div class="d-flex">
+              <p class="equation-border mx-auto">\[W = \dfrac{1}{2}*C*U^2\]</p>
+            </div>
+
+            <h5>2. Frage: Wo sitzt die gespeicherte Energie im Kondensator?</h5>
+            <p>\begin{aligned} W = \dfrac{1}{2} *C * U^2 = \dfrac{1}{2} * \epsilon_0 \epsilon_r \dfrac{A}{d} * (E*d)^2 = \dfrac{1}{2} \epsilon_0 \epsilon_r E^2 * A d \end{aligned}</p>
+            <p><b>Räumliche Energiedichte \(\rho\)</b> : </p>
+            <div class="d-flex">
+              <p class="equation-border mx-auto">\[\rho = \dfrac{W}{V} = \dfrac{1}{2} * \epsilon_0 * \epsilon_r * E^2\]</p>
+            </div>
+
+            <div class="highlite-card-remember">
+              <div class="highlite-card-header-remember">
+                Merke
+              </div>
+              <div class="card-body">
+                <p>Die Energie steckt im E-Feld. Feldenergie gibt es also auch im Vakuum!</p>  
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </div>
 
