@@ -113,7 +113,7 @@
               2. Der elektrische Widerstand
             </div>
             <div class="topic-card-body">
-              <h4>a) Reihenschaltung</h4>
+              <h4>a) Reihenschaltung (serielle Schaltung)</h4>
               <p>Die Stromstärke ist an allen Widerständen gleich: \(I_1 = I_2 = I\).</p>
               <p>Es gilt:</p>
               <p>\[U_{ges} = U_1 + U_2\]</p>
@@ -415,7 +415,7 @@
               <p>Die Energie ist die Fläche unter dem \(F\)-\(r\)-Graphen, also</p>
               <p>\[W = \int F \ dr \]</p>
               <p>\[F = \dfrac{dW}{dr} = \dfrac{qQ}{4 \pi \epsilon_0} * \dfrac{1}{r^2}\]</p>
-              <p>\[\Rightarrow W = \dfrac{q*Q}{4 \pi \epsilon_0} * \dfrac{1}{-r}\]</p>
+              <p>\[\Rightarrow W = \dfrac{qQ}{4 \pi \epsilon_0} * \dfrac{1}{-r}\]</p>
               <p>\begin{aligned} W_{(r)} &= \int_{R}^{\infty} F_{(R)} \ dr = \int_{R}^{\infty} \dfrac{qQ}{4 \pi \epsilon_0} * \dfrac{1}{r^2} \ dr = \dfrac{qQ}{4 \pi \epsilon_0} \left[ \dfrac{1}{-r} \right]_R^{\infty} \\[10pt]
                 &= \dfrac{qQ}{4 \pi \epsilon_0} \left( -\dfrac{1}{r \rightarrow \infty} \right) - \dfrac{qQ}{4 \pi \epsilon_0} \left( -\dfrac{1}{R} \right) = \dfrac{qQ}{4 \pi \epsilon_0 R} \end{aligned}</p>
               <p>\[ \varphi_{_{(r)}}= \dfrac{W}{q} = \dfrac{Q}{4 \pi \epsilon_0 r} \]</p>
@@ -428,12 +428,99 @@
                   <p>\[\varphi_{_{(r)}} = \dfrac{Q}{4 \pi \epsilon_0 r}\]</p>
                 </div>
               </div>
+
             </div>
           </div>
 
         <!--9. Die Kapazität des Kondensators-->
+        <div class="topic-card">
+          <div class="topic-card-header">
+            9. Die Kapazität des Kondensators
+          </div>
+          <div class="topic-card-body">
+            <h5>Frage: Wieviel Ladung passt bei einer bestimmten Spannung auf den Kondensator?</h5>
+            <p>Es gilt: \(Q \sim U\) bzw. \(\dfrac{Q}{U} = konst.\)</p>
+            <div class="highlite-card-remember">
+              <div class="highlite-card-header-remember">
+                Definition
+              </div>
+              <div class="card-body">
+                <p>Die <b>Kapazität</b> \(C\) eines Kondensators gibt an, welche Ladung \(Q\) der Kondensator bei einer bestimmten Spannung \(U\) speichern kann. Dabei ist Q die Ladung einer Platte.</p>
+                <p>\[C := \dfrac{Q}{U}\]</p>
+                <p>\[[C] = 1 \dfrac{C}{V} = 1F \]</p>
+              </div>
+            </div>
+            <h5>Frage: Wovon hängt die Kapazität eines Kondensators ab?</h5>
+            <ol>
+              <li>Zusammenhang Kapazität - Spannung: \(C = \dfrac{Q}{U}\) und \(U \sim d \Rightarrow C \sim \dfrac{1}{d}\)</li>
+              <li>Zusammenhang Kapazität - Ladung: \(C = \dfrac{Q}{U}\) und \(Q \sim A \Rightarrow C \sim A\)</li>
+            </ol>
+            <p>Daraus lässt sich für den Spezialfall des Plattenkondesators folgern, dass \(C \sim \dfrac{Q}{A}\). Es gilt:</p>
+            <p>\[C = \epsilon_0 * \dfrac{A}{d}\]</p>
+            <div class="highlite-card-experiment">
+              <div class="highlite-card-header-experiment">
+                Plattenkondensator mit Dielektrikum
+              </div>
+              <div class="card-body">
+                <div class="col-lg-4 offset-lg-4">
+                  <img class="img-fluid" src="/assets/img/img-elektrisches_feld/dielektrikum-kondensator.png"/>
+                  <p class="text-black-50 text-center mt-2" style="font-size: small;">Quelle: <a class="text-black-50" href="https://physikunterricht-online.de/wp-content/uploads/2014/07/Dielektrikum-Kondensator.jpg">physikunterricht-online.de</a> | Name: Dielektrikum im Plattenkondensator</p>
+                </div>
+                <p>Der Kondensator wird auf \(4kV\) aufgeladen und anschließend von der Spannungsquelle getrennt \( \rightarrow Q = konst.\)</p>
+                <p>Dann wird die Plastikplatte (<b>Dielektrikum</b>) zwischen die Platten geschoben.</p>
+                <h5>Beobachtung:</h5>
+                <p>Die Spannung sinkz auf \(2kV\).</p>
+                <h5>Erklärung:</h5>
+                <p>Ein Dielektrikum vergrößert die Kapazität eines Kondensators. Das Verhältnis der Kapazität der Kapazität \(C\) mit DIelektrikum zur Kapazität \C_0\) ohne Dielektrikum (im Vakuum) ist \(\epsilon_r\). \(\epsilon_r\) heißt <b>relative Dielektrizitätszahl</b>.</p>
+                <div class="d-flex">
+                  <p class="equation-border mx-auto">\[\epsilon_r = \dfrac{C}{C_0}\] \[C = \epsilon_r * \epsilon_0 * \dfrac{A}{d}\]</p>
+                </div>
+                <p>\(\epsilon_r := 1\) für Vakuum, \(\epsilon_r = 1,00058\) für Luft, \(\epsilon_r \approx 3\) für Hartgummi, \(\epsilon_r = 81\) Wasser, \(\epsilon_r = 3,75\) für Glas.</p>
+            </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!--10. Schaltung von Kondensatoren-->
+        <div class="topic-card">
+          <div class="topic-card-header">
+            10. Schaltung von Kondensatoren
+          </div>
+          <div class="topic-card-body">
+            <h5>a) Parallelschaltung</h5>
+            <div class="col-lg-4 offset-lg-4">
+              <img class="img-fluid" src="/assets/img/img-elektrisches_feld/kondensatoren_parallelschaltung.png"/>
+              <p class="text-black-50 text-center mt-2" style="font-size: small;">Quelle: <a class="text-black-50" href="https://lx3.mint-kolleg.kit.edu/onlinekursphysik/html/1.4.3/Physikkurs/stromkreiseelemente_kondensator/images/MFILE3xParallelschaltung-C.png">mint-kolleg.kit.edu</a> | Name: Parallelschaltung von Kondensatoren</p>
+            </div>
+            <p>Die Spannung ist an allen Kondensatoren gleich. \(U = konst.\)</p>
+            <p>\begin{aligned}&Q_1 = C_1*U \\ &Q_2 = C_2*U \\ &Q_3 = C_3*U \\ \Rightarrow &Q_{ges} = (C_1+C_2+C_3)*U \end{aligned}</p>
+            <p>\[\Rightarrow C_{ges} = \dfrac{Q_{ges}}{U} = \dfrac{(C_1+C_2+C_3)*U}{U} = C_1+C_2+C_3 \]</p>
+            <div class="d-flex">
+              <p class="equation-border mx-auto">\[C_{ges} = \sum _i C_i\]</p>
+            </div>
+            <h5>b) Reihenschaltung (serielle Schaltung)</h5>
+            <div class="col-lg-4 offset-lg-4">
+              <img class="img-fluid" src="/assets/img/img-elektrisches_feld/kondensatoren_reihenschaltung.png"/>
+              <p class="text-black-50 text-center mt-2" style="font-size: small;">Quelle: <a class="text-black-50" href="data:image/png;base64,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">schulen.eduhi.at/</a> | Name: Reihenschaltung von Kondensatoren</p>
+            </div>
+            <p>Die Ladung ist, wie der Grafik zu entnehmen ist, konstant. \(Q = konst.\)</p>
+            <p>Für \(U\) gilt \[U = U_1 + U_2 + U_3\]</p>
+            <p>\[U = \dfrac{Q}{C_1} + \dfrac{Q}{C_2} + \dfrac{Q}{C_3}\]</p>
+            <p>\[\dfrac{U}{Q} = \dfrac{1}{C_1} + \dfrac{1}{C_2} + \dfrac{1}{C_3}\]</p>
+            <p>\[\dfrac{1}{C_{ges}} = \dfrac{1}{C_1} + \dfrac{1}{C_2} + \dfrac{1}{C_3}\]</p>
+            <div class="d-flex">
+              <p class="equation-border mx-auto">\[\dfrac{1}{C_{ges}} = \sum _i \dfrac{1}{C_i}\]</p>
+            </div>
+            
+
+          </div>
+        </div>
+        <!--11. Auf- und Entladen eines Kondensators-->
 
 
+
+        <!--12. Die Energie elektrischer Felder-->
       </div>
     </div>
 
