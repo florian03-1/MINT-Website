@@ -93,22 +93,123 @@
 
 
 
-           <!--LUKAS-->
+           <!--3. Induktion durch Magnetfeldänderung-->
            <div class="topic-card">
-            <div class="topic-card-header">5. Das Magnetfeld einer schlanken Spule</div>
+            <div class="topic-card-header">3. Induktion durch Magnetfeldänderung</div>
             <div class="topic-card-body">
-                <p>Im Inneren eine schlanken Spule ist  magnetische Feld nahezu homogen (bis auf Randeffekte). Es gilt:</p>
-                <p>\begin{aligned}&B \sim I \\[5px] &B \sim n \\[5px] &B \sim \tfrac{1}{l} \\[5px] \Rightarrow &B \sim \tfrac{I*n}{l}\end{aligned}</p>
-                <p>\(I\) ist die Stromstärke, \(n\) die Windungszahl der Spule und \(l\) die Länge der Spule.</p>
-                <div class="highlite-card-remember">
-                    <div class="highlite-card-header-remember">Merke</div>
-                    <div class="card-body">
-                        <p>Der Betrag der magnetischen Flussdichte \(B\) einer schlanken Spule ist \[B = \mu_{0}*\dfrac{I*n}{l}\]</p>
-                        <p>\(\mu_{0}\) ist die <b>magnetische Feldkonstante</b> oder <b>Permeabilität des Vakuums</b> \[\mu_{0} \approx 1,257 * 10^{-6}\frac{Vs}{Am}\]</p>
+                <div class="highlite-card-experiment">
+                  <div class="highlite-card-header-experiment">
+                    Induktion durch Magnetfeldänderung einer Spule
+                  </div>
+                  <div class="card-body">
+                    <div class="col-lg-6 offset-lg-3">
+                      <img class="img-fluid" src="/assets/img/img-induktion/induktion_durch_magentfeldaenderung.png"/>
+                      <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Induktion durch Magnetfeldänderung</p>
                     </div>
+                    <p>Die Feldspule (rot) erzeugt ein Magnetfeld, durch die Stromstärke \(I_{err}\). Nun steigt \(I_{err}\), und somit auch \(B\), mit der Zeit linear an (\(B = \mu_0 * \frac{In}{l}\)). An der Induktionsspule (blau) im Inneren der Feldspule können wir eine konstante Induktionsspannung \(U_{ind}\) messen.</p> 
+                    <p>Folglich lässt sich vermuten, dass</p>
+                    <p>\[U_{ind} \sim \dot{B}\]</p>
+                    <p>Es gilt:</p>
+                    <div class="d-flex">
+                      <p class="equation-border mx-auto">\[U_{ind} = n*A*\dot{B} = n*A*\frac{dB}{dt}\]</p>
+                    </div>
+                  </div>
                 </div>
-
             </div>
+        </div>
+
+         <!--4. Der magnetische Fluss-->
+         <div class="topic-card">
+           <div class="topic-card-header">4. Der magnetische Fluss</div>
+           <div class="topic-card-body">
+             <p><b>Faradays Vermutung:</b> Anzahl der magnetischen Feldlinien einer Fläche ist der magnetische Fluss \(\phi\). </br> Daher der Name der magnetischen Flussdichte: \(B = \frac{\phi}{A}\)</p>
+
+             <div class="highlite-card-remember">
+              <div class="highlite-card-header-remember">Definition</div>
+              <div class="card-body">
+                  <p>Der <b>magnetische Fluss</b> \(\phi\) durch eine Leiterschleife der Fläche \(A\) ist das Produkt aus magnetischer Flussdichte \(B\) und dem Flächeninhalt der Fläche \(A\).</p>
+                  <p>\[\phi = B*A_{\bot}\]</p>
+                  <p>\[[\phi] = 1\ Tm^2 = 1\ Vs\]</p>
+                  <p><i>mathematisch genauer:</i></p>
+                  <p>\begin{align} 
+                    \phi &= \vec{B} \cdot \vec{A} \\
+                    &= B*A*\cos{\varphi} \\
+                    &= B*A*\cos{(\omega t)}
+                    \end{align}</p>
+               </div>
+              </div>
+              <div class="highlite-card-remember">
+                <div class="highlite-card-header-remember">Merke</div>
+                <div class="card-body">
+                    <p style="color:green">Allgemeines Induktionsgesetz:</p>
+                    <p>\[U_{ind} = n * \dot{\phi}\]</p>
+                    <p>Eine Spannung wird induziert, wann immer sich der magnetische Fluss ändert.</p>
+                    <p>\[U_{ind} = \dot{\phi} = \frac{d}{dt} (A*B) = \dot{A}B+A\dot{B}\]</p>
+                    <p>Wichtige Fälle:</p>
+                    <div class="table-responsive">
+                    <table class="table">
+                      <tr>
+                        <td class="col-lg-4 col-md-2">für \(B = konst.\)</td>
+                        <td>\(U_{ind} = \dot{A}B\)</td>
+                      </tr>
+                      <tr>
+                        <td class="col-lg-4 col-md-2">für \(A = konst.\)</td>
+                        <td>\(U_{ind} = A\dot{B}\)</td>
+                      </tr>
+                      <tr>
+                        <td class="col-lg-4 col-md-2">für \(A \not \bot B\)</td>
+                        <td>\(U_{ind} = -A*B*\sin{(\omega t)}*\omega\)</td>
+                      </tr>
+                    </table>
+                  </div>
+                 </div>
+           </div>
+         </div>
+        </div>
+
+         <!--5. Das Lenzsche Gesetz und der Energieerhaltungssatz-->
+         <div class="topic-card">
+          <div class="topic-card-header">5. Das Lenzsche Gesetz und der Energieerhaltungssatz</div>
+          <div class="topic-card-body">
+            <div class="highlite-card-experiment">
+              <div class="highlite-card-header-experiment">
+                Gedankenexperiment
+              </div>
+              <div class="card-body">
+                <div class="col-lg-6 offset-lg-3">
+                  <img class="img-fluid" src="/assets/img/img-induktion/gedankenexperiment-lenzsche-gesetz.png"/>
+                  <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Gedankenexperiment - Lenzsches Gesetz</p>
+                </div>
+                <p>Die Schiene gleite reibungsfrei, werde angestoßen und habe dann \(v > 0\). Wird die scheller, langsamer oder bleibt \(v\) gleich?</p>
+                <p><b>Fall 1:</b> Schalter offen: \(F = 0 \Rightarrow v = konst.\)</p>
+                <p><b>Fall 2:</b> Schalter geschlossen: Ist der Stromkreis geschlossen, fließt ein Induktionsstrom \(I\). Dieser Strom fließt auch von C nach D. Dadurch entsteht eine zweite Lorentzkraft, die der Bewegungsrichtung entgegen wirkt.</p>
+                <h5>Energiebetrachtung</h5>
+                <p>\[W_{el} = U*Q = U*I*\Delta t = \color{green}{B*d*v*I*\Delta t}\]</p>
+                <p>Soll \(v\) gleich bleiben, benötigt man eine Kraft \(F\) entgegen \(F_L\) mit \(F = F_L\) \(\rightarrow\) man muss Arbeit entlang des Weges verrichten:</p>
+                <p>\[W_{mech} = F*s_{\parallel} = F_L * v*\Delta t = \color{green}{B*I*d*v*\Delta t}\]</p>
+                <p>\(\Rightarrow\) Energieerhaltungssatz gilt!</p>
+              </div>
+            </div>
+            <div class="highlite-card-experiment">
+              <div class="highlite-card-header-experiment">
+                Ring um Magnet
+              </div>
+              <div class="card-body">
+                <div class="col-lg-10 offset-lg-1">
+                  <img class="img-fluid" src="/assets/img/img-induktion/ring-um-magnet-lenzsche-gesetz.png"/>
+                  <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Ring um Magnet - Lenzsches Gesetz</p>
+                </div>
+                <p><b>Einschalten des Magnetfelds:</b> B-Feld baut sich auf \(\rightarrow\) \(\dot{\phi}>0\) im Ring \(\rightarrow\) \(U_{ind}\) im Ring \(\rightarrow\) \(I_{ind}\) \(\rightarrow\) B-Feld im Ring ist so gerichtet, dass es sich vom ursprünglichen B-Feld <i>abstößt</i></p>
+                <p><b>Ausschalten des Magnetfelds:</b> B-Feld nimmt ab \(\rightarrow\) \(\dot{\phi} < 0\) im Ring \(\rightarrow\) \(U_{ind}\) im Ring \(\rightarrow\) \(I_{ind}\) \(\rightarrow\) B-Feld im Ring ist so gerichtet, dass es sich zum ursprünglichen B-Feld <i>anzieht</i></p>
+              </div>
+            </div>
+            <div class="highlite-card-remember">
+              <div class="highlite-card-header-remember">Merke</div>
+              <div class="card-body">
+                <p><b>Lenzsche Regel:</b> Die induzierte Spannung ist so gerichtet, dass sie durch den induzierten Strom ihrer Ursache entgegenwirkt.</p>
+              </div>
+            </div>
+          </div>
         </div>
 
     </div>
