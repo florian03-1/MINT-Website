@@ -57,39 +57,114 @@
         <h1 class="text-center my-4">IV. Induktion</h1>
 
 
-        <!--5. Das Magnetfeld einer schlanken Spule-->
+        <!--1. Induktion durch Bewegung-->
         <div class="topic-card">
-            <div class="topic-card-header">5. Das Magnetfeld einer schlanken Spule</div>
-            <div class="topic-card-body">
-                <p>Im Inneren eine schlanken Spule ist  magnetische Feld nahezu homogen (bis auf Randeffekte). Es gilt:</p>
-                <p>\begin{aligned}&B \sim I \\[5px] &B \sim n \\[5px] &B \sim \tfrac{1}{l} \\[5px] \Rightarrow &B \sim \tfrac{I*n}{l}\end{aligned}</p>
-                <p>\(I\) ist die Stromstärke, \(n\) die Windungszahl der Spule und \(l\) die Länge der Spule.</p>
-                <div class="highlite-card-remember">
-                    <div class="highlite-card-header-remember">Merke</div>
-                    <div class="card-body">
-                        <p>Der Betrag der magnetischen Flussdichte \(B\) einer schlanken Spule ist \[B = \mu_{0}*\dfrac{I*n}{l}\]</p>
-                        <p>\(\mu_{0}\) ist die <b>magnetische Feldkonstante</b> oder <b>Permeabilität des Vakuums</b> \[\mu_{0} \approx 1,257 * 10^{-6}\frac{Vs}{Am}\]</p>
-                    </div>
-                </div>
+          <div class="topic-card-header">1. Induktion durch Bewegung</div>
+          <div class="topic-card-body">
 
+
+            <div class="highlite-card-experiment">
+              <div class="highlite-card-header-experiment">Versuch 1</div>
+              <div class="card-body"><div class="row">
+                  <div class="col-lg-6 offset-lg-3">
+                    <img class="img-fluid" src="/assets/img/img-induktion/induktion-versuch1.png"/>
+                    <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Induktion - Versuch 1</p>
+                  </div>
+                  <h6>Beobachtung:</h6>
+                  <p>Bewegen wir einen Metallstab durch ein homogenes Magnetfeld, so lässt sich an den Enden eine Spannung messen.</p>
+                  <h6>Erklärung:</h6>
+                  <p>Aufgrund der Lorentzkraft bewegen sich die Elektronen auf eine Seite des Stabs. Auf der anderen Seite herscht dann ein Elektronenmangel, was zu einer Potentialdifferenz und somit zu einer Spannung führt. <br/>Ändert man die "Bewegungsrichtung" oder die Richtung des B-Felds, polt die Spannung um. <br/>Die Ladungstrennng findet statt bis Lorentzkraft und elektrische Kraft gleich groß sind. Es gilt</p>
+
+                  <p>\begin{aligned}F_L &= F{el} \\[5px] q*v_s*B &= q*E \\[5px] v_s * B &= \dfrac{Uind}{d} \\[5px] U_{ind} &= d * v_s * B \end{aligned}</p>
+              </div>
             </div>
+          </div>
+
+              <div class="highlite-card-remember">
+                  <div class="highlite-card-header-remember">Merke</div>
+                  <div class="card-body">
+                      <p>Ein gerades Leiterstück der Länge \(d\) bewege sich mit der Geschwindigkeitskimponente \(v_s\) senkrecht zu einem Magnetfeld mit konstanter Feldstärke \(B\). Lorentzkräfte erzeugen dann die <b>Induktionsspannung</b></p>
+                      <p>\[U_{ind} = d*v_s*B\]</p>
+                  </div>
+              </div>
+
+              <div class="highlite-card-experiment">
+                <div class="highlite-card-header-experiment">Versuch 2</div>
+                <div class="card-body"><div class="row">
+                    <div class="col-lg-6 offset-lg-3">
+                      <img class="img-fluid" src="/assets/img/img-induktion/induktion-versuch2.png"/>
+                      <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Induktion - Versuch 2</p>
+                    </div>
+                    <p>Ein Drahtrahmen bewegt sich durch ein homogenes Magnetfeld im Inneren einer Spule mit \(B = 0,4T\) nach oben. Der Drahtrahmen hat eine Breite \(d = 5,0 cm\) und \(n = 500\) Windungen. Der Drahtrahmen bewegt sich durch einen Motor gleichmäßig mit \(v_s = 2,0 *10^{-3} \frac{m}{s}\) senkrecht zum B-Feld.</p>
+                    <p>In jedem der unteren Leiterstücke wird die Spannung \(U_{ind1} = 4,0*10^{-3} T * 0,05m*2,0*10^{-3}\frac{m}{s} = 4,0*10^{-7} V\) induziert. Da die Spule \(n = 500\) Windungen hat, ergibt sich</p>
+                    <p>\[U_{ind} = 500 * U_{ind1} = 500*4,0*10^{-7}V = 2,0*10^{-4}V\]</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="highlite-card-experiment">
+              <div class="highlite-card-header-experiment">Versuch 3</div>
+              <div class="card-body"><div class="row">
+                  <div class="col-lg-4 offset-lg-4">
+                    <img class="img-fluid" src="/assets/img/img-induktion/induktion-versuch3.png"/>
+                    <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Induktion - Versuch 3</p>
+                  </div>
+                  <p>Wir sehen es wird eine Spannung induziert, wenn sich die felddurchsetzte Fläche \(A_S\) ändert. Formulieren wir diese durch \(A_S = \Delta s * l\).</p>
+                  <p>Es gilt \(\Delta s = v_s * \Delta t\) und folglich auch \(A_S = v_s * \Delta t * l\)</p>
+                  <p>Betrachten wir nun die <i>Änderungsrate</i> der Fläche.</p>
+                  <p>\[\dot{A} = \frac{dA}{dt} = \frac{d(l*s)}{dt}\ = l * \frac{d(s)}{dt} = l *v_s\]</p>
+                  <p>Mit \(U_{ind} = d*v_s*B = l*v_s*B\) ergibt sich für die Induktionsspannung duch Änderung der felddurchsetzten Fläche</p>
+                  <div class="d-flex">
+                    <p class="equation-border mx-auto">\[U_{ind} = B*\dot{A}\]</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          </div>
         </div>
 
 
 
+        <!--2. Induktion durch Rotation-->
+        <div class="topic-card">
+          <div class="topic-card-header">2. Induktion durch Rotation</div>
+          <div class="topic-card-body">
 
 
+            <div class="highlite-card-experiment">
+              <div class="highlite-card-header-experiment">Rotierende Leiterschleife im Erdmagnetfeld</div>
+              <div class="card-body"><div class="row">
+                  <div class="col-lg-6 offset-lg-3">
+                    <img class="img-fluid" src="/assets/img/img-induktion/rotierende_leiterschleife.png"/>
+                    <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Rotierende Leiterschleife im Erdmagnetfeld</p>
+                  </div>
+                  <p>Betrachten wir eine Leiterspule, die in einem Magnetfeld rotiert. Prinzipiell ist dies auch Induktion durch Flächenänderung. Die Fläche \(\Delta A\) wird durh die B-Feldlinien auf die tatsächlich felddurchsetzte Fläche \(A_S\) projiziert. Es gilt:</p>
+                  <p>\begin{aligned}\Delta A &= \Delta s * d \\[5px] A_S &= \Delta A*\cos{\varphi} \\[5px] &= \Delta s * d * \cos{\varphi}\end{aligned}</p>
+                  <p>Bei gleichmäßiger Drehung gilt: \(\varphi = \omega * t\) und damit</p>
+                  <div class="d-flex">
+                    <p class="equation-border mx-auto">\[A_S(t) = A*\cos{(\omega t)}\]</p>
+                  </div>
+                  <p>Auch hier gilt: \(U_{ind} = B*\dot{A}\) und folglich</p>
+                  <p>\begin{aligned}U_{ind} &= B*\frac{d\ A_S}{dt} \\[5px] &= B*\frac{d}{dt} (A*\cos{(\omega t)})\end{aligned}</p>
+                  <div class="d-flex">
+                    <p class="equation-border mx-auto">\[U_{ind} = -B*A*\sin{(\omega t)}*\omega\]</p>
+                  </div>
+                  
+                </div>
+            </div>
+          </div>
+
+              <div class="highlite-card-remember">
+                  <div class="highlite-card-header-remember">Merke</div>
+                  <div class="card-body">
+                      <p></p>
+                  </div>
+              </div>
 
 
-
-
-
-
-
-
-
-
-
+          </div>
+        </div>
 
 
 
