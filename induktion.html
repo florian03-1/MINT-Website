@@ -311,18 +311,108 @@
                 <p>\[U_{ind}(t) = -n*\dot{\phi (t)}\]</p>
               </div>
             </div>
+            </div>
+            </div>
 
+            
+            <!--6. Wirbelströme-->
+            <div class="topic-card">
+              <div class="topic-card-header">6. Wirbelströme</div>
+              <div class="topic-card-body">
+                <div class="highlite-card-experiment">
+                  <div class="highlite-card-header-experiment">
+                    Pendelnde Aluminiumplatte im Magnetfeld
+                  </div>
+                  <div class="card-body">
+                    <div class="col-lg-6 offset-lg-3">
+                      <img class="img-fluid" src="/assets/img/img-induktion/aluminiumplatte_im_magnetfeld.png"/>
+                      <p class="text-black-50 text-center mt-2" style="font-size: small;">Quelle: <a class="text-black-50" href="https://www.elektropraktiker.de/fileadmin/Uploads/Bilder/Nachrichten/2019/11/bild_1_wirbelstrom.png">elektropraktiker.de</a> | Name: Aluminiumplatte im Magnetfeld</p>
+                    </div>
+                    <h6>a) Eine Aluminiumplatte pendelt frei in einem starken Magnetfeld</h6>
+                    <p><b>Beobachtung:</b> Die Aluminiumplatte wird abgebremst.</p>
+
+                    <h6>b) Eine Aluminiumplatte in "Kammform" pendelt frei im gleichen Magnetfeld</h6>
+                    <p><b>Beobachtung:</b> Die Aluminiumplatte wird nicht abgebremst.</p>
+                    <p><b>Erklärung:</b></p>
+
+                    <div class="col-lg-6 offset-lg-3">
+                      <img class="img-fluid" src="/assets/img/img-induktion/wirbelstrom.png"/>
+                      <p class="text-black-50 text-center mt-2" style="font-size: small;">Quelle: <a class="text-black-50" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Wirbelstrom_de.svg/260px-Wirbelstrom_de.svg.png">wikipedia.org</a> | Name: Wirbelstrom</p>
+                    </div>
+
+                    <p>Fällt eine metallische Scheibe geradlinig durch ein senkrecht dazu verlaufendes Magnetfeld, werden in ihr Wirbelströme induziert. Nach der lenzschen Regel verlaufen die Wirbelströme so, dass sie ihrer Entstehungsursache entgegenwirken.</p>
+                  </div>
+                </div>
+
+                <div class="highlite-card-experiment">
+                  <div class="highlite-card-header-experiment">
+                    Münze und Magnet im Kupferrohr
+                  </div>
+                  <div class="card-body">
+                    <p><b>Beobachtung:</b> Eine 1-Cent Münze fällt frei durch ein Kupferrohr. Ein fallender Magnet durch das Kupferrohr braucht ein Vielfaches länger.</p>
+                    <p><b>Erklärung:</b></p>
+                    <div class="col-lg-2 offset-lg-5">
+                      <img class="img-fluid" src="/assets/img/img-induktion/magnet_im_kupferrohr.png"/>
+                      <p class="text-black-50 text-center mt-2" style="font-size: small;">Quelle: <a class="text-black-50" href="https://media.springernature.com/lw785/springer-static/image/chp%3A10.1007%2F978-3-662-54445-7_10/MediaObjects/338133_1_De_10_Fig14_HTML.png">link.springer.com</a> | Name: Magnet im Kupferrohr</p>
+                    </div>
+
+                    <p>Die induzierte Spannung führt zu einem Kreisstrom, welcher wiederum für ein Magnetfeld sorgt, welches nach der lenzschen Regel der Entstehungsursache entgegen wirkt.</p>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+
+
+          <!--7. Selbstinduktion-->
+          <div class="topic-card">
+            <div class="topic-card-header">7. Selbstinduktion</div>
+            <div class="topic-card-body">
+              <div class="highlite-card-experiment">
+                <div class="highlite-card-header-experiment">
+                  Selbstinduktion einer Spule
+                </div>
+                <div class="card-body">
+                  <div class="col-lg-6 offset-lg-3">
+                    <img class="img-fluid" src="/assets/img/img-induktion/selbstinduktion-versuch1.png"/>
+                    <p class="text-black-50 text-center mt-2" style="font-size: small;">Quelle: <a class="text-black-50" href="https://www.sachsen.schule/~physikms/material/pruefung/loesung/e_lehre/indukt/aufg15.gif">sachsen.schule</a> | Name: Selbstinduktion einer Spule</p>
+                  </div>
+
+                  <p><b>Beobachtung:</b> \(L_2\) leuchtet später auf als \(L_1\)</p>
+
+                  <p><b>Erklärung:</b> Einschalten: \(\dot{I} \rightarrow \dot{B} \rightarrow \dot{\phi} \rightarrow U_{ind}\) </br> \(U_{ind}\), in der Spule selbst, wirkt ihrer Ursache entgegen (Lenzsche Regel) \( \rightarrow U_{ind}\) zögert Stromanstieg hinaus</p>
+                  <p>Es gilt:</p>
+                  <p>\begin{aligned}U_{ind} &= -n*\dot{\phi} \\ &\sim \dot{B} \sim \dot{I} \\ \Rightarrow U_{ind} &= - \color{green}{L}*\dot{I}\end{aligned}</p>
+                  <p>Wir definieren \(L\) als die (Eigen-)Induktivität der Spule.</p>
+                  <p>\[U_{ind} = -n*\dot{\phi} = -n*A*\dot{B} = -\color{green}{n*A*\mu_0\mu_r*}\frac{I*\color{green}{n}}{\color{green}{l}}\]</p>
+                  <p>\[\Rightarrow L = \mu_0\mu_r*\frac{n^2A}{l}\]</p>
+                  Wenn sich ein Strom ändert, induziert er im eigenen Leiterkreis eine Selbstinduktionsspannung. Sie wirkt ihrer Ursache entgegen (d..h. der Zu- oder Abnahme des Stroms).
+                </div>
+              </div>
+
+              <div class="highlite-card-remember">
+                <div class="highlite-card-header-remember">
+                  Definition
+                </div>
+                <div class="card-body">
+                  <p>Der Proportionalitätsfaktor von Selbstinduktionsspannung und Änderung des Stroms heißt <b>(Eigen-)Induktivität</b> \(L\). Es gilt:</p>
+                  <p>\[U_{ind} = -L*\dot{I}\]</p>
+                  <p>\[[L] = 1 \frac{Vs}{A} = 1 H\]</p>
+                  <p>Die Eigeninduktivität einer langgestreckten Spule ist</p>
+                  <p>\[L = \mu_0\mu_r\frac{n^2A}{l}\]</p>
+                </div>
+              </div>
+
+              <p>Durch das Verwenden einer zweiten identischen Spule, lässt sich die durch Selbstinduktion induzierte Spannung \(U_{ind}\) von der ursprünglichen Spannung \(U_0\) isolieren. Abgesehen von Messfehlern ergibt sich durch die geometrischen Größen die gleiche Eigendinduktivität, wie durch die gemessene Induktionsspannung und Stromänderung.</p>
 
           </div>
         </div>
 
-
-
     </div>
 
-        <div class="footer_container">
+    <div class="footer_container">
 
-        </div>
+    </div>
     
         <!--Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
