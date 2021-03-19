@@ -476,12 +476,12 @@
 
                 <img class="img-fluid" src="/assets/img/img-induktion/turn_on_ampere.png"/>
   
-                <p><span class="fs-3">①</span> &nbsp; \(U_{ind}(0) = -U_0 = -L * I_0\) &nbsp;  \(I(0) = \dfrac{U_0}{L}\)</p>
+                <p><span class="fs-3">①</span> &nbsp; \(U_{ind}(0) = -U_0 = -L * \dot{I}_0\) &nbsp; \(\Rightarrow \) &nbsp;\(\dot{I}(0) = \dfrac{U_0}{L}\)</p>
   
                 <p><span class="fs-3">②</span> &nbsp; \(\lim\limits_{t \rightarrow \infty}{I(t) = \dfrac{U_0}{R_{sp}}}\)</p>
   
   
-                <p><span class="text-decoration-underline">allg:</span> &nbsp; \(I(t) = \dfrac{U}{R} = \dfrac{U_0 + U_{ind}}{R_{sp}} = \dfrac{U_0 - L * Ip}{R_{sp}}\)</p>
+                <p><span class="text-decoration-underline">allg:</span> &nbsp; \(I(t) = \dfrac{U}{R} = \dfrac{U_0 + U_{ind}}{R_{sp}} = \dfrac{U_0 - L * \dot{I}}{R_{sp}}\)</p>
   
               </div>
   
@@ -494,7 +494,7 @@
                 <p><span class="fs-3">④</span> &nbsp; \(\lim\limits_{t \rightarrow \infty}{I(t) = 0}\)</p>
   
   
-                <p><span class="text-decoration-underline">allg:</span> &nbsp; \(I(t) = \dfrac{U}{R} = \dfrac{U_{ind}}{R_{ges}} = \dfrac{-L * \dot{I}}{R_{sp}}\)</p>
+                <p><span class="text-decoration-underline">allg:</span> &nbsp; \(I(t) = \dfrac{U}{R} = \dfrac{U_{ind}}{R_{ges}} = \dfrac{-L * \dot{I}}{R_{ges}}\)</p>
   
               </div>
 
@@ -519,22 +519,98 @@
   
                 <img class="img-fluid" src="/assets/img/img-induktion/turn_off_volt.png"/>
 
-                <p><span class="fs-3">③</span> &nbsp; \(U_{ind}(0) = R_{ges} * I_0\)</p>
+                <p><span class="fs-3">③</span> &nbsp; \(U_{ind}(0) = R_{ges} * I_0 = R_{ges}*\dfrac{U_0}{R_{sp}} = U_0*\dfrac{R_{ges}}{R_{sp}}\)</p>
   
-                <p><span class="fs-3">④</span> &nbsp; \(\lim\limits_{t \rightarrow \infty}{U(t) = 0}\)</p>
+                <p><span class="fs-3">④</span> &nbsp; \(\lim\limits_{t \rightarrow \infty}{U_{ind}(t) = 0}\)</p>
   
   
                 <p><span class="text-decoration-underline">allg:</span> &nbsp; \(U_{ind}(t) = R_{ges} * I(t)\)</p>
   
               </div>
             </div>
-            
           </div>
         </div>
+
+        <h5>Allgemeinere Herleitung für diesen Zusammenhang</h5>
+        <p><b>Ausschalten:</b> \(U_{ges} = U_{ind}\)</p>
+        <p>Folglich gilt:</p>
+        <p>\begin{align}
+          U(t) &= U_{ind}(t)\\
+          R*I(t) &= -L * \dot{I}(t)
+          \end{align}</p>
+        <p>Wir erhalten eine Differentialgleichung, welche sich wie folgt umformen lässt</p>
+        <p>\begin{align}
+          -\frac{R}{L} &= \frac{\dot{I}(t)}{I(t)}\\
+          \int -\frac{R}{L} \,dt &= \int \frac{\dot{I}(t)}{I(t)} \,dt\\
+          c-\frac{R}{L}*t &= \ln{(I(t))}\\
+          e^c*e^{-\frac{R}{L}*t} &= I(t)
+          \end{align}</p>
+        
+          <div class="d-flex">
+            <p class="equation-border mx-auto">\[I(t) = I_0*e^{-\frac{R}{L}*t}\]\[U(t) = \frac{I_0}{R}*e^{-\frac{R}{L}*t}\]</p>
+          </div>
+          <p>Hierbei ist anzumerken, dass mit der Überlegung, dass \(\frac{\,d(\ln{(f(x)))}}{\,dx} = \frac{1}{f(x)}*f^{\prime}(x)\), das obige Integral weitaus leichter ist. Es zeigt sich, dass in diesem Fall \(e^c = I_0\). Es ist hier allerdings nicht relevant zu wissen, wie das zu zeigen ist.</p>
+        <p><b>Einschalten:</b> \(U_{ges} = U_0 + U_{ind}\)</p>
+        <p>Um es einfacher zu halten, wird für den Fall des Einschaltens wird die dem obigen Prozess entsprechende Umformung hier nicht aufgeführt. Mit der Ähnlichkeit zum Kondensator lässt sich allerdings schon richtig vermuten, dass hier gilt:</p>
+        <div class="d-flex">
+          <p class="equation-border mx-auto">\[I(t) = I_0*(1-e^{-\frac{R}{L}*t})\]\[U(t) = \frac{I_0}{R}*(1-e^{-\frac{R}{L}*t})\]</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!--8. Die Energie des Magnetfelds-->
+    <div class="topic-card">
+      <div class="topic-card-header">8. Die Energie des Magnetfelds</div>
+      <div class="topic-card-body">
+
+
+        <div class="highlite-card-experiment">
+          <div class="highlite-card-header-experiment">Energie im Magnetfeld einer Spule</div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <img class="img-fluid" src="/assets/img/img-induktion/energie_im_magnetfeld-schaltkreis.png" />
+                <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Rotierende Leiterschleife im Erdmagnetfeld</p>
+              </div>
+              <p><b>Schalter geschlossen</b></p>
+              <p>\(\rightarrow\) Spule wird vom Strom durchflossen und es baut sich ein B-Feld auf</p>
+              <p>\(\rightarrow\) Motor bewegt sich nicht, da die Diode den Stromfluss verhindert</p>
+              
+              <p><b>Schalter offen</b></p>
+              <p>\(\rightarrow\) Spule und Motor sind von Spannungsquelle getrennt</p>
+              <p>\(\rightarrow\) Motor wird von Spule gespeist</p>
+              <p>\(\rightarrow U_{ind} = -L*\dot{I}\)</p>
+              <p>\(\rightarrow\) Die vom Motor verrichtete Arbeit entspricht der Energie, die zuvor im B-Feld der Spule gespeichert war.</p>
+            </div>
+          </div>
+        </div>
+        <p>Für die Leistung gelten folgende Formeln</p>
+        <p>\begin{align}
+          P &= \dfrac{\Delta W}{\Delta t} = \dfrac{\,d W(t)}{\,dt}\\
+          P &= U*I = U_{ind}(t)*I(t) = -L*\dot{I}(t)*I(t)
+          \end{align}</p>
+        <p>Durch Gleichsetzen der beiden Gleichungen ergibt sich</p>
+        <p>\begin{align}
+          \dfrac{\,d W(t)}{\,dt} &= -L*\dot{I}(t)*I(t)\\
+          W &= -L*\int \frac{\,d I(t)}{\,dt} * I(t) \,dt \\
+          W &= -L*\int I(t) \,dI \\
+          W &= -L*\dfrac{I^2}{2}
+          \end{align}</p>
+
+          <div class="highlite-card-remember">
+            <div class="highlite-card-header-remember">Merke</div>
+            <div class="card-body">
+              <p>Ein vom Strom \(I\) durchflosener Leiter, der Induktivität \(L\), ist von einem Magnetfeld umgeben. Zu dessen Erzeugung ist die Energie E_{mag} nötig, die im Magnetfeld gespeichert ist und wieder frei wird, wenn der Stromfluss unterbrochen wird.</p>
+              <p>Es gilt:</p>
+              <p>\[E_{mag} = \frac{1}{2} * L * I^2\]</p>
+            </div>
+          </div>
 
       </div>
     </div>
 
+  
   </div>
 
   <div class="footer_container">
