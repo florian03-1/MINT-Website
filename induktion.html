@@ -1,291 +1,335 @@
 <!doctype html>
 <html lang="de">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Site CSS, inkl. Bootstrap-->
-    <link href="/assets/css/site.min.css" rel="stylesheet">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--jQuery-->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <!-- Site CSS, inkl. Bootstrap-->
+  <link href="/assets/css/site.min.css" rel="stylesheet">
 
-   <!--MathJax Integration-->
-   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <!--jQuery-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/img/logo.ico">
-    <title>Magnetisches Feld</title>
-  </head>
+  <!--MathJax Integration-->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
-  <body class="bg-lightgray">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/img/logo.ico">
+  <title>Magnetisches Feld</title>
+</head>
 
-    <nav class="navbar navbar-expand-lg shadow navbar-dark bg-gray text-white py-3">
-        <div class="container">
-          <a class="navbar-brand" href="/index.html">
-              <img class="img-fluid" src="/assets/img/logo_icon_xs.png"/>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="/formelübersicht.html" style="font-size: large;">Formelübersicht</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/elektrisches-feld.html" style="font-size: large;">I. Elektrisches Feld</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/magnetische-feld.html" style="font-size: large;" >II. Magnetisches Feld</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/teilchen-in-feldern.html" style="font-size: large;">III. Teilchen in Feldern</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/induktion.html" style="font-size: large;">IV. Induktion</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+<body class="bg-lightgray">
 
-    
+  <nav class="navbar navbar-expand-lg shadow navbar-dark bg-gray text-white py-3">
     <div class="container">
+      <a class="navbar-brand" href="/index.html">
+        <img class="img-fluid" src="/assets/img/logo_icon_xs.png" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/formelübersicht.html" style="font-size: large;">Formelübersicht</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/elektrisches-feld.html" style="font-size: large;">I. Elektrisches Feld</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/magnetische-feld.html" style="font-size: large;">II. Magnetisches Feld</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/teilchen-in-feldern.html" style="font-size: large;">III. Teilchen in Feldern</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/induktion.html" style="font-size: large;">IV.
+              Induktion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-        <h1 class="text-center my-4">IV. Induktion</h1>
+
+  <div class="container">
+
+    <h1 class="text-center my-4">IV. Induktion</h1>
 
 
-        <!--1. Induktion durch Bewegung-->
-        <div class="topic-card">
-          <div class="topic-card-header">1. Induktion durch Bewegung</div>
-          <div class="topic-card-body">
+    <!--1. Induktion durch Bewegung-->
+    <div class="topic-card">
+      <div class="topic-card-header">1. Induktion durch Bewegung</div>
+      <div class="topic-card-body">
 
 
-            <div class="highlite-card-experiment">
-              <div class="highlite-card-header-experiment">Versuch 1</div>
-              <div class="card-body"><div class="row">
-                  <div class="col-lg-6 offset-lg-3">
-                    <img class="img-fluid" src="/assets/img/img-induktion/induktion-versuch1.png"/>
-                    <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Induktion - Versuch 1</p>
-                  </div>
-                  <h6>Beobachtung:</h6>
-                  <p>Bewegen wir einen Metallstab durch ein homogenes Magnetfeld, so lässt sich an den Enden eine Spannung messen.</p>
-                  <h6>Erklärung:</h6>
-                  <p>Aufgrund der Lorentzkraft bewegen sich die Elektronen auf eine Seite des Stabs. Auf der anderen Seite herscht dann ein Elektronenmangel, was zu einer Potentialdifferenz und somit zu einer Spannung führt. <br/>Ändert man die "Bewegungsrichtung" oder die Richtung des B-Felds, polt die Spannung um. <br/>Die Ladungstrennng findet statt bis Lorentzkraft und elektrische Kraft gleich groß sind. Es gilt</p>
-
-                  <p>\begin{aligned}F_L &= F{el} \\[5px] q*v_s*B &= q*E \\[5px] v_s * B &= \dfrac{Uind}{d} \\[5px] U_{ind} &= d * v_s * B \end{aligned}</p>
+        <div class="highlite-card-experiment">
+          <div class="highlite-card-header-experiment">Versuch 1</div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <img class="img-fluid" src="/assets/img/img-induktion/induktion-versuch1.png" />
+                <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Induktion - Versuch 1</p>
               </div>
+              <h6>Beobachtung:</h6>
+              <p>Bewegen wir einen Metallstab durch ein homogenes Magnetfeld, so lässt sich an den Enden eine Spannung
+                messen.</p>
+              <h6>Erklärung:</h6>
+              <p>Aufgrund der Lorentzkraft bewegen sich die Elektronen auf eine Seite des Stabs. Auf der anderen Seite
+                herscht dann ein Elektronenmangel, was zu einer Potentialdifferenz und somit zu einer Spannung führt.
+                <br />Ändert man die "Bewegungsrichtung" oder die Richtung des B-Felds, polt die Spannung um. <br />Die
+                Ladungstrennng findet statt bis Lorentzkraft und elektrische Kraft gleich groß sind. Es gilt
+              </p>
+
+              <p>\begin{aligned}F_L &= F{el} \\[5px] q*v_s*B &= q*E \\[5px] v_s * B &= \dfrac{Uind}{d} \\[5px] U_{ind}
+                &= d * v_s * B \end{aligned}</p>
             </div>
-          </div>
-
-              <div class="highlite-card-remember">
-                  <div class="highlite-card-header-remember">Merke</div>
-                  <div class="card-body">
-                      <p>Ein gerades Leiterstück der Länge \(d\) bewege sich mit der Geschwindigkeitskimponente \(v_s\) senkrecht zu einem Magnetfeld mit konstanter Feldstärke \(B\). Lorentzkräfte erzeugen dann die <b>Induktionsspannung</b></p>
-                      <p>\[U_{ind} = d*v_s*B\]</p>
-                  </div>
-              </div>
-
-              <div class="highlite-card-experiment">
-                <div class="highlite-card-header-experiment">Versuch 2</div>
-                <div class="card-body"><div class="row">
-                    <div class="col-lg-6 offset-lg-3">
-                      <img class="img-fluid" src="/assets/img/img-induktion/induktion-versuch2.png"/>
-                      <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Induktion - Versuch 2</p>
-                    </div>
-                    <p>Ein Drahtrahmen bewegt sich durch ein homogenes Magnetfeld im Inneren einer Spule mit \(B = 0,4T\) nach oben. Der Drahtrahmen hat eine Breite \(d = 5,0 cm\) und \(n = 500\) Windungen. Der Drahtrahmen bewegt sich durch einen Motor gleichmäßig mit \(v_s = 2,0 *10^{-3} \frac{m}{s}\) senkrecht zum B-Feld.</p>
-                    <p>In jedem der unteren Leiterstücke wird die Spannung \(U_{ind1} = 4,0*10^{-3} T * 0,05m*2,0*10^{-3}\frac{m}{s} = 4,0*10^{-7} V\) induziert. Da die Spule \(n = 500\) Windungen hat, ergibt sich</p>
-                    <p>\[U_{ind} = 500 * U_{ind1} = 500*4,0*10^{-7}V = 2,0*10^{-4}V\]</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="highlite-card-experiment">
-              <div class="highlite-card-header-experiment">Versuch 3</div>
-              <div class="card-body"><div class="row">
-                  <div class="col-lg-4 offset-lg-4">
-                    <img class="img-fluid" src="/assets/img/img-induktion/induktion-versuch3.png"/>
-                    <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Induktion - Versuch 3</p>
-                  </div>
-                  <p>Wir sehen es wird eine Spannung induziert, wenn sich die felddurchsetzte Fläche \(A_S\) ändert. Formulieren wir diese durch \(A_S = \Delta s * l\).</p>
-                  <p>Es gilt \(\Delta s = v_s * \Delta t\) und folglich auch \(A_S = v_s * \Delta t * l\)</p>
-                  <p>Betrachten wir nun die <i>Änderungsrate</i> der Fläche.</p>
-                  <p>\[\dot{A} = \frac{dA}{dt} = \frac{d(l*s)}{dt}\ = l * \frac{d(s)}{dt} = l *v_s\]</p>
-                  <p>Mit \(U_{ind} = d*v_s*B = l*v_s*B\) ergibt sich für die Induktionsspannung duch Änderung der felddurchsetzten Fläche</p>
-                  <div class="d-flex">
-                    <p class="equation-border mx-auto">\[U_{ind} = B*\dot{A}\]</p>
-                  </div>
-              </div>
-            </div>
-          </div>
-
           </div>
         </div>
 
-
-
-        <!--2. Induktion durch Rotation-->
-        <div class="topic-card">
-          <div class="topic-card-header">2. Induktion durch Rotation</div>
-          <div class="topic-card-body">
-
-
-            <div class="highlite-card-experiment">
-              <div class="highlite-card-header-experiment">Rotierende Leiterschleife im Erdmagnetfeld</div>
-              <div class="card-body"><div class="row">
-                  <div class="col-lg-6 offset-lg-3">
-                    <img class="img-fluid" src="/assets/img/img-induktion/rotierende_leiterschleife.png"/>
-                    <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Rotierende Leiterschleife im Erdmagnetfeld</p>
-                  </div>
-                  <p>Betrachten wir eine Leiterspule, die in einem Magnetfeld rotiert. Prinzipiell ist dies auch Induktion durch Flächenänderung. Die Fläche \(\Delta A\) wird durh die B-Feldlinien auf die tatsächlich felddurchsetzte Fläche \(A_S\) projiziert. Es gilt:</p>
-                  <p>\begin{aligned}\Delta A &= \Delta s * d \\[5px] A_S &= \Delta A*\cos{\varphi} \\[5px] &= \Delta s * d * \cos{\varphi}\end{aligned}</p>
-                  <p>Bei gleichmäßiger Drehung gilt: \(\varphi = \omega * t\) und damit</p>
-                  <div class="d-flex">
-                    <p class="equation-border mx-auto">\[A_S(t) = A*\cos{(\omega t)}\]</p>
-                  </div>
-                  <p>Auch hier gilt: \(U_{ind} = B*\dot{A}\) und folglich</p>
-                  <p>\begin{aligned}U_{ind} &= B*\frac{d\ A_S}{dt} \\[5px] &= B*\frac{d}{dt} (A*\cos{(\omega t)})\end{aligned}</p>
-                  <div class="d-flex">
-                    <p class="equation-border mx-auto">\[U_{ind} = -B*A*\sin{(\omega t)}*\omega\]</p>
-                  </div>
-                  
-                </div>
-            </div>
-          </div>
-          
+        <div class="highlite-card-remember">
+          <div class="highlite-card-header-remember">Merke</div>
+          <div class="card-body">
+            <p>Ein gerades Leiterstück der Länge \(d\) bewege sich mit der Geschwindigkeitskimponente \(v_s\) senkrecht
+              zu einem Magnetfeld mit konstanter Feldstärke \(B\). Lorentzkräfte erzeugen dann die
+              <b>Induktionsspannung</b>
+            </p>
+            <p>\[U_{ind} = d*v_s*B\]</p>
           </div>
         </div>
 
-
-
-           <!--3. Induktion durch Magnetfeldänderung-->
-           <div class="topic-card">
-            <div class="topic-card-header">3. Induktion durch Magnetfeldänderung</div>
-            <div class="topic-card-body">
-                <div class="highlite-card-experiment">
-                  <div class="highlite-card-header-experiment">
-                    Induktion durch Magnetfeldänderung einer Spule
-                  </div>
-                  <div class="card-body">
-                    <div class="col-lg-6 offset-lg-3">
-                      <img class="img-fluid" src="/assets/img/img-induktion/induktion_durch_magentfeldaenderung.png"/>
-                      <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Induktion durch Magnetfeldänderung</p>
-                    </div>
-                    <p>Die Feldspule (rot) erzeugt ein Magnetfeld, durch die Stromstärke \(I_{err}\). Nun steigt \(I_{err}\), und somit auch \(B\), mit der Zeit linear an (\(B = \mu_0 * \frac{In}{l}\)). An der Induktionsspule (blau) im Inneren der Feldspule können wir eine konstante Induktionsspannung \(U_{ind}\) messen.</p> 
-                    <p>Folglich lässt sich vermuten, dass</p>
-                    <p>\[U_{ind} \sim \dot{B}\]</p>
-                    <p>Es gilt:</p>
-                    <div class="d-flex">
-                      <p class="equation-border mx-auto">\[U_{ind} = n*A*\dot{B} = n*A*\frac{dB}{dt}\]</p>
-                    </div>
-                  </div>
-                </div>
+        <div class="highlite-card-experiment">
+          <div class="highlite-card-header-experiment">Versuch 2</div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <img class="img-fluid" src="/assets/img/img-induktion/induktion-versuch2.png" />
+                <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Induktion - Versuch 2</p>
+              </div>
+              <p>Ein Drahtrahmen bewegt sich durch ein homogenes Magnetfeld im Inneren einer Spule mit \(B = 0,4T\) nach
+                oben. Der Drahtrahmen hat eine Breite \(d = 5,0 cm\) und \(n = 500\) Windungen. Der Drahtrahmen bewegt
+                sich durch einen Motor gleichmäßig mit \(v_s = 2,0 *10^{-3} \frac{m}{s}\) senkrecht zum B-Feld.</p>
+              <p>In jedem der unteren Leiterstücke wird die Spannung \(U_{ind1} = 4,0*10^{-3} T *
+                0,05m*2,0*10^{-3}\frac{m}{s} = 4,0*10^{-7} V\) induziert. Da die Spule \(n = 500\) Windungen hat, ergibt
+                sich</p>
+              <p>\[U_{ind} = 500 * U_{ind1} = 500*4,0*10^{-7}V = 2,0*10^{-4}V\]</p>
             </div>
+          </div>
         </div>
 
-         <!--4. Der magnetische Fluss-->
-         <div class="topic-card">
-           <div class="topic-card-header">4. Der magnetische Fluss</div>
-           <div class="topic-card-body">
-             <p><b>Faradays Vermutung:</b> Anzahl der magnetischen Feldlinien einer Fläche ist der magnetische Fluss \(\phi\). </br> Daher der Name der magnetischen Flussdichte: \(B = \frac{\phi}{A}\)</p>
-
-             <div class="highlite-card-remember">
-              <div class="highlite-card-header-remember">Definition</div>
-              <div class="card-body">
-                  <p>Der <b>magnetische Fluss</b> \(\phi\) durch eine Leiterschleife der Fläche \(A\) ist das Produkt aus magnetischer Flussdichte \(B\) und dem Flächeninhalt der Fläche \(A\).</p>
-                  <p>\[\phi = B*A_{\bot}\]</p>
-                  <p>\[[\phi] = 1\ Tm^2 = 1\ Vs\]</p>
-                  <p><i>mathematisch genauer:</i></p>
-                  <p>\begin{align} 
-                    \phi &= \vec{B} \cdot \vec{A} \\
-                    &= B*A*\cos{\varphi} \\
-                    &= B*A*\cos{(\omega t)}
-                    \end{align}</p>
-               </div>
+        <div class="highlite-card-experiment">
+          <div class="highlite-card-header-experiment">Versuch 3</div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-4 offset-lg-4">
+                <img class="img-fluid" src="/assets/img/img-induktion/induktion-versuch3.png" />
+                <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Induktion - Versuch 3</p>
               </div>
-              <div class="highlite-card-remember">
-                <div class="highlite-card-header-remember">Merke</div>
-                <div class="card-body">
-                    <p style="color:green">Allgemeines Induktionsgesetz:</p>
-                    <p>\[U_{ind} = n * \dot{\phi}\]</p>
-                    <p>Eine Spannung wird induziert, wann immer sich der magnetische Fluss ändert.</p>
-                    <p>\[U_{ind} = \dot{\phi} = \frac{d}{dt} (A*B) = \dot{A}B+A\dot{B}\]</p>
-                    <p>Wichtige Fälle:</p>
-                    <div class="table-responsive">
-                    <table class="table">
-                      <tr>
-                        <td class="col-lg-4 col-md-2">für \(B = konst.\)</td>
-                        <td>\(U_{ind} = \dot{A}B\)</td>
-                      </tr>
-                      <tr>
-                        <td class="col-lg-4 col-md-2">für \(A = konst.\)</td>
-                        <td>\(U_{ind} = A\dot{B}\)</td>
-                      </tr>
-                      <tr>
-                        <td class="col-lg-4 col-md-2">für \(|\omega| > 0 \ (\rightarrow A \not \bot B)\)</td>
-                        <td>\(U_{ind} = -A*B*\sin{(\omega t)}*\omega\)</td>
-                      </tr>
-                    </table>
-                  </div>
-                 </div>
-           </div>
-         </div>
+              <p>Wir sehen es wird eine Spannung induziert, wenn sich die felddurchsetzte Fläche \(A_S\) ändert.
+                Formulieren wir diese durch \(A_S = \Delta s * l\).</p>
+              <p>Es gilt \(\Delta s = v_s * \Delta t\) und folglich auch \(A_S = v_s * \Delta t * l\)</p>
+              <p>Betrachten wir nun die <i>Änderungsrate</i> der Fläche.</p>
+              <p>\[\dot{A} = \frac{dA}{dt} = \frac{d(l*s)}{dt}\ = l * \frac{d(s)}{dt} = l *v_s\]</p>
+              <p>Mit \(U_{ind} = d*v_s*B = l*v_s*B\) ergibt sich für die Induktionsspannung duch Änderung der
+                felddurchsetzten Fläche</p>
+              <div class="d-flex">
+                <p class="equation-border mx-auto">\[U_{ind} = B*\dot{A}\]</p>
+              </div>
+            </div>
+          </div>
         </div>
 
-         <!--5. Das Lenzsche Gesetz und der Energieerhaltungssatz-->
-         <div class="topic-card">
-          <div class="topic-card-header">5. Das Lenzsche Gesetz und der Energieerhaltungssatz</div>
-          <div class="topic-card-body">
-            <div class="highlite-card-experiment">
-              <div class="highlite-card-header-experiment">
-                Gedankenexperiment
-              </div>
-              <div class="card-body">
-                <div class="col-lg-6 offset-lg-3">
-                  <img class="img-fluid" src="/assets/img/img-induktion/gedankenexperiment-lenzsche-gesetz.png"/>
-                  <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Gedankenexperiment - Lenzsches Gesetz</p>
-                </div>
-                <p>Die Schiene gleite reibungsfrei, werde angestoßen und habe dann \(v > 0\). Wird die scheller, langsamer oder bleibt \(v\) gleich?</p>
-                <p><b>Fall 1:</b> Schalter offen: \(F = 0 \Rightarrow v = konst.\)</p>
-                <p><b>Fall 2:</b> Schalter geschlossen: Ist der Stromkreis geschlossen, fließt ein Induktionsstrom \(I\). Dieser Strom fließt auch von C nach D. Dadurch entsteht eine zweite Lorentzkraft, die der Bewegungsrichtung entgegen wirkt.</p>
-                <h5>Energiebetrachtung</h5>
-                <p>\[W_{el} = U*Q = U*I*\Delta t = \color{green}{B*d*v*I*\Delta t}\]</p>
-                <p>Soll \(v\) gleich bleiben, benötigt man eine Kraft \(F\) entgegen \(F_L\) mit \(F = F_L\) \(\rightarrow\) man muss Arbeit entlang des Weges verrichten:</p>
-                <p>\[W_{mech} = F*s_{\parallel} = F_L * v*\Delta t = \color{green}{B*I*d*v*\Delta t}\]</p>
-                <p>\(\Rightarrow\) Energieerhaltungssatz gilt!</p>
-              </div>
-            </div>
-            <div class="highlite-card-experiment">
-              <div class="highlite-card-header-experiment">
-                Ring um Magnet
-              </div>
-              <div class="card-body">
-                <div class="col-lg-10 offset-lg-1">
-                  <img class="img-fluid" src="/assets/img/img-induktion/ring-um-magnet-lenzsche-gesetz.png"/>
-                  <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Ring um Magnet - Lenzsches Gesetz</p>
-                </div>
-                <p><b>Einschalten des Magnetfelds:</b> B-Feld baut sich auf \(\rightarrow\) \(\dot{\phi}>0\) im Ring \(\rightarrow\) \(U_{ind}\) im Ring \(\rightarrow\) \(I_{ind}\) \(\rightarrow\) B-Feld im Ring ist so gerichtet, dass es sich vom ursprünglichen B-Feld <i>abstößt</i></p>
-                <p><b>Ausschalten des Magnetfelds:</b> B-Feld nimmt ab \(\rightarrow\) \(\dot{\phi} < 0\) im Ring \(\rightarrow\) \(U_{ind}\) im Ring \(\rightarrow\) \(I_{ind}\) \(\rightarrow\) B-Feld im Ring ist so gerichtet, dass es sich zum ursprünglichen B-Feld <i>anzieht</i></p>
-              </div>
-            </div>
-            <div class="highlite-card-remember">
-              <div class="highlite-card-header-remember">Merke</div>
-              <div class="card-body">
-                <p><b>Lenzsche Regel:</b> Die induzierte Spannung ist so gerichtet, dass sie durch den induzierten Strom ihrer Ursache entgegenwirkt.</p>
-              </div>
-            </div>
+      </div>
+    </div>
 
-            <div class="highlite-card-experiment">
-              <div class="highlite-card-header-experiment">
-                Eisenstab in Spule
+
+
+    <!--2. Induktion durch Rotation-->
+    <div class="topic-card">
+      <div class="topic-card-header">2. Induktion durch Rotation</div>
+      <div class="topic-card-body">
+
+
+        <div class="highlite-card-experiment">
+          <div class="highlite-card-header-experiment">Rotierende Leiterschleife im Erdmagnetfeld</div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <img class="img-fluid" src="/assets/img/img-induktion/rotierende_leiterschleife.png" />
+                <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Rotierende Leiterschleife im
+                  Erdmagnetfeld</p>
               </div>
-              <div class="card-body">
-                <h6>a) Eisenstab wird in eine stromdurchflossene Spule geschoben</h6>
-                <p><b>Beobachtung:</b> \(I\) sinkt (geringfügig)</p>
-                <p><b>Erklärung:</b> \(U_{ges} = U_0 + U_{ind}\)</p>
-                <p>\(\Rightarrow U_{ind} < 0\), da \(I\) sinkt</p>
+              <p>Betrachten wir eine Leiterspule, die in einem Magnetfeld rotiert. Prinzipiell ist dies auch Induktion
+                durch Flächenänderung. Die Fläche \(\Delta A\) wird durh die B-Feldlinien auf die tatsächlich
+                felddurchsetzte Fläche \(A_S\) projiziert. Es gilt:</p>
+              <p>\begin{aligned}\Delta A &= \Delta s * d \\[5px] A_S &= \Delta A*\cos{\varphi} \\[5px] &= \Delta s * d *
+                \cos{\varphi}\end{aligned}</p>
+              <p>Bei gleichmäßiger Drehung gilt: \(\varphi = \omega * t\) und damit</p>
+              <div class="d-flex">
+                <p class="equation-border mx-auto">\[A_S(t) = A*\cos{(\omega t)}\]</p>
+              </div>
+              <p>Auch hier gilt: \(U_{ind} = B*\dot{A}\) und folglich</p>
+              <p>\begin{aligned}U_{ind} &= B*\frac{d\ A_S}{dt} \\[5px] &= B*\frac{d}{dt} (A*\cos{(\omega
+                t)})\end{aligned}</p>
+              <div class="d-flex">
+                <p class="equation-border mx-auto">\[U_{ind} = -B*A*\sin{(\omega t)}*\omega\]</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <!--3. Induktion durch Magnetfeldänderung-->
+    <div class="topic-card">
+      <div class="topic-card-header">3. Induktion durch Magnetfeldänderung</div>
+      <div class="topic-card-body">
+        <div class="highlite-card-experiment">
+          <div class="highlite-card-header-experiment">
+            Induktion durch Magnetfeldänderung einer Spule
+          </div>
+          <div class="card-body">
+            <div class="col-lg-6 offset-lg-3">
+              <img class="img-fluid" src="/assets/img/img-induktion/induktion_durch_magentfeldaenderung.png" />
+              <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Induktion durch
+                Magnetfeldänderung</p>
+            </div>
+            <p>Die Feldspule (rot) erzeugt ein Magnetfeld, durch die Stromstärke \(I_{err}\). Nun steigt \(I_{err}\),
+              und somit auch \(B\), mit der Zeit linear an (\(B = \mu_0 * \frac{In}{l}\)). An der Induktionsspule (blau)
+              im Inneren der Feldspule können wir eine konstante Induktionsspannung \(U_{ind}\) messen.</p>
+            <p>Folglich lässt sich vermuten, dass</p>
+            <p>\[U_{ind} \sim \dot{B}\]</p>
+            <p>Es gilt:</p>
+            <div class="d-flex">
+              <p class="equation-border mx-auto">\[U_{ind} = n*A*\dot{B} = n*A*\frac{dB}{dt}\]</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--4. Der magnetische Fluss-->
+    <div class="topic-card">
+      <div class="topic-card-header">4. Der magnetische Fluss</div>
+      <div class="topic-card-body">
+        <p><b>Faradays Vermutung:</b> Anzahl der magnetischen Feldlinien einer Fläche ist der magnetische Fluss
+          \(\phi\). </br> Daher der Name der magnetischen Flussdichte: \(B = \frac{\phi}{A}\)</p>
+
+        <div class="highlite-card-remember">
+          <div class="highlite-card-header-remember">Definition</div>
+          <div class="card-body">
+            <p>Der <b>magnetische Fluss</b> \(\phi\) durch eine Leiterschleife der Fläche \(A\) ist das Produkt aus
+              magnetischer Flussdichte \(B\) und dem Flächeninhalt der Fläche \(A\).</p>
+            <p>\[\phi = B*A_{\bot}\]</p>
+            <p>\[[\phi] = 1\ Tm^2 = 1\ Vs\]</p>
+            <p><i>mathematisch genauer:</i></p>
+            <p>\begin{align}
+              \phi &= \vec{B} \cdot \vec{A} \\
+              &= B*A*\cos{\varphi} \\
+              &= B*A*\cos{(\omega t)}
+              \end{align}</p>
+          </div>
+        </div>
+        <div class="highlite-card-remember">
+          <div class="highlite-card-header-remember">Merke</div>
+          <div class="card-body">
+            <p style="color:green">Allgemeines Induktionsgesetz:</p>
+            <p>\[U_{ind} = n * \dot{\phi}\]</p>
+            <p>Eine Spannung wird induziert, wann immer sich der magnetische Fluss ändert.</p>
+            <p>\[U_{ind} = \dot{\phi} = \frac{d}{dt} (A*B) = \dot{A}B+A\dot{B}\]</p>
+            <p>Wichtige Fälle:</p>
+            <div class="table-responsive">
+              <table class="table">
+                <tr>
+                  <td class="col-lg-4 col-md-2">für \(B = konst.\)</td>
+                  <td>\(U_{ind} = \dot{A}B\)</td>
+                </tr>
+                <tr>
+                  <td class="col-lg-4 col-md-2">für \(A = konst.\)</td>
+                  <td>\(U_{ind} = A\dot{B}\)</td>
+                </tr>
+                <tr>
+                  <td class="col-lg-4 col-md-2">für \(|\omega| > 0 \ (\rightarrow A \not \bot B)\)</td>
+                  <td>\(U_{ind} = -A*B*\sin{(\omega t)}*\omega\)</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--5. Das Lenzsche Gesetz und der Energieerhaltungssatz-->
+    <div class="topic-card">
+      <div class="topic-card-header">5. Das Lenzsche Gesetz und der Energieerhaltungssatz</div>
+      <div class="topic-card-body">
+        <div class="highlite-card-experiment">
+          <div class="highlite-card-header-experiment">
+            Gedankenexperiment
+          </div>
+          <div class="card-body">
+            <div class="col-lg-6 offset-lg-3">
+              <img class="img-fluid" src="/assets/img/img-induktion/gedankenexperiment-lenzsche-gesetz.png" />
+              <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Gedankenexperiment - Lenzsches
+                Gesetz</p>
+            </div>
+            <p>Die Schiene gleite reibungsfrei, werde angestoßen und habe dann \(v > 0\). Wird die scheller, langsamer
+              oder bleibt \(v\) gleich?</p>
+            <p><b>Fall 1:</b> Schalter offen: \(F = 0 \Rightarrow v = konst.\)</p>
+            <p><b>Fall 2:</b> Schalter geschlossen: Ist der Stromkreis geschlossen, fließt ein Induktionsstrom \(I\).
+              Dieser Strom fließt auch von C nach D. Dadurch entsteht eine zweite Lorentzkraft, die der
+              Bewegungsrichtung entgegen wirkt.</p>
+            <h5>Energiebetrachtung</h5>
+            <p>\[W_{el} = U*Q = U*I*\Delta t = \color{green}{B*d*v*I*\Delta t}\]</p>
+            <p>Soll \(v\) gleich bleiben, benötigt man eine Kraft \(F\) entgegen \(F_L\) mit \(F = F_L\) \(\rightarrow\)
+              man muss Arbeit entlang des Weges verrichten:</p>
+            <p>\[W_{mech} = F*s_{\parallel} = F_L * v*\Delta t = \color{green}{B*I*d*v*\Delta t}\]</p>
+            <p>\(\Rightarrow\) Energieerhaltungssatz gilt!</p>
+          </div>
+        </div>
+        <div class="highlite-card-experiment">
+          <div class="highlite-card-header-experiment">
+            Ring um Magnet
+          </div>
+          <div class="card-body">
+            <div class="col-lg-10 offset-lg-1">
+              <img class="img-fluid" src="/assets/img/img-induktion/ring-um-magnet-lenzsche-gesetz.png" />
+              <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Ring um Magnet - Lenzsches
+                Gesetz</p>
+            </div>
+            <p><b>Einschalten des Magnetfelds:</b> B-Feld baut sich auf \(\rightarrow\) \(\dot{\phi}>0\) im Ring
+              \(\rightarrow\) \(U_{ind}\) im Ring \(\rightarrow\) \(I_{ind}\) \(\rightarrow\) B-Feld im Ring ist so
+              gerichtet, dass es sich vom ursprünglichen B-Feld <i>abstößt</i></p>
+            <p><b>Ausschalten des Magnetfelds:</b> B-Feld nimmt ab \(\rightarrow\) \(\dot{\phi} < 0\) im Ring
+                \(\rightarrow\) \(U_{ind}\) im Ring \(\rightarrow\) \(I_{ind}\) \(\rightarrow\) B-Feld im Ring ist so
+                gerichtet, dass es sich zum ursprünglichen B-Feld <i>anzieht</i></p>
+          </div>
+        </div>
+        <div class="highlite-card-remember">
+          <div class="highlite-card-header-remember">Merke</div>
+          <div class="card-body">
+            <p><b>Lenzsche Regel:</b> Die induzierte Spannung ist so gerichtet, dass sie durch den induzierten Strom
+              ihrer Ursache entgegenwirkt.</p>
+          </div>
+        </div>
+
+        <div class="highlite-card-experiment">
+          <div class="highlite-card-header-experiment">
+            Eisenstab in Spule
+          </div>
+          <div class="card-body">
+            <h6>a) Eisenstab wird in eine stromdurchflossene Spule geschoben</h6>
+            <p><b>Beobachtung:</b> \(I\) sinkt (geringfügig)</p>
+            <p><b>Erklärung:</b> \(U_{ges} = U_0 + U_{ind}\)</p>
+            <p>\(\Rightarrow U_{ind} < 0\), da \(I\) sinkt</p>
                 <p>\(U_{ind} = -\dot{\phi}\), da \(\dot{\phi}>0\) (B-Feld nimmt zu)</p>
 
                 <h6>a) Eisenstab wird aus stromdurchflossener Spule heraus gezogen</h6>
@@ -293,132 +337,226 @@
                 <p><b>Erklärung:</b> \(U_{ges} = U_0 + U_{ind}\)</p>
                 <p>\(\Rightarrow U_{ind} > 0\), da \(I\) steigt</p>
                 <p>\(U_{ind} = -\dot{\phi}\), da \(\dot{\phi} < 0\) (B-Feld nimmt ab)</p>
-              </div>
-            </div>
-
-            <div class="highlite-card-remember">
-              <div class="highlite-card-header-remember">Merke</div>
-              <div class="card-body">
-                <p>Die induzierte Spannung ist so gerichtet, dass sie durch den induzierten Strom ihrer Ursache entgegenwirkt. Daher gilt immer</p>
-                <p>\[U_{ind}(t) = -n*\dot{\phi (t)}\]</p>
-              </div>
-            </div>
-            </div>
-            </div>
-
-            
-            <!--6. Wirbelströme-->
-            <div class="topic-card">
-              <div class="topic-card-header">6. Wirbelströme</div>
-              <div class="topic-card-body">
-                <div class="highlite-card-experiment">
-                  <div class="highlite-card-header-experiment">
-                    Pendelnde Aluminiumplatte im Magnetfeld
-                  </div>
-                  <div class="card-body">
-                    <div class="col-lg-6 offset-lg-3">
-                      <img class="img-fluid" src="/assets/img/img-induktion/aluminiumplatte_im_magnetfeld.png"/>
-                      <p class="text-black-50 text-center mt-2" style="font-size: small;">Quelle: <a class="text-black-50" href="https://www.elektropraktiker.de/fileadmin/Uploads/Bilder/Nachrichten/2019/11/bild_1_wirbelstrom.png">elektropraktiker.de</a> | Name: Aluminiumplatte im Magnetfeld</p>
-                    </div>
-                    <h6>a) Eine Aluminiumplatte pendelt frei in einem starken Magnetfeld</h6>
-                    <p><b>Beobachtung:</b> Die Aluminiumplatte wird abgebremst.</p>
-
-                    <h6>b) Eine Aluminiumplatte in "Kammform" pendelt frei im gleichen Magnetfeld</h6>
-                    <p><b>Beobachtung:</b> Die Aluminiumplatte wird nicht abgebremst.</p>
-                    <p><b>Erklärung:</b></p>
-
-                    <div class="col-lg-6 offset-lg-3">
-                      <img class="img-fluid" src="/assets/img/img-induktion/wirbelstrom.png"/>
-                      <p class="text-black-50 text-center mt-2" style="font-size: small;">Quelle: <a class="text-black-50" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Wirbelstrom_de.svg/260px-Wirbelstrom_de.svg.png">wikipedia.org</a> | Name: Wirbelstrom</p>
-                    </div>
-
-                    <p>Fällt eine metallische Scheibe geradlinig durch ein senkrecht dazu verlaufendes Magnetfeld, werden in ihr Wirbelströme induziert. Nach der lenzschen Regel verlaufen die Wirbelströme so, dass sie ihrer Entstehungsursache entgegenwirken.</p>
-                  </div>
-                </div>
-
-                <div class="highlite-card-experiment">
-                  <div class="highlite-card-header-experiment">
-                    Münze und Magnet im Kupferrohr
-                  </div>
-                  <div class="card-body">
-                    <p><b>Beobachtung:</b> Eine 1-Cent Münze fällt frei durch ein Kupferrohr. Ein fallender Magnet durch das Kupferrohr braucht ein Vielfaches länger.</p>
-                    <p><b>Erklärung:</b></p>
-                    <div class="col-lg-2 offset-lg-5">
-                      <img class="img-fluid" src="/assets/img/img-induktion/magnet_im_kupferrohr.png"/>
-                      <p class="text-black-50 text-center mt-2" style="font-size: small;">Quelle: <a class="text-black-50" href="https://media.springernature.com/lw785/springer-static/image/chp%3A10.1007%2F978-3-662-54445-7_10/MediaObjects/338133_1_De_10_Fig14_HTML.png">link.springer.com</a> | Name: Magnet im Kupferrohr</p>
-                    </div>
-
-                    <p>Die induzierte Spannung führt zu einem Kreisstrom, welcher wiederum für ein Magnetfeld sorgt, welches nach der lenzschen Regel der Entstehungsursache entgegen wirkt.</p>
-                  </div>
-                </div>
-
-            </div>
-          </div>
-
-
-          <!--7. Selbstinduktion-->
-          <div class="topic-card">
-            <div class="topic-card-header">7. Selbstinduktion</div>
-            <div class="topic-card-body">
-              <div class="highlite-card-experiment">
-                <div class="highlite-card-header-experiment">
-                  Selbstinduktion einer Spule
-                </div>
-                <div class="card-body">
-                  <div class="col-lg-6 offset-lg-3">
-                    <img class="img-fluid" src="/assets/img/img-induktion/selbstinduktion-versuch1.png"/>
-                    <p class="text-black-50 text-center mt-2" style="font-size: small;">Quelle: <a class="text-black-50" href="https://www.sachsen.schule/~physikms/material/pruefung/loesung/e_lehre/indukt/aufg15.gif">sachsen.schule</a> | Name: Selbstinduktion einer Spule</p>
-                  </div>
-
-                  <p><b>Beobachtung:</b> \(L_2\) leuchtet später auf als \(L_1\)</p>
-
-                  <p><b>Erklärung:</b> Einschalten: \(\dot{I} \rightarrow \dot{B} \rightarrow \dot{\phi} \rightarrow U_{ind}\) </br> \(U_{ind}\), in der Spule selbst, wirkt ihrer Ursache entgegen (Lenzsche Regel) \( \rightarrow U_{ind}\) zögert Stromanstieg hinaus</p>
-                  <p>Es gilt:</p>
-                  <p>\begin{aligned}U_{ind} &= -n*\dot{\phi} \\ &\sim \dot{B} \sim \dot{I} \\ \Rightarrow U_{ind} &= - \color{green}{L}*\dot{I}\end{aligned}</p>
-                  <p>Wir definieren \(L\) als die (Eigen-)Induktivität der Spule.</p>
-                  <p>\[U_{ind} = -n*\dot{\phi} = -n*A*\dot{B} = -\color{green}{n*A*\mu_0\mu_r*}\frac{\dot{I}*\color{green}{n}}{\color{green}{l}}\]</p>
-                  <p>\[\Rightarrow L = \mu_0\mu_r*\frac{n^2A}{l}\]</p>
-                  Wenn sich ein Strom ändert, induziert er im eigenen Leiterkreis eine Selbstinduktionsspannung. Sie wirkt ihrer Ursache entgegen (d..h. der Zu- oder Abnahme des Stroms).
-                </div>
-              </div>
-
-              <div class="highlite-card-remember">
-                <div class="highlite-card-header-remember">
-                  Definition
-                </div>
-                <div class="card-body">
-                  <p>Der Proportionalitätsfaktor von Selbstinduktionsspannung und Änderung des Stroms heißt <b>(Eigen-)Induktivität</b> \(L\). Es gilt:</p>
-                  <p>\[U_{ind} = -L*\dot{I}\]</p>
-                  <p>\[[L] = 1 \frac{Vs}{A} = 1 H\]</p>
-                  <p>Die Eigeninduktivität einer langgestreckten Spule ist</p>
-                  <p>\[L = \mu_0\mu_r\frac{n^2A}{l}\]</p>
-                </div>
-              </div>
-
-              <p>Durch das Verwenden einer zweiten identischen Spule, lässt sich die durch Selbstinduktion induzierte Spannung \(U_{ind}\) von der ursprünglichen Spannung \(U_0\) isolieren. Abgesehen von Messfehlern ergibt sich durch die geometrischen Größen die gleiche Eigendinduktivität, wie durch die gemessene Induktionsspannung und Stromänderung.</p>
-
           </div>
         </div>
 
+        <div class="highlite-card-remember">
+          <div class="highlite-card-header-remember">Merke</div>
+          <div class="card-body">
+            <p>Die induzierte Spannung ist so gerichtet, dass sie durch den induzierten Strom ihrer Ursache
+              entgegenwirkt. Daher gilt immer</p>
+            <p>\[U_{ind}(t) = -n*\dot{\phi (t)}\]</p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="footer_container">
 
+    <!--6. Wirbelströme-->
+    <div class="topic-card">
+      <div class="topic-card-header">6. Wirbelströme</div>
+      <div class="topic-card-body">
+        <div class="highlite-card-experiment">
+          <div class="highlite-card-header-experiment">
+            Pendelnde Aluminiumplatte im Magnetfeld
+          </div>
+          <div class="card-body">
+            <div class="col-lg-6 offset-lg-3">
+              <img class="img-fluid" src="/assets/img/img-induktion/aluminiumplatte_im_magnetfeld.png" />
+              <p class="text-black-50 text-center mt-2" style="font-size: small;">Quelle: <a class="text-black-50"
+                  href="https://www.elektropraktiker.de/fileadmin/Uploads/Bilder/Nachrichten/2019/11/bild_1_wirbelstrom.png">elektropraktiker.de</a>
+                | Name: Aluminiumplatte im Magnetfeld</p>
+            </div>
+            <h6>a) Eine Aluminiumplatte pendelt frei in einem starken Magnetfeld</h6>
+            <p><b>Beobachtung:</b> Die Aluminiumplatte wird abgebremst.</p>
+
+            <h6>b) Eine Aluminiumplatte in "Kammform" pendelt frei im gleichen Magnetfeld</h6>
+            <p><b>Beobachtung:</b> Die Aluminiumplatte wird nicht abgebremst.</p>
+            <p><b>Erklärung:</b></p>
+
+            <div class="col-lg-6 offset-lg-3">
+              <img class="img-fluid" src="/assets/img/img-induktion/wirbelstrom.png" />
+              <p class="text-black-50 text-center mt-2" style="font-size: small;">Quelle: <a class="text-black-50"
+                  href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Wirbelstrom_de.svg/260px-Wirbelstrom_de.svg.png">wikipedia.org</a>
+                | Name: Wirbelstrom</p>
+            </div>
+
+            <p>Fällt eine metallische Scheibe geradlinig durch ein senkrecht dazu verlaufendes Magnetfeld, werden in ihr
+              Wirbelströme induziert. Nach der lenzschen Regel verlaufen die Wirbelströme so, dass sie ihrer
+              Entstehungsursache entgegenwirken.</p>
+          </div>
+        </div>
+
+        <div class="highlite-card-experiment">
+          <div class="highlite-card-header-experiment">
+            Münze und Magnet im Kupferrohr
+          </div>
+          <div class="card-body">
+            <p><b>Beobachtung:</b> Eine 1-Cent Münze fällt frei durch ein Kupferrohr. Ein fallender Magnet durch das
+              Kupferrohr braucht ein Vielfaches länger.</p>
+            <p><b>Erklärung:</b></p>
+            <div class="col-lg-2 offset-lg-5">
+              <img class="img-fluid" src="/assets/img/img-induktion/magnet_im_kupferrohr.png" />
+              <p class="text-black-50 text-center mt-2" style="font-size: small;">Quelle: <a class="text-black-50"
+                  href="https://media.springernature.com/lw785/springer-static/image/chp%3A10.1007%2F978-3-662-54445-7_10/MediaObjects/338133_1_De_10_Fig14_HTML.png">link.springer.com</a>
+                | Name: Magnet im Kupferrohr</p>
+            </div>
+
+            <p>Die induzierte Spannung führt zu einem Kreisstrom, welcher wiederum für ein Magnetfeld sorgt, welches
+              nach der lenzschen Regel der Entstehungsursache entgegen wirkt.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
-    
-        <!--Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    
-        <script>
-            $(".footer_container").load("/assets/common/footer.html"); 
-        </script>
 
-<script type="text/x-mathjax-config">
+
+    <!--7. Selbstinduktion-->
+    <div class="topic-card">
+      <div class="topic-card-header">7. Selbstinduktion</div>
+      <div class="topic-card-body">
+        <div class="highlite-card-experiment">
+          <div class="highlite-card-header-experiment">
+            Selbstinduktion einer Spule
+          </div>
+          <div class="card-body">
+            <div class="col-lg-6 offset-lg-3">
+              <img class="img-fluid" src="/assets/img/img-induktion/selbstinduktion-versuch1.png" />
+              <p class="text-black-50 text-center mt-2" style="font-size: small;">Quelle: <a class="text-black-50"
+                  href="https://www.sachsen.schule/~physikms/material/pruefung/loesung/e_lehre/indukt/aufg15.gif">sachsen.schule</a>
+                | Name: Selbstinduktion einer Spule</p>
+            </div>
+
+            <p><b>Beobachtung:</b> \(L_2\) leuchtet später auf als \(L_1\)</p>
+
+            <p><b>Erklärung:</b> Einschalten: \(\dot{I} \rightarrow \dot{B} \rightarrow \dot{\phi} \rightarrow U_{ind}\)
+              </br> \(U_{ind}\), in der Spule selbst, wirkt ihrer Ursache entgegen (Lenzsche Regel) \( \rightarrow
+              U_{ind}\) zögert Stromanstieg hinaus</p>
+            <p>Es gilt:</p>
+            <p>\begin{aligned}U_{ind} &= -n*\dot{\phi} \\ &\sim \dot{B} \sim \dot{I} \\ \Rightarrow U_{ind} &= -
+              \color{green}{L}*\dot{I}\end{aligned}</p>
+            <p>Wir definieren \(L\) als die (Eigen-)Induktivität der Spule.</p>
+            <p>\[U_{ind} = -n*\dot{\phi} = -n*A*\dot{B} =
+              -\color{green}{n*A*\mu_0\mu_r*}\frac{\dot{I}*\color{green}{n}}{\color{green}{l}}\]</p>
+            <p>\[\Rightarrow L = \mu_0\mu_r*\frac{n^2A}{l}\]</p>
+            Wenn sich ein Strom ändert, induziert er im eigenen Leiterkreis eine Selbstinduktionsspannung. Sie wirkt
+            ihrer Ursache entgegen (d..h. der Zu- oder Abnahme des Stroms).
+          </div>
+        </div>
+
+        <div class="highlite-card-remember">
+          <div class="highlite-card-header-remember">
+            Definition
+          </div>
+          <div class="card-body">
+            <p>Der Proportionalitätsfaktor von Selbstinduktionsspannung und Änderung des Stroms heißt
+              <b>(Eigen-)Induktivität</b> \(L\). Es gilt:
+            </p>
+            <p>\[U_{ind} = -L*\dot{I}\]</p>
+            <p>\[[L] = 1 \frac{Vs}{A} = 1 H\]</p>
+            <p>Die Eigeninduktivität einer langgestreckten Spule ist</p>
+            <p>\[L = \mu_0\mu_r\frac{n^2A}{l}\]</p>
+          </div>
+        </div>
+
+        <p>Durch das Verwenden einer zweiten identischen Spule, lässt sich die durch Selbstinduktion induzierte Spannung
+          \(U_{ind}\) von der ursprünglichen Spannung \(U_0\) isolieren. Abgesehen von Messfehlern ergibt sich durch die
+          geometrischen Größen die gleiche Eigendinduktivität, wie durch die gemessene Induktionsspannung und
+          Stromänderung.</p>
+
+        <div class="highlite-card-experiment">
+          <div class="highlite-card-header-experiment">
+            Veranschaulichung von \(U_{ind}\) und \(I_{ind}\) am Oszilloskop
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-6">
+                <h5 class="fw-bold text-center">Einschalten</h5>
+                <p class="fw-bolder">Stromstärke:</p>
+
+                <img class="img-fluid" src="/assets/img/img-induktion/turn_on_ampere.png"/>
+  
+                <p><span class="fs-3">①</span> &nbsp; \(U_{ind}(0) = -U_0 = -L * I_0\) &nbsp;  \(I(0) = \dfrac{U_0}{L}\)</p>
+  
+                <p><span class="fs-3">②</span> &nbsp; \(\lim\limits_{t \rightarrow \infty}{I(t) = \dfrac{U_0}{R_{sp}}}\)</p>
+  
+  
+                <p><span class="text-decoration-underline">allg:</span> &nbsp; \(I(t) = \dfrac{U}{R} = \dfrac{U_0 + U_{ind}}{R_{sp}} = \dfrac{U_0 - L * Ip}{R_{sp}}\)</p>
+  
+              </div>
+  
+              <div class="col-lg-6 order-lg-2 order-3">
+                <h5 class="fw-bold text-center">Auschalten</h5>
+                <p class="fw-bolder">Stromstärke:</p>
+  
+                <img class="img-fluid" src="/assets/img/img-induktion/turn_off_ampere.png"/>
+
+                <p><span class="fs-3">④</span> &nbsp; \(\lim\limits_{t \rightarrow \infty}{I(t) = 0}\)</p>
+  
+  
+                <p><span class="text-decoration-underline">allg:</span> &nbsp; \(I(t) = \dfrac{U}{R} = \dfrac{U_{ind}}{R_{ges}} = \dfrac{-L * \dot{I}}{R_{sp}}\)</p>
+  
+              </div>
+
+
+              <div class="col-lg-6 order-lg-3 order-2">
+                <p class="fw-bolder">Induktionsspannung:</p>
+  
+                <img class="img-fluid" src="/assets/img/img-induktion/turn_on_volt.png"/>
+
+                <p><span class="fs-3">①</span> &nbsp; \(U_{ind}(0) = -U_0 = -L * I_0\)</p>
+  
+                <p><span class="fs-3">②</span> &nbsp; \(\lim\limits_{t \rightarrow \infty}{I(t) = 0}\)</p>
+  
+  
+                <p><span class="text-decoration-underline">allg:</span> &nbsp; \(U_{ind}(t) = U_{ges} - U_0 = I(t) * R_{sp} - U_0\)</p>
+  
+              </div>
+
+
+              <div class="col-lg-6 order-4">
+                <p class="fw-bolder">Induktionsspannung:</p>
+  
+                <img class="img-fluid" src="/assets/img/img-induktion/turn_off_volt.png"/>
+
+                <p><span class="fs-3">③</span> &nbsp; \(U_{ind}(0) = R_{ges} * I_0\)</p>
+  
+                <p><span class="fs-3">④</span> &nbsp; \(\lim\limits_{t \rightarrow \infty}{U(t) = 0}\)</p>
+  
+  
+                <p><span class="text-decoration-underline">allg:</span> &nbsp; \(U_{ind}(t) = R_{ges} * I(t)\)</p>
+  
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer_container">
+
+  </div>
+
+  <!--Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+  <script>
+    $(".footer_container").load("/assets/common/footer.html");
+  </script>
+
+  <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       CommonHTML: { linebreaks: { automatic: true } },
       "HTML-CSS": { linebreaks: { automatic: true } },
              SVG: { linebreaks: { automatic: true } }
     });
     </script>
-  </body>
+</body>
+
 </html>
