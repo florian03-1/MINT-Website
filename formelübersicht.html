@@ -278,7 +278,7 @@
                     <p class="mt-2">Keine Formeln auswendig lernen! Nur die Kräftgleichgewichte unter <a href="https://www.mint.florian03.de/teilchen-in-feldern.html">Teilchen in Feldern </a> verstehen!</p>
             </div>
             <div class="topic-card-body">
-                <h5 class="mb-3">Längesfeld - Bewegung entgegen der Feldrichtung:</h5>
+                <h5 class="mb-3">Längsfeld - Bewegung entgegen der Feldrichtung:</h5>
                 <div class="row text-center">
                     <div class="col-lg-12 col-md-12 mt-md-0 mt-4">
                         <p class="mt-2"> \(a =  \dfrac{q*U}{m*d}\)</p>
@@ -298,8 +298,83 @@
                 </div>
             </div>
         </div>
+
+        <div class="topic-card">
+            <div class="topic-card-header">
+                IV. Induktion
+            </div>
+            <div class="topic-card-body">
+                <h5 class="mb-3">Magnetischer Fluss:</h5>
+                
+                <div class="row text-center">
+                    <div class="col-lg-12 col-md-12 mt-md-0 mt-4">
+                        <p class="mt-2"> \(\phi = A_{\bot}*B\)</p>
+                        <p class="mt-4">Mathematisch genauer:</p>
+                        <p class="mt-4">\(\phi = \vec{A}\cdot\vec{B} = A*B*\cos{(\omega t)}\)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="topic-card-body">
+                <h5 class="mb-3">Induktionsspannung:</h5>
+                <p>Im Speziallfall eines mit der Geschwindigkeit \(v_s\) bewegten Leiters der Länge \(d\) durch ein Magnetfeld \(B\) gilt</p>
+                <div class="row text-center">
+                    <div class="col-lg-12 col-md-12 mt-md-0 mt-4">
+                        <p class="mt-2"> \(U_{ind} = d*v_s*B\)</p>
+                    </div>
+                </div>
+                <p>Im Allgemeinen Fall gilt</p>
+                <div class="row text-center">
+                    <div class="col-lg-12 col-md-12 mt-md-0 mt-4">
+                        <p class="mt-2"> \(U_{ind} = -n*\dot{\phi}\)</p>
+                    </div>
+                </div>
+                <p>Durch Differenzieren von \(\phi\) resultieren daraus folgende Formeln <br/> (Die Windungszahl wird hier vernachlässigt, ist aber selbstverständlich im Anwendungsfall zu beachten)</p>
+                <div class="table-responsive">
+                    <table class="table align-middle text-center table-bordered border-gray">
+                        <thead>
+                        <tr>
+                            <th scope="col">Bedingung</th>
+                            <th scope="col">resultierende Formel</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="py-6 px-6">\(\dot{B} = 0\) und \(\dot{\varphi} = 0\) <br/> (keine Magnetfeldänderung und Rotation)</th>
+                            <td class="py-6 px-6">\( U_{ind} = \dot{A}B\)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-6 px-6">\(\dot{A} = 0\) und \(\dot{\varphi} = 0\) <br/> (keine Flächenänderung und Rotation)</th>
+                            <td class="py-6 px-6">\( U_{ind} = A\dot{B}\)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-6 px-6">\(\dot{A} = 0\) und \(\dot{B} = 0\) <br/> (keine Flächen- und Magnetfeldänderung)</th>
+                            <td class="py-6 px-6">\( U_{ind} = -AB*\sin{(\omega t)}*\omega\)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-6 px-6">\(\dot{A} \neq 0\) und \(\dot{B} \neq 0\) und \(\dot{\varphi} \neq 0\) <br/> (Fläche, Magnetfeld und Winkel ändern sich.)</th>
+                            <td class="py-6 px-6">\( U_{ind} = \dot{A}B*\cos{(\omega t)} + A\dot{B}*\cos{(\omega t)} - AB*\sin{(\omega t)}*\omega\)</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <p>Der letzte Fall kommt in der Praxis quasi nie vor, allerdings sieht man hier gut, wie sich die anderen Formeln daraus ergeben, wenn die jeweiligen Ableitungen null sind. (\(\dot{\varphi} = 0 \Rightarrow \omega = 0\))</p>
+                </div>
+            </div>
+
+            <div class="topic-card-body">
+                <h5 class="mb-3">Eigeninduktivität:</h5>
+                
+                <div class="row text-center">
+                    <div class="col-lg-12 col-md-12 mt-md-0 mt-4">
+                        <p class="mt-2"> \(U_{ind} = -L*I\)</p>
+                        <p class="mt-4">\(L = \mu_0\mu_r\frac{n^2A}{l}\)</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+
     </div>
-  
 
     <br/>
     <br/>
