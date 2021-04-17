@@ -700,7 +700,7 @@
         <p>\(I(t) = \dfrac{U_{ges}}{R} = \dfrac{U(t)-U_{ind}(t)}{R} = \dfrac{U(t) - L \dot{I}(t)}{R}\)</p>
         <p>\(I(t) * R = U(t) - L \dot{I}(t)\)</p>
         <p>Da wir nur die Spule betrachten wollen, nehmen wir an \(R \approx 0\). Dann gilt</p>
-        <p>\(0 = U(t) - L \dot{I}(t) \Rightarrow U(t) = L \dot{I}(t)\)</p>
+        <p>\[0 = U(t) - L \dot{I}(t) \Rightarrow U(t) = L \dot{I}(t)\]</p>
         <p>Mit \(U(t) = U_0 * \sin{(\omega t)}\) ergibt sich</p>
         <p>\begin{align}
             \dfrac{U_0 * \sin{(\omega t)}}{L} &= \dot{I}(t) \\
@@ -718,6 +718,35 @@
           <p class="text-black-50 text-center mt-2" style="font-size: small;">Quelle: <a class="text-black-50"
             href="https://www.geogebra.org/resource/wmwyPwvj/whLoUXcX5pUXcfOI/material-wmwyPwvj.png">geogebra.org</a> <i>[geändert]</i> | Name: Zeigerdiagramm - Induktiver Widerstand</p>
         </div>
+
+        <h5>d) Reihenschaltung von \(R\), \(C\), \(L\) (Siebkette)</h5>
+        <div class="col-lg-6 offset-lg-3">
+          <img class="img-fluid" src="/assets/img/img-induktion/schaltung-siebkette.png"/>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="/assets/img/img-induktion/vektoren-siebkette.png"/>
+          </div>
+          <div class="col-lg-4 offset-lg-1 order-lg-3 order-2">
+            <p>&nbsp;</p>
+            <p>vektorielle Addition der Zeiger von \(U_C\), \(U_L\), \(U_R\):</p>
+            <p>\begin{align}
+              U_{ges} &= \sqrt{U_{R}^2+(U_L-U_C)^2}\\
+              &= \sqrt{\Big(I_0*R\Big)^2+\Bigg[\Big(I_0 \omega L\Big)-\Big(\frac{I_0}{\omega C}\Big)\Bigg]^2}\\
+              &= I_0 * \sqrt{R^2+\Big(\omega L - \frac{1}{\omega C}\Big)^2}
+            \end{align}</p>
+          </div>
+        </div>
+
+        <div class="d-flex">
+          <p class="equation-border mx-auto"><b>Impedanz oder Gesamtwiderstand</b>\[Z = \sqrt{R^2+\Big(\omega L - \frac{1}{\omega C}\Big)^2}\]</p>
+        </div>
+        <p><center><b>Phasenwinkel:</b> &nbsp; &nbsp; \(\tan{\varphi} = \dfrac{U_L-U_C}{U_R} = \dfrac{I_0 * (\omega L - \frac{1}{\omega C})}{I_0 * R} = \dfrac{\omega L - \frac{1}{\omega C}}{R}\)</center></p>
+        <div class="d-flex">
+          <p class="equation-border mx-auto"><b>Resonanzfall</b>\[\omega_{0}L = \frac{1}{\omega_{0}C} \Rightarrow \omega_{0} = \frac{1}{\sqrt{LC}}\]</p>
+        </div>
+        <p><center><b>Resonanzfrequenz:</b> &nbsp; &nbsp; \(f_0 = \dfrac{1}{2 \pi \sqrt{LC}}\)</center></p>
+        <p><center>Für \(f_0\) ist die Impedanz minimal und \(I_0\) maximal!</center></p>
 
       </div>
     </div>
