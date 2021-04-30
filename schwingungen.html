@@ -132,9 +132,36 @@
       </div>
     </div>
 
+    <!--2. Das Fadenpendel-->
+    <div class="topic-card">
+      <div class="topic-card-header">2. Das Fadenpendel</div>
+      <div class="topic-card-body">
 
+        <div class="col-lg-10 offset-lg-1">
+            <img class="img-fluid" src="/assets/img/img-schwingungen/fadenpendel.png" />
+            <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Fadenpendel</p>
+          </div>
 
-
+          <p>\[F_R = F_G * \sin{\varphi}\]</p>
+          <p>Für kleine Phi gilt \(\sin{\varphi} \approx \varphi \Rightarrow F_R \approx F_G * \varphi\), d.h. die Schwingung ist für kleine \(\varphi\) harmonisch.</p>
+          <p>Für die Kraft gilt allgemein</p>
+          <p>\[m*a(t) = -F_G*\varphi(t)\]</p>
+          <p>Das "\(-\)" benötigen wir, da die Kraft bei positiven Winkeln nach links und bei negativen Winkeln nach rechts wirkt.</p>
+          <p>Mit \(\dfrac{\varphi (t)}{2\pi} = \dfrac{s(t)}{2\pi l} \Rightarrow \varphi(t) = \dfrac{s(t)}{l}\) ergibt sich</p>
+          <p>\[m*\ddot{s}(t) = -m*g*\dfrac{s(t)}{l}\]</p>
+          <p>\[\Rightarrow \ddot{s}(t) = -\dfrac{g}{l}*s(t)\]</p>
+          <p>Hypothese für die Lösung der DGL: &nbsp; \(s(t) = \hat{s}*\sin{(\omega t + \varphi_0)}\)</p>
+          <p>Einsetzen in DGL: \begin{align} 
+            -\hat{s}*\omega ^2 * \sin{(\omega t + \varphi_{0})} &= -\frac{g}{l} * \hat{s} * \sin{(\omega t + \varphi_{0})} \\[5pt]
+            \Rightarrow -\hat{s}*\omega ^2 &= -\frac{g}{l} * \hat{s}\\[5pt]
+            \omega ^2 &= \frac{g}{l}\\[5pt]
+            \omega &= \sqrt{\frac{g}{l}}
+          \end{align}</p>
+          <div class="d-flex">
+            <p class="equation-border mx-auto">\[T = 2\pi\sqrt{\frac{l}{g}}\]</p>
+          </div>
+      </div>
+    </div>
 
   
   </div>
