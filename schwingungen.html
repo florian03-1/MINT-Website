@@ -163,7 +163,45 @@
       </div>
     </div>
 
-  
+    <!--3. Horizontaler Federschwinger-->
+    <div class="topic-card">
+      <div class="topic-card-header">3. Horizontaler Federschwinger</div>
+      <div class="topic-card-body">
+
+        <h5>Fall 1: eine Feder</h5>
+        <p>\(F_G\) spielt für die Ruhelage und die horizontale Bewegung keine Rolle.</p>
+        <p>\begin{align}
+          m*a &= -D*s\\[5pt]
+          m*\ddot{s}(t) &= -D*s(t)\\ 
+          \end{align}</p> 
+        <p>Prüfe linearen Zusammenhang mit Kraftmesser:</p>
+        <p>\begin{align} \Delta s_1 &:\ F_1 = 0,4N\ \\
+        \Delta s_2 = 2*\Delta s_1 &: \ F_2 = 0,8N \end{align}</p>
+        
+        <p>Die Lösung der Diffenrentialgleichung ist: \(s(t) = \hat{s} * \sin{(\omega t + \varphi_0)}\)</p>
+
+        <h5>Fall 2: zwei Federn</h5>
+        <p>Nun wirken zwei betragsmäßig gleiche Kräfte \(\vec{F}_1 = -D_1 * \vec{s}_{1,0}\) und \(\vec{F}_2 = -D_2 * \vec{s}_{2,0}\) in entgegengesetzter Richtung auf die Masse.</p>
+        <p>Seien für diesen Fall beide Federn gleich, d.h. \(D = D_1 = D_2\). Die Ruhelage befindet sich genau in der Mitte der beiden Aufhängungen.</p>
+        <p>Wir lenken nun die Masse um \(\Delta s > 0\) aus:</p>
+        <p>\begin{align}
+          &s_1 = s_{1,0} + \Delta s && s_2 = s_{2,0} - \Delta s \\[5pt]
+          &F_{1,neu} = -D_1 * (s_{1,0}+\Delta s) && F_{2,neu} = -D_2 * (s_{2,0}-\Delta s)
+          \end{align}</p>
+          <p>&nbsp;</p>
+          <p>\begin{align}
+            F_{res} &= F_{1,neu} - F_{2,neu} \\[5pt]
+            &= -D_1 * (s_{1,0}+\Delta s) + D_2 * (s_{2,0}-\Delta s) \\[5pt]
+            &= -D_1 s_{1,0}-D_1 \Delta s + D_2 s_{2,0} - D_2 \Delta s \\[5pt]
+            &= F_{1,0}-D_1 \Delta s + F_{2,0} - D_2 \Delta s  \\[5pt]
+            &= -D_1 \Delta s - D_2 \Delta s \\[5pt]
+            & = -(D_1+D_2)*\Delta s = -2D*\Delta s
+            \end{align}</p>
+            <p>\[\Rightarrow D_{ges} = D_1 + D_2\]</p>
+
+      </div>
+    </div>
+
   </div>
 
   <div class="footer_container">
