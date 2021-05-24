@@ -237,9 +237,153 @@
       </div>
     </div>
 
-    <!--4. Der elektromagnetische Schwingkreis-->
+
+
+    <!--4. Das U-Rohr-->
     <div class="topic-card">
-      <div class="topic-card-header">4. Der elektromagnetische Schwingkreis</div>
+      <div class="topic-card-header">4. Das U-Rohr</div>
+      <div class="topic-card-body">
+        
+        <div class="col-lg-6 offset-lg-3">
+          <img class="img-fluid" src="/assets/img/img-schwingungen/u_rohr.png" />
+          <p class="text-black-50 text-center mt-2" style="font-size: small;">Quelle: <a class="text-black-50" href="https://www.abiweb.de/assets/courses/media/u-rohr-ca.png">abiweb.de</a> | Name: U-Rohr</p>
+        </div>
+
+        <p>In einem U-Rohr der Querschnittsfläche \(A\) befindet sich eine Flüssigkeit (hier: Wasser) der Dichte \(\rho\). Lenkt man die Flüssigkeit in einem Schnenkel um \(s\) nach oben aus, so bewegt sich die Flüssigkeit anschließend stark gedämpft hin und her.</p>
+        <p><b>Frage:</b> Ist die Schwingung harmonisch?</p>
+        <p>Sei \(m_0\) diejenige Masse, die die linke Seite mehr hat als die rechte Seite, und \(m\) die Masse des gesamten Wassers im U-Rohr. Die Rückstellkraft entspricht der Gewichtskraft dieser Masse</p>
+        <p>\[F_{rück} =  F_G = -m_0 * g = -\rho*V*g = -\rho*2s*A*g\]</p>
+        <p>\[m*\ddot{s}(t) = -2\rho *A*g*s(t)\]</p>
+        <p>\[\omega = \sqrt{\frac{D^{\prime}}{m}} = \sqrt{\frac{2\rho *A*g}{m}}\]</p>
+        <p>Da \(m\) die Masse des gesamten Wassers ist, ergibt sich</p>
+        <p>\[m = \rho*A*l \Rightarrow \omega = \sqrt{\frac{2\rho *A*g}{\rho*A*l}} =\sqrt{\frac{2g}{l}}\]</p>
+      </div>
+    </div>
+
+    <!--5. Schwingendes Reagenzglas-->
+    <div class="topic-card">
+      <div class="topic-card-header">5. Schwingendes Reagenzglas</div>
+      <div class="topic-card-body">
+        
+      
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <h5><center>Gleichgewichtslage</center></h5>
+            <div class="col-lg-6 offset-lg-3">
+              <img class="img-fluid" src="/assets/img/img-schwingungen/reagenz1.png" />
+              <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Reagenzglas in der Gleichgewichtslage</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 order-lg-2 order-3">
+            <h5><center>weiter eingetaucht</center></h5>
+            <div class="col-lg-6 offset-lg-3">
+              <img class="img-fluid" src="/assets/img/img-schwingungen/reagenz2.png" />
+              <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Reagenzglas weiter eingetaucht</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 order-lg-3 order-2">
+            <p>\begin{align} 
+              F_G &= F_A \\
+              m * g &= \rho *A*s_0*g\\
+              
+              \end{align}</p>
+              <p>Wobei \(m\) die Masse des Reagenzglases und \(\rho A s_0\) die Masse des verdrängten Wassers ist.</p>
+          </div>
+
+          <div class="col-lg-6 order-4">
+            <p>\begin{align} 
+              F_{res} = F_A-F_G &= \rho *A*(s+s_0)*g-mg \\
+              &= \rho *A*s*g+\rho *A*s_0*g-mg\\
+              &= \rho A g *s \\
+              \omega &= \sqrt{\frac{\rho A g}{m}} \Leftrightarrow T = 2\pi \sqrt{\frac{m}{\rho A g}}
+              \end{align}</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <!--6. Dämpfung-->
+    <div class="topic-card">
+      <div class="topic-card-header">6. Dämpfung</div>
+      <div class="topic-card-body">
+
+        <p>Bei jeder Schwingung treten durch unterschiedliche Arten von Reibung Energieverluste auf, wodurch die Amplitude ständig kleiner wird, bis die Schwingung zur Ruhe kommt. Das nennt man eine <b>gedämpfte Schwingung</b>.</p>
+        <center>
+          <table style="width: 90%;  border-collapse: collapse;">
+            <thead>
+              <tr style="border-bottom: 1px solid black; text-align: center;">
+                <td style="text-align: left !important; border-right: 1px solid black;">\(n\)</td>
+                <td>\(1\)</td>
+                <td>\(2\)</td>
+                <td>\(3\)</td>
+                <td>\(4\)</td>
+                <td>\(5\)</td>
+                <td>\(6\)</td>
+                <td>\(7\)</td>
+                <td>\(8\)</td>
+              </tr>
+              
+            </thead>
+            <tbody>
+              <tr style="text-align: center;">
+                <td style="text-align: left !important; border-right: 1px solid black;">\(\hat{y}_n \ [\text{cm}]\)</td>
+                <td>\(15,0\)</td>
+                <td>\(10,2\)</td>
+                <td>\(6,9\)</td>
+                <td>\(4,7\)</td>
+                <td>\(3,2\)</td>
+                <td>\(2,2\)</td>
+                <td>\(1,5\)</td>
+                <td>\(1,0\)</td>
+              </tr>
+              <tr style="text-align: center;">
+                <td style="text-align: left !important; border-right: 1px solid black;">\(\frac{\hat{y}_{n+1}}{\hat{y}_{n}}\)</td>
+                <td>\(0,68\)</td>
+                <td>\(0,68\)</td>
+                <td>\(0,68\)</td>
+                <td>\(0,68\)</td>
+                <td>\(0,69\)</td>
+                <td>\(0,68\)</td>
+                <td>\(0,67\)</td>
+                <td>\(-\)</td>
+              </tr>
+            </tbody>
+          </table>
+        </center>
+        
+
+        <div class="col-lg-4 offset-lg-4">
+          <img class="img-fluid" src="/assets/img/img-schwingungen/daempfung.png" />
+          <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Gedämpfte Schwingung</p>
+        </div>
+
+        <p><b>Einhüllende</b>: Verlauf der Amplitude in Abhängigkeit von der Zeit.</p>
+        <p>Hypothese: Einhüllende ist eine fallende Exponentialfunktion.</p>
+        <p>Nachweise:</p>
+        <ol>
+          <li>Quotient \(\frac{\hat{y}_{n+1}}{\hat{y}_{n}} = \text{konst.}\)</li>
+          <li>In der logarithmischen Darstellung erhalten wir eine Gerade. ( \( \ln(\hat{y(t)})  = \ln(\hat{y}_1)-kt \) )</li>
+        </ol>
+        <p>\[\hat{y}(n) = \hat{y}_1 * 0,68^{n-1}\]</p>
+        <div class="d-flex">
+          <p class="equation-border mx-auto">\[\hat{y}(t) = \hat{y}_1 * e^{-kt}\] \(k\) : Dämpfungskonstante</p>
+        </div>
+        
+
+      </div>
+    </div>
+
+
+    <!--7. Der elektromagnetische Schwingkreis-->
+    <div class="topic-card">
+      <div class="topic-card-header">7. Der elektromagnetische Schwingkreis</div>
       <div class="topic-card-body">
 
         <div class="col-lg-4 offset-lg-4">
@@ -263,30 +407,57 @@
           <p class="text-black-50 text-center mt-2" style="font-size: small;">Quelle: <a class="text-black-50" href="https://www.abiweb.de/assets/courses/media/elektromagn-schwing-01-ca.png">abiweb.de</a> | Name: elektromagnetischer Schwingkreis - Phasen</p>
         </div>
 
-      </div>
-    </div>
-
-    <!--5. ???-->
-    <div class="topic-card">
-      <div class="topic-card-header">5. ???</div>
-      <div class="topic-card-body">
-        
-        <div class="col-lg-6 offset-lg-3">
-          <img class="img-fluid" src="/assets/img/img-schwingungen/u_rohr.png" />
-          <p class="text-black-50 text-center mt-2" style="font-size: small;">Quelle: <a class="text-black-50" href="https://www.abiweb.de/assets/courses/media/u-rohr-ca.png">abiweb.de</a> | Name: U-Rohr</p>
+        <div class="highlite-card-remember">
+          <div class="highlite-card-header-remember">Merke</div>
+          <div class="card-body">
+            <p>Während Spannung und Strom mit der Periode \(T\) schwingen, ändern sich die elektrischen beziehungsweise magnetischen Feldenergien mit der Periode \(\frac{T}{2}\).</p>
+          </div>
         </div>
 
-        <p>In einem U-Rohr der Querschnittsfläche \(A\) befindet sich eine Flüssigkeit (hier: Wasser) der Dichte \(\rho\). Lenkt man die Flüssigkeit in einem Schnenkel um \(s\) nach oben aus, so bewegt sich die Flüssigkeit anschließend stark gedämpft hin und her.</p>
-        <p><b>Frage:</b> Ist die Schwingung harmonisch?</p>
-        <p>Sei \(m_0\) diejenige Masse, die die linke Seite mehr hat als die rechte Seite, und \(m\) die Masse des gesamten Wassers im U-Rohr. Die Rückstellkraft entspricht der Gewichtskraft dieser Masse</p>
-        <p>\[F_{rück} =  F_G = -m_0 * g = -\rho*V*g = -\rho*2s*A*g\]</p>
-        <p>\[m*\ddot{s}(t) = -2\rho *A*g*s(t)\]</p>
-        <p>\[\omega = \sqrt{\frac{D^{\prime}}{m}} = \sqrt{\frac{2\rho *A*g}{m}}\]</p>
-        <p>Da \(m\) die Masse des gesamten Wassers ist, ergibt sich</p>
-        <p>\[m = \rho*A*l \Rightarrow \omega = \sqrt{\frac{2\rho *A*g}{\rho*A*l}} =\sqrt{\frac{2g}{l}}\]</p>
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="col-lg-6 offset-lg-3">
+              <img class="img-fluid" src="/assets/img/img-schwingungen/elektromagnetischer_schwingkreis-masche.png" />
+              <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Elektromagnetischer Schwingkreis - Masche</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 order-lg-2 order-3">
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+              <p>\begin{align}
+                U_C+U_L &= 0 && \text{(Maschenregel)} \\
+                \frac{Q(t)}{C} + L\dot{I}(t) &= 0 \\
+                \frac{Q(t)}{C} + L\ddot{Q}(t) &= 0
+                \end{align}
+              </p>
+          </div>
+        </div>
+
+        <p>Hypothese: \(Q(t) = \hat{Q} * \sin{(\omega t + \varphi _0)}\)</p>
+        <p>\begin{align} 
+          \frac{\hat{Q}}{C} * \sin{(\omega t + \varphi _0)} &- L\hat{Q} \omega^2 * \sin{(\omega t + \varphi _0)} = 0 \\
+          \frac{\hat{Q}}{C} * \sin{(\omega t + \varphi _0)} &= L\hat{Q} \omega^2 * \sin{(\omega t + \varphi _0)} \\
+          \frac{1}{C} * \sin{(\omega t + \varphi _0)} &= L \omega^2 * \sin{(\omega t + \varphi _0)} \\
+          \Rightarrow \frac{1}{C} &= L \omega^2 \\
+          \omega &= \frac{1}{\sqrt{LC}}
+          \end{align}</p>
+          <div class="d-flex">
+            <p class="equation-border mx-auto"><b>Thomsonsche Schwingungsgleichung</b>\[T = 2\pi \sqrt{LC}\]</p>
+          </div>
+
+          <p>\begin{align} 
+            \Rightarrow &U(t) = \frac{Q(t)}{C} = \frac{\hat{Q}}{C} * \sin{(\omega t + \varphi _0)} = \hat{U} * \sin{(\omega t + \varphi _0)}\\
+            \Rightarrow &I(t) = \dot{Q}(t) = \hat{Q} \omega * \cos{(\omega t + \varphi _0)} = \hat{I} * \cos{(\omega t + \varphi _0)}
+            \end{align}</p>
+
+
+
+          
+
       </div>
     </div>
-      
 
   </div>
 
