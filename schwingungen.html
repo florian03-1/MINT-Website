@@ -452,10 +452,46 @@
             \Rightarrow &I(t) = \dot{Q}(t) = \hat{Q} \omega * \cos{(\omega t + \varphi _0)} = \hat{I} * \cos{(\omega t + \varphi _0)}
             \end{align}</p>
 
+          </div>
+    </div>
 
+    <!--8. Die Energie harmonischer Schwingungen-->
+    <div class="topic-card">
+      <div class="topic-card-header">8. Die Energie harmonischer Schwingungen</div>
+      <div class="topic-card-body">
 
-          
+        <p>horizontale Schwingung: \(E_{ges} = E_{sp} + E_{kin}\)</p>
+        <p>vertikale Schwingung: \(E_{ges} = E_{sp} + E_{kin} + E_{pot}\)</p>
 
+        <p>Wir lenken ein Federpendel um \(s\) aus der Gleichgewichtslage \(s_0\) aus. Für die Kräfte gilt folgendes Diagramm</p>
+        <div class="col-lg-8 offset-lg-2">
+          <img class="img-fluid" src="/assets/img/img-schwingungen/federpendel_kraefte.png" />
+          <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Spann- und Gewichtskraft</p>
+        </div>
+        <p>für \(s>0\): \(E_{sp} + E_{pot} = \color{orange}{\text{orange}} - \color{blue}{\text{blau}} = \color{green}{\text{grün}}\)</p>
+        <p>für \(s < 0\): \(E_{pot} + E_{sp} = \color{blue}{\text{blau}} - \color{orange}{\text{orange}} = \color{green}{\text{grün}}\)</p>
+
+        Daraus ergibt sich, dass \(E_{pot} + E_{sp} = \frac{1}{2}Ds^2\), und für die Gesamtenergie
+
+        <div class="d-flex">
+          <p class="equation-border mx-auto">\[E_{ges} = \frac{1}{2}Ds^2 + \frac{1}{2}mv^2\]</p>
+        </div>
+        
+        <p>Im elektromagnetische Schwingkreis gilt \[E_{ges} = E_{el} + E_{mag} = \frac{1}{2} C U^2 + \frac{1}{2} L I^2\]</p>
+
+        <p>Es folgt</p>
+        <p>\begin{align} 
+          E_{ges}(t) &= \frac{1}{2} C U^2(t) + \frac{1}{2} L I^2(t) \\
+          &= \frac{1}{2} C \big( \hat{U} * \cos{(\omega t)} \big)^2 + \frac{1}{2} L \big( -\hat{I} * \sin{(\omega t)} \big)^2 \\
+          &=  \frac{1}{2} C \hat{U}^2 * \cos^2{(\omega t)} + \frac{1}{2} L \hat{I}^2 * \sin^2{(\omega t)} \\
+          &=  \frac{1}{2} C \hat{U}^2 * \cos^2{(\omega t)} + \frac{1}{2} L (-C\hat{U}\omega)^2 * \sin^2{(\omega t)} \\
+          &=  \frac{1}{2} C \hat{U}^2 * \cos^2{(\omega t)} + \frac{1}{2} L \frac{C^2 \hat{U}^2}{LC} * \sin^2{(\omega t)} \\
+          &=  \frac{1}{2} C \hat{U}^2 * \cos^2{(\omega t)} + \frac{1}{2} C \hat{U}^2 * \sin^2{(\omega t)} \\
+          &=  \frac{1}{2} C \hat{U}^2 * \big(\cos^2{(\omega t)} + \sin^2{(\omega t)}\big) \\
+          &= \frac{1}{2} C \hat{U}^2 = \text{konst}
+          \end{align}</p>
+
+          <p>Das heißt die Gesamtenergie im elektromagnetischen Schwingkreis ist konstant und entspricht der Energie des Kondensators, wenn dieser maximal geladen ist bezeihungsweise der Energie der Spule, wenn der maximale Strom fließt. Der Energieerhaltungssatz gilt!</p>
       </div>
     </div>
 
