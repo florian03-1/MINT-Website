@@ -526,6 +526,139 @@
       </div>
     </div>
 
+    <!--8.1 Bewegter Sender, ruhender Empfänger-->
+    
+    <div class="topic-card">
+      <div class="topic-card-header">8.1 Bewegter Sender, ruhender Empfänger</div>
+      <div class="topic-card-body">
+
+        <div class="col-lg-8 offset-lg-2">
+          <img class="img-fluid" src="/assets/img/img-wellen/doppler1.png" />
+                <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Bewegter Sender, ruhender Empfänger</p>
+        </div>
+
+        <p>\(s\): Weg, den der Sender in der Zeit \(T\) zurückgelegt hat</p>
+        <p>\(\lambda\): Wellenlänge des Senders</p>
+        <p>\(\lambda_V\): Wellenlänge, die der Empfänger wahrnimmt</p>
+
+        <p>Es gilt:
+          \begin{align}
+          \lambda_V &= 2\lambda - \lambda - s \\
+          &= \lambda - s \\
+          &= cT - vT \\
+          &= T (c-v) \\
+          &= \frac{c-v}{f} \\
+          \frac{c}{f_V} &= \frac{c-v}{f} \\
+          \frac{f_V}{c} &= \frac{f}{c-v}
+          \end{align}
+          <div class="d-flex">
+            <p class="equation-border mx-auto">\begin{align}f_V = f * \frac{c}{c-v}\end{align}</p>
+          </div>
+          \begin{align}
+          = f * \frac{1}{1-v/c}
+          \end{align}
+          <div class="d-flex">
+            <p class="equation-border mx-auto">\begin{align}f_V = f * \frac{1}{1-\beta}\end{align}\(\beta := \frac{v}{c}\)</p>
+          </div>
+        </p>
+        
+        <p>Analog ist diese Argumentation für \(f_H\) zu führen:
+          \begin{align}
+          \lambda_H + \lambda &= 2\lambda + s \\
+          \lambda_H &= \lambda + s \\
+          &\vdots
+          \end{align}
+          <div class="d-flex">
+            <p class="equation-border mx-auto">\begin{align}f_H = f * \frac{1}{1+\beta}\end{align}</p>
+          </div>
+        </p>
+
+        <p><b>Frage:</b> Was passiert, wenn die Geschwindigkeit des Senders Schallgeschwindigkeit erreicht? (\(v = c\))</p>
+
+        <div class="col-lg-8 offset-lg-2">
+          <img class="img-fluid" src="/assets/img/img-wellen/doppler2.png" />
+                <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Erreichen der Schallgeschwindigkeit</p>
+        </div>
+
+        <p>\[\lambda_V = 0 \Rightarrow f_V = \frac{c}{\lambda} \rightarrow \infty \]</p>
+        <p>\[\lambda_H = 2 \lambda \Rightarrow f_H = \frac{c}{2 \lambda} = \frac{f_0}{2}\]</p>
+
+
+        <p><b>Frage:</b> Was passiert, wenn der Sender die Schallgeschwindigkeit überschreitet? (\(v > c\))</p>
+        
+        <div class="col-lg-8 offset-lg-2">
+          <img class="img-fluid" src="/assets/img/img-wellen/doppler3.png" />
+                <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Überschreiten der Schallgeschwindigkeit</p>
+        </div>
+
+        <div class="d-flex">
+          <p class="equation-border mx-auto">\begin{align}\sin{\frac{\alpha}{2}} = \frac{ct}{vt} = \frac{c}{v}\end{align}\(\alpha:\) Öffnungswinkel des Machschen Kegels</p>
+        </div>
+
+        
+      </div>
+    </div>
+
+
+    <!--8.2 Bewegter Empfänger, ruhender Sender-->
+    
+    <div class="topic-card">
+      <div class="topic-card-header">8.2 Bewegter Empfänger, ruhender Sender</div>
+      <div class="topic-card-body">
+
+        <div class="d-flex">
+          <p class="equation-border mx-auto">\begin{align}f_E = f_S * (1 \pm \beta)\end{align}</p>
+        </div>
+
+        <p><b>Beispiel:</b> \(f_S = 800 \text{Hz}\) &nbsp; &nbsp; \(v = 20m \frac{\text{m}}{\text{s}}\) <br/>
+          Empfänger in Bewegungsrichtung: \(f_E = 847 \text{Hz}\) <br/>
+          Empfänger entgegen Bewegungsrichtung: \(f_E = 753 \text{Hz}\)
+        </p>
+        
+      </div>
+    </div>
+
+    <!--8.3 Bewegter Empfänger, bewegter Sender-->
+    
+    <div class="topic-card">
+      <div class="topic-card-header">8.3 Bewegter Empfänger, bewegter Sender</div>
+      <div class="topic-card-body">
+
+        <div class="d-flex">
+          <p class="equation-border mx-auto">\begin{align}f_E = f_S * \frac{1 \pm \beta}{1 \mp \beta}\end{align}</p>
+        </div>
+
+        <div class="col-lg-8 offset-lg-2">
+          <img class="img-fluid" src="/assets/img/img-wellen/doppler4.png" />
+                <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Empfängerfrequenzen - Doppler-Effekt</p>
+        </div>
+
+        <p><span style="color:#DE0000">bewegter Empfänger: </span> \(f_E = f_S * (1 \pm \beta)\)</p>
+        <p><span style="color:#4D43FF">bewegter Sender: </span> \(f_E = f_S * \frac{1}{1 \pm \beta}\)</p>
+        <p><span style="color:#19BC00">beide bewegt: </span> \(f_E = f_S * \frac{1 \pm \beta}{1 \mp \beta}\)</p>
+        
+      </div>
+    </div>
+
+
+    <!--9. Prinzip von Fermat-->
+    
+    <div class="topic-card">
+      <div class="topic-card-header">9. Prinzip von Fermat</div>
+      <div class="topic-card-body">
+
+        <div class="highlite-card-remember">
+          <div class="highlite-card-header-remember">Merke</div>
+          <div class="card-body">
+            <p>Nach dem <b>Prinzip von Fermat</b> bewegt sich das Licht zwischen zwei Punkten A und B so, dass es für die Strecke die kürzeste Zeit benötigt. Es ist das Prinzip der <b>extremalen Laufzeit</b>.</p>
+          </div>
+        </div>
+
+        
+        
+      </div>
+    </div>
+
 
   <!------->
   </div>
