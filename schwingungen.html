@@ -116,25 +116,25 @@
           <div class="card-body">
             <p>Beim Federpendel ist die <b>Rückstellkraft</b> \(F\) stets proportional zur <b>Elongation</b> \(s\). Es gilt das lineare Kraftgesetz</p>
             <div class="d-flex">
-                <p class="equation-border mx-auto">\[\vec{F} = -D \cdot \vec{s}\]</p>
+                <p class="equation-border mx-auto">\[\vec{F} = -D \cdot  \vec{s}\]</p>
               </div>
           </div>
         </div>
 
         <h5>Differentialgleichung der harmonischen Schwingung</h5>
         <p>\begin{align}
-            F(t) = m \cdot a(t) &= -D\cdots(t)\\[5pt]
-            m\cdot\dot{v}(t) &= -D\cdots(t)\\[5pt]
-            m\cdot\ddot{s}(t) &= -D\cdots(t)
+            F(t) = m \cdot  a(t) &= -D\cdot s(t)\\[5pt]
+            m\cdot \dot{v}(t) &= -D\cdot s(t)\\[5pt]
+            m\cdot \ddot{s}(t) &= -D\cdot s(t)
           \end{align}</p>
-        <p>Hypothese für die Lösung der Differentialgleichung: &nbsp; \(s(t) = \hat{s}\cdot\sin{(\omega t + \varphi_{0})}\)</p>
+        <p>Hypothese für die Lösung der Differentialgleichung: &nbsp; \(s(t) = \hat{s}\cdot \sin{(\omega t + \varphi_{0})}\)</p>
         <p>Einsetzen in DGL: \begin{align} 
-            -m\cdot\hat{s}\cdot\omega ^2 \cdot \sin{(\omega t + \varphi_{0})} &= -D \cdot \hat{s} \cdot \sin{(\omega t + \varphi_{0})} \\[5pt]
-            \Rightarrow -m\cdot\hat{s}\cdot\omega ^2 &= -D \cdot \hat{s}\\[5pt]
+            -m\cdot \hat{s}\cdot \omega ^2 \cdot  \sin{(\omega t + \varphi_{0})} &= -D \cdot  \hat{s} \cdot  \sin{(\omega t + \varphi_{0})} \\[5pt]
+            \Rightarrow -m\cdot \hat{s}\cdot \omega ^2 &= -D \cdot  \hat{s}\\[5pt]
             m \omega ^2 &= D\\[5pt]
             \omega &= \sqrt{\frac{D}{m}}
           \end{align}</p>
-        <p>\(\Rightarrow\) Lösung: \(s(t) = \hat{s}\cdot\sin{\Big( \sqrt{\frac{D}{m}} \cdot t + \varphi_{0}\Big)}\)</p>
+        <p>\(\Rightarrow\) Lösung: \(s(t) = \hat{s}\cdot \sin{\Big( \sqrt{\frac{D}{m}} \cdot  t + \varphi_{0}\Big)}\)</p>
       </div>
     </div>
 
@@ -148,18 +148,18 @@
             <p class="text-black-50 text-center mt-2" style="font-size: small;">Name: Fadenpendel</p>
           </div>
 
-          <p>\[F_R = F_G \cdot \sin{\varphi}\]</p>
-          <p>Für kleine Phi gilt \(\sin{\varphi} \approx \varphi \Rightarrow F_R \approx F_G \cdot \varphi\), d.h. die Schwingung ist für kleine \(\varphi\) harmonisch.</p>
+          <p>\[F_R = F_G \cdot  \sin{\varphi}\]</p>
+          <p>Für kleine Phi gilt \(\sin{\varphi} \approx \varphi \Rightarrow F_R \approx F_G \cdot  \varphi\), d.h. die Schwingung ist für kleine \(\varphi\) harmonisch.</p>
           <p>Für die Kraft gilt allgemein</p>
-          <p>\[m\cdota(t) = -F_G\cdot\varphi(t)\]</p>
+          <p>\[m\cdot a(t) = -F_G\cdot \varphi(t)\]</p>
           <p>Das "\(-\)" benötigen wir, da die Kraft bei positiven Winkeln nach links und bei negativen Winkeln nach rechts wirkt.</p>
           <p>Mit \(\dfrac{\varphi (t)}{2\pi} = \dfrac{s(t)}{2\pi l} \Rightarrow \varphi(t) = \dfrac{s(t)}{l}\) ergibt sich</p>
-          <p>\[m\cdot\ddot{s}(t) = -m\cdotg\cdot\dfrac{s(t)}{l}\]</p>
-          <p>\[\Rightarrow \ddot{s}(t) = -\dfrac{g}{l}\cdots(t)\]</p>
-          <p>Hypothese für die Lösung der DGL: &nbsp; \(s(t) = \hat{s}\cdot\sin{(\omega t + \varphi_0)}\)</p>
+          <p>\[m\cdot \ddot{s}(t) = -m\cdot g\cdot \dfrac{s(t)}{l}\]</p>
+          <p>\[\Rightarrow \ddot{s}(t) = -\dfrac{g}{l}\cdot s(t)\]</p>
+          <p>Hypothese für die Lösung der DGL: &nbsp; \(s(t) = \hat{s}\cdot \sin{(\omega t + \varphi_0)}\)</p>
           <p>Einsetzen in DGL: \begin{align} 
-            -\hat{s}\cdot\omega ^2 \cdot \sin{(\omega t + \varphi_{0})} &= -\frac{g}{l} \cdot \hat{s} \cdot \sin{(\omega t + \varphi_{0})} \\[5pt]
-            \Rightarrow -\hat{s}\cdot\omega ^2 &= -\frac{g}{l} \cdot \hat{s}\\[5pt]
+            -\hat{s}\cdot \omega ^2 \cdot  \sin{(\omega t + \varphi_{0})} &= -\frac{g}{l} \cdot  \hat{s} \cdot  \sin{(\omega t + \varphi_{0})} \\[5pt]
+            \Rightarrow -\hat{s}\cdot \omega ^2 &= -\frac{g}{l} \cdot  \hat{s}\\[5pt]
             \omega ^2 &= \frac{g}{l}\\[5pt]
             \omega &= \sqrt{\frac{g}{l}}
           \end{align}</p>
@@ -177,31 +177,31 @@
         <h5>Fall 1: eine Feder</h5>
         <p>\(F_G\) spielt für die Ruhelage und die horizontale Bewegung keine Rolle.</p>
         <p>\begin{align}
-          m\cdota &= -D\cdots\\[5pt]
-          m\cdot\ddot{s}(t) &= -D\cdots(t)\\ 
+          m\cdot a &= -D\cdot s\\[5pt]
+          m\cdot \ddot{s}(t) &= -D\cdot s(t)\\ 
           \end{align}</p> 
         <p>Prüfe linearen Zusammenhang mit Kraftmesser:</p>
         <p>\begin{align} \Delta s_1 &:\ F_1 = 0,4N\ \\
-        \Delta s_2 = 2\cdot\Delta s_1 &: \ F_2 = 0,8N \end{align}</p>
+        \Delta s_2 = 2\cdot \Delta s_1 &: \ F_2 = 0,8N \end{align}</p>
         
-        <p>Die Lösung der Differentialgleichung ist: \(s(t) = \hat{s} \cdot \sin{(\omega t + \varphi_0)}\)</p>
+        <p>Die Lösung der Differentialgleichung ist: \(s(t) = \hat{s} \cdot  \sin{(\omega t + \varphi_0)}\)</p>
 
         <h5>Fall 2: zwei Federn</h5>
-        <p>Nun wirken zwei betragsmäßig gleiche Kräfte \(\vec{F}_1 = -D_1 \cdot \vec{s}_{1,0}\) und \(\vec{F}_2 = -D_2 \cdot \vec{s}_{2,0}\) in entgegengesetzter Richtung auf die Masse.</p>
+        <p>Nun wirken zwei betragsmäßig gleiche Kräfte \(\vec{F}_1 = -D_1 \cdot  \vec{s}_{1,0}\) und \(\vec{F}_2 = -D_2 \cdot  \vec{s}_{2,0}\) in entgegengesetzter Richtung auf die Masse.</p>
         <p>Seien für diesen Fall beide Federn gleich, d.h. \(D = D_1 = D_2\). Die Ruhelage befindet sich genau in der Mitte der beiden Aufhängungen.</p>
         <p>Wir lenken nun die Masse um \(\Delta s > 0\) aus:</p>
         <p>\begin{align}
           &s_1 = s_{1,0} + \Delta s && s_2 = s_{2,0} - \Delta s \\[5pt]
-          &F_{1,neu} = -D_1 \cdot (s_{1,0}+\Delta s) && F_{2,neu} = -D_2 \cdot (s_{2,0}-\Delta s)
+          &F_{1,neu} = -D_1 \cdot  (s_{1,0}+\Delta s) && F_{2,neu} = -D_2 \cdot  (s_{2,0}-\Delta s)
           \end{align}</p>
           <p>&nbsp;</p>
           <p>\begin{align}
             F_{res} &= F_{1,neu} - F_{2,neu} \\[5pt]
-            &= -D_1 \cdot (s_{1,0}+\Delta s) + D_2 \cdot (s_{2,0}-\Delta s) \\[5pt]
+            &= -D_1 \cdot  (s_{1,0}+\Delta s) + D_2 \cdot  (s_{2,0}-\Delta s) \\[5pt]
             &= -D_1 s_{1,0}-D_1 \Delta s + D_2 s_{2,0} - D_2 \Delta s \\[5pt]
             &= F_{1,0}-D_1 \Delta s + F_{2,0} - D_2 \Delta s  \\[5pt]
             &= -D_1 \Delta s - D_2 \Delta s \\[5pt]
-            & = -(D_1+D_2)\cdot\Delta s = -2D\cdot\Delta s
+            & = -(D_1+D_2)\cdot \Delta s = -2D\cdot \Delta s
             \end{align}</p>
             <p>\[\Rightarrow D_{ges} = D_1 + D_2\]</p>
 
@@ -210,15 +210,15 @@
             <img class="img-fluid" src="/assets/img/img-schwingungen/feder_rollen_kombination.png" />
             <p class="text-black-50 text-center mt-2" style="font-size: small;">Quelle: <a class="text-black-50" href="https://www.leifiphysik.de/sites/default/files/images/36b559147f35612d033b34221618a5db/0Feder-Rollen-Kombination_Bild.gif">leifiphysik.de [geändert]</a> | Name: Feder-Rollen Kombination</p>
           </div>
-          <p>Die Elongation der Masse um \(s\) nach unten bedeutet, dass die Feder um \(2s\) verlängert wird \[F_{Seil} = D \cdot 2s\]</p>
-          <p>Da die Masse von zwei Seilen getragen wird, ist auch die Rückstellkraft die doppelte Seilkraft \[F_{rück} = -2\cdotF_{Seil} = -4D\cdots\]</p>
+          <p>Die Elongation der Masse um \(s\) nach unten bedeutet, dass die Feder um \(2s\) verlängert wird \[F_{Seil} = D \cdot  2s\]</p>
+          <p>Da die Masse von zwei Seilen getragen wird, ist auch die Rückstellkraft die doppelte Seilkraft \[F_{rück} = -2\cdot F_{Seil} = -4D\cdot s\]</p>
           <p>Die Schwingung ist harmonisch, da</p>
           <ol>
             <li>\(F_{rück} \sim s\)</li>
             <li>\(F_{rück}\) zu \(s\) entgegen gerichtet</li>
           </ol>
-          <p>Wir erhalten folgende Differentialgleichung \[m\cdot\ddot{s}(t) = -4D\cdots(t)\] in welcher \(4D\) die sogenannte <b>Richtgröße</b> \(D^{\prime}\) ist.</p>
-          <p>Durch Lösen der DGL nach dem bekannten Verfahren erhalten wir \(s(t) = \hat{s}\cdot\sin{(\omega t + \varphi_0)}\) mit \(\omega = \sqrt{\dfrac{4D}{m}}\). Im allgemeinen Fall gilt</p>
+          <p>Wir erhalten folgende Differentialgleichung \[m\cdot \ddot{s}(t) = -4D\cdot s(t)\] in welcher \(4D\) die sogenannte <b>Richtgröße</b> \(D^{\prime}\) ist.</p>
+          <p>Durch Lösen der DGL nach dem bekannten Verfahren erhalten wir \(s(t) = \hat{s}\cdot \sin{(\omega t + \varphi_0)}\) mit \(\omega = \sqrt{\dfrac{4D}{m}}\). Im allgemeinen Fall gilt</p>
           <div class="d-flex">
             <p class="equation-border mx-auto">\[\omega = \sqrt{\frac{D^{\prime}}{m}}\]</p>
           </div>
@@ -232,8 +232,8 @@
           <p>Da \(F_{rück} \not \sim -s\), ist die Schwingung nicht harmonisch. Die Periodendauer \(T_{ges}\) setzt sich zu gleichen Teilen aus der Schwingung rechts der Befestigung mit \(T_1\) und der Schwingung links der Befestigung mit \(T_2\) zusammen.</p>
           <p>Entsprechend gilt \begin{align}
             T_{ges} &= \frac{1}{2} T_1 + \frac{1}{2} T_2 \\
-            &= \frac{1}{2} \cdot 2\pi\cdot\sqrt{\frac{l_1}{g}} + \frac{1}{2} \cdot2\pi\cdot\sqrt{\frac{l_2}{g}} \\
-            &= \pi \cdot \Bigg( \sqrt{\frac{l_1}{g}}+\sqrt{\frac{l_2}{g}} \Bigg)
+            &= \frac{1}{2} \cdot  2\pi\cdot \sqrt{\frac{l_1}{g}} + \frac{1}{2} \cdot 2\pi\cdot \sqrt{\frac{l_2}{g}} \\
+            &= \pi \cdot  \Bigg( \sqrt{\frac{l_1}{g}}+\sqrt{\frac{l_2}{g}} \Bigg)
             \end{align}</p>
           <p>Das s-t-Diagramm könnte wie folgt aussehen</p>
           <div class="col-lg-6 offset-lg-3">
@@ -258,11 +258,11 @@
         <p>In einem U-Rohr der Querschnittsfläche \(A\) befindet sich eine Flüssigkeit (hier: Wasser) der Dichte \(\rho\). Lenkt man die Flüssigkeit in einem Schnenkel um \(s\) nach oben aus, so bewegt sich die Flüssigkeit anschließend stark gedämpft hin und her.</p>
         <p><b>Frage:</b> Ist die Schwingung harmonisch?</p>
         <p>Sei \(m_0\) diejenige Masse, die die linke Seite mehr hat als die rechte Seite, und \(m\) die Masse des gesamten Wassers im U-Rohr. Die Rückstellkraft entspricht der Gewichtskraft dieser Masse</p>
-        <p>\[F_{rück} =  F_G = -m_0 \cdot g = -\rho\cdotV\cdotg = -\rho\cdot2s\cdotA\cdotg\]</p>
-        <p>\[m\cdot\ddot{s}(t) = -2\rho \cdotA\cdotg\cdots(t)\]</p>
-        <p>\[\omega = \sqrt{\frac{D^{\prime}}{m}} = \sqrt{\frac{2\rho \cdotA\cdotg}{m}}\]</p>
+        <p>\[F_{rück} =  F_G = -m_0 \cdot  g = -\rho\cdot V\cdot g = -\rho\cdot 2s\cdot A\cdot g\]</p>
+        <p>\[m\cdot \ddot{s}(t) = -2\rho \cdot A\cdot g\cdot s(t)\]</p>
+        <p>\[\omega = \sqrt{\frac{D^{\prime}}{m}} = \sqrt{\frac{2\rho \cdot A\cdot g}{m}}\]</p>
         <p>Da \(m\) die Masse des gesamten Wassers ist, ergibt sich</p>
-        <p>\[m = \rho\cdotA\cdotl \Rightarrow \omega = \sqrt{\frac{2\rho \cdotA\cdotg}{\rho\cdotA\cdotl}} =\sqrt{\frac{2g}{l}}\]</p>
+        <p>\[m = \rho\cdot A\cdot l \Rightarrow \omega = \sqrt{\frac{2\rho \cdot A\cdot g}{\rho\cdot A\cdot l}} =\sqrt{\frac{2g}{l}}\]</p>
       </div>
     </div>
 
@@ -294,7 +294,7 @@
           <div class="col-lg-6 order-lg-3 order-2">
             <p>\begin{align} 
               F_G &= F_A \\
-              m \cdot g &= \rho \cdotA\cdots_0\cdotg\\
+              m \cdot  g &= \rho \cdot A\cdot s_0\cdot g\\
               
               \end{align}</p>
               <p>Wobei \(m\) die Masse des Reagenzglases und \(m_w  = \rho A s_0\) die Masse des verdrängten Wassers ist.</p>
@@ -302,9 +302,9 @@
 
           <div class="col-lg-6 order-4">
             <p>\begin{align} 
-              F_{res} = F_A-F_G &= \rho \cdotA\cdot(s+s_0)\cdotg-mg \\
-              &= \rho \cdotA\cdots\cdotg+\rho \cdotA\cdots_0\cdotg-mg\\
-              &= \rho A g \cdots \\
+              F_{res} = F_A-F_G &= \rho \cdot A\cdot (s+s_0)\cdot g-mg \\
+              &= \rho \cdot A\cdot s\cdot g+\rho \cdot A\cdot s_0\cdot g-mg\\
+              &= \rho A g \cdot s \\
               \omega &= \sqrt{\frac{\rho A g}{m}} \Leftrightarrow T = 2\pi \sqrt{\frac{m}{\rho A g}}
               \end{align}</p>
           </div>
@@ -377,9 +377,9 @@
           <li>Quotient \(\frac{\hat{y}_{n+1}}{\hat{y}_{n}} = \text{konst.}\)</li>
           <li>In der logarithmischen Darstellung erhalten wir eine Gerade. ( \( \ln(\hat{y(t)})  = \ln(\hat{y}_1)-kt \) )</li>
         </ol>
-        <p>\[\hat{y}(n) = \hat{y}_1 \cdot 0,68^{n-1}\]</p>
+        <p>\[\hat{y}(n) = \hat{y}_1 \cdot  0,68^{n-1}\]</p>
         <div class="d-flex">
-          <p class="equation-border mx-auto">\[\hat{y}(t) = \hat{y}_1 \cdot e^{-kt}\] \(k\) : Dämpfungskonstante</p>
+          <p class="equation-border mx-auto">\[\hat{y}(t) = \hat{y}_1 \cdot  e^{-kt}\] \(k\) : Dämpfungskonstante</p>
         </div>
         
 
@@ -441,11 +441,11 @@
           </div>
         </div>
 
-        <p>Hypothese: \(Q(t) = \hat{Q} \cdot \sin{(\omega t + \varphi _0)}\)</p>
+        <p>Hypothese: \(Q(t) = \hat{Q} \cdot  \sin{(\omega t + \varphi _0)}\)</p>
         <p>\begin{align} 
-          \frac{\hat{Q}}{C} \cdot \sin{(\omega t + \varphi _0)} &- L\hat{Q} \omega^2 \cdot \sin{(\omega t + \varphi _0)} = 0 \\
-          \frac{\hat{Q}}{C} \cdot \sin{(\omega t + \varphi _0)} &= L\hat{Q} \omega^2 \cdot \sin{(\omega t + \varphi _0)} \\
-          \frac{1}{C} \cdot \sin{(\omega t + \varphi _0)} &= L \omega^2 \cdot \sin{(\omega t + \varphi _0)} \\
+          \frac{\hat{Q}}{C} \cdot  \sin{(\omega t + \varphi _0)} &- L\hat{Q} \omega^2 \cdot  \sin{(\omega t + \varphi _0)} = 0 \\
+          \frac{\hat{Q}}{C} \cdot  \sin{(\omega t + \varphi _0)} &= L\hat{Q} \omega^2 \cdot  \sin{(\omega t + \varphi _0)} \\
+          \frac{1}{C} \cdot  \sin{(\omega t + \varphi _0)} &= L \omega^2 \cdot  \sin{(\omega t + \varphi _0)} \\
           \Rightarrow \frac{1}{C} &= L \omega^2 \\
           \omega &= \frac{1}{\sqrt{LC}}
           \end{align}</p>
@@ -454,8 +454,8 @@
           </div>
 
           <p>\begin{align} 
-            \Rightarrow &U(t) = \frac{Q(t)}{C} = \frac{\hat{Q}}{C} \cdot \sin{(\omega t + \varphi _0)} = \hat{U} \cdot \sin{(\omega t + \varphi _0)}\\
-            \Rightarrow &I(t) = \dot{Q}(t) = \hat{Q} \omega \cdot \cos{(\omega t + \varphi _0)} = \hat{I} \cdot \cos{(\omega t + \varphi _0)}
+            \Rightarrow &U(t) = \frac{Q(t)}{C} = \frac{\hat{Q}}{C} \cdot  \sin{(\omega t + \varphi _0)} = \hat{U} \cdot  \sin{(\omega t + \varphi _0)}\\
+            \Rightarrow &I(t) = \dot{Q}(t) = \hat{Q} \omega \cdot  \cos{(\omega t + \varphi _0)} = \hat{I} \cdot  \cos{(\omega t + \varphi _0)}
             \end{align}</p>
 
           </div>
@@ -488,12 +488,12 @@
         <p>Es folgt</p>
         <p>\begin{align} 
           E_{ges}(t) &= \frac{1}{2} C U^2(t) + \frac{1}{2} L I^2(t) \\
-          &= \frac{1}{2} C \big( \hat{U} \cdot \cos{(\omega t)} \big)^2 + \frac{1}{2} L \big( -\hat{I} \cdot \sin{(\omega t)} \big)^2 \\
-          &=  \frac{1}{2} C \hat{U}^2 \cdot \cos^2{(\omega t)} + \frac{1}{2} L \hat{I}^2 \cdot \sin^2{(\omega t)} \\
-          &=  \frac{1}{2} C \hat{U}^2 \cdot \cos^2{(\omega t)} + \frac{1}{2} L (-C\hat{U}\omega)^2 \cdot \sin^2{(\omega t)} \\
-          &=  \frac{1}{2} C \hat{U}^2 \cdot \cos^2{(\omega t)} + \frac{1}{2} L \frac{C^2 \hat{U}^2}{LC} \cdot \sin^2{(\omega t)} \\
-          &=  \frac{1}{2} C \hat{U}^2 \cdot \cos^2{(\omega t)} + \frac{1}{2} C \hat{U}^2 \cdot \sin^2{(\omega t)} \\
-          &=  \frac{1}{2} C \hat{U}^2 \cdot \big(\cos^2{(\omega t)} + \sin^2{(\omega t)}\big) \\
+          &= \frac{1}{2} C \big( \hat{U} \cdot  \cos{(\omega t)} \big)^2 + \frac{1}{2} L \big( -\hat{I} \cdot  \sin{(\omega t)} \big)^2 \\
+          &=  \frac{1}{2} C \hat{U}^2 \cdot  \cos^2{(\omega t)} + \frac{1}{2} L \hat{I}^2 \cdot  \sin^2{(\omega t)} \\
+          &=  \frac{1}{2} C \hat{U}^2 \cdot  \cos^2{(\omega t)} + \frac{1}{2} L (-C\hat{U}\omega)^2 \cdot  \sin^2{(\omega t)} \\
+          &=  \frac{1}{2} C \hat{U}^2 \cdot  \cos^2{(\omega t)} + \frac{1}{2} L \frac{C^2 \hat{U}^2}{LC} \cdot  \sin^2{(\omega t)} \\
+          &=  \frac{1}{2} C \hat{U}^2 \cdot  \cos^2{(\omega t)} + \frac{1}{2} C \hat{U}^2 \cdot  \sin^2{(\omega t)} \\
+          &=  \frac{1}{2} C \hat{U}^2 \cdot  \big(\cos^2{(\omega t)} + \sin^2{(\omega t)}\big) \\
           &= \frac{1}{2} C \hat{U}^2 = \text{konst}
           \end{align}</p>
 
@@ -573,10 +573,10 @@
           <p class="text-black-50 text-center mt-2" style="font-size: small;">Quelle: <a class="text-black-50" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Interferenz_sinus.svg/440px-Interferenz_sinus.svg.png">wikipedia.org</a> [geändert] | Name: Konstruktive Interferenz</p>
         </div>
 
-        <p>\begin{align\cdot} 
-          s_{res}(t) = s_1(t) + s_2(t) &= s_1 \cdot \sin{(\omega t)} + s_2 \cdot \sin{(\omega t)} \\
-          &= (s_1+s_2) \cdot \sin{(\omega t)}
-          \end{align\cdot}</p>
+        <p>\begin{align*} 
+          s_{res}(t) = s_1(t) + s_2(t) &= s_1 \cdot  \sin{(\omega t)} + s_2 \cdot  \sin{(\omega t)} \\
+          &= (s_1+s_2) \cdot  \sin{(\omega t)}
+          \end{align*}</p>
         
         <p> <center>\(\Rightarrow\) <b>maximale Verstärkung</b> </center></p>
         
@@ -586,10 +586,10 @@
           <p class="text-black-50 text-center mt-2" style="font-size: small;">Quelle: <a class="text-black-50" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Interferenz_sinus.svg/440px-Interferenz_sinus.svg.png">wikipedia.org</a> [geändert] | Name: Destruktive Interferenz</p>
         </div>
 
-        <p>\begin{align\cdot} 
-        s_{res}(t) = s_1(t) - s_2(t) &= s_1 \cdot \sin{(\omega t)} - s_2 \cdot \sin{(\omega t)} \\
-        &= (s_1-s_2) \cdot \sin{(\omega t)}
-        \end{align\cdot}</p>
+        <p>\begin{align*} 
+        s_{res}(t) = s_1(t) - s_2(t) &= s_1 \cdot  \sin{(\omega t)} - s_2 \cdot  \sin{(\omega t)} \\
+        &= (s_1-s_2) \cdot  \sin{(\omega t)}
+        \end{align*}</p>
 
         <p> <center>\(\Rightarrow\) <b>maximale Abschwächung</b> (Auslöschung möglich)</center></p>
 
@@ -602,14 +602,14 @@
           <p class="text-black-50 text-center mt-2" style="font-size: small;">Quelle: <a class="text-black-50" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Interferenz_sinus.svg/440px-Interferenz_sinus.svg.png">wikipedia.org</a> [geändert] | Name: Schwebung</p>
         </div>
 
-        <p>\begin{align\cdot} 
-          s_{res}(t) &= s \cdot \sin{(\omega t + \frac{\delta}{2})} - s \cdot \sin{(\omega t - \frac{\delta}{2})} \\
-          &= s \cdot \Big[ \sin{(\omega t)} \cdot \cos{(\frac{\delta}{2})} + \cos{(\omega t)} \cdot \sin{(\frac{\delta}{2})} \Big] \\
-          &\ + s \cdot \Big[ \sin{(\omega t)} \cdot \cos{(\frac{\delta}{2})} - \cos{(\omega t)} \cdot \sin{(\frac{\delta}{2})} \Big] \\
-          &= 2s \cdot \cos{(\frac{\delta}{2})} \cdot \sin{(\omega t)}
-          \end{align\cdot}</p>
+        <p>\begin{align*} 
+          s_{res}(t) &= s \cdot  \sin{(\omega t + \frac{\delta}{2})} - s \cdot  \sin{(\omega t - \frac{\delta}{2})} \\
+          &= s \cdot  \Big[ \sin{(\omega t)} \cdot  \cos{(\frac{\delta}{2})} + \cos{(\omega t)} \cdot  \sin{(\frac{\delta}{2})} \Big] \\
+          &\ + s \cdot  \Big[ \sin{(\omega t)} \cdot  \cos{(\frac{\delta}{2})} - \cos{(\omega t)} \cdot  \sin{(\frac{\delta}{2})} \Big] \\
+          &= 2s \cdot  \cos{(\frac{\delta}{2})} \cdot  \sin{(\omega t)}
+          \end{align*}</p>
         
-        <p>\(2s \cdot \cos{(\frac{\delta}{2})}\) ist die Einhüllende und \(\sin{(\omega t)}\) die Schwingung.</p>
+        <p>\(2s \cdot  \cos{(\frac{\delta}{2})}\) ist die Einhüllende und \(\sin{(\omega t)}\) die Schwingung.</p>
 
         <p>\(\delta\) ist zeitabhängig! (analog zu \(\omega t\) eine lineare Funktion)</p>
       </div>
