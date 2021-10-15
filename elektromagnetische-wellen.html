@@ -217,6 +217,125 @@
       </div>
     </div>
 
+    <!--4. Die Maxwell-Gleichungen (1864)-->
+    
+    <div class="topic-card">
+      <div class="topic-card-header">4. Die Maxwell-Gleichungen (1864)</div>
+      <div class="topic-card-body">
+
+        <p>
+          \begin{align}
+          \text{I.} && &\oint_{\partial V} \vec{E} \cdot \,d\vec{A} = \frac{Q}{\epsilon_0}\\[10pt]
+          \text{II.} && &\oint_{\partial V} \vec{B} \cdot \,d\vec{A} = 0\\[10pt]
+          \text{III.} && &\oint \vec{E} \cdot \,d\vec{s} = - \frac{\partial}{\partial t} \int \vec{B} \cdot \,d\vec{A}\\[10pt]
+          \text{IV.} && &\oint \vec{B} \cdot \,d\vec{s} = \mu_0 \mu_r \cdot I + \mu_0 \mu_r \epsilon_0 \epsilon_r \cdot \frac{\partial}{\partial t} \int \vec{E} \cdot \,d\vec{A}
+          \end{align}
+        </p>
+
+        <h5>Bedeutung der Maxwell-Gleichungen</h5>
+        <p><b>I. Gauß'scher Satz für el. Felder</b> positive Ladungen sind die Quellen, negative Ladungen die Senken des elektrischen Feldes</p>
+        <p><b>II. Gauß'scher Satz für mag. Felder:</b> es gibt keine Quellen und Senken des B-Feldes, das heißt es gibt keine magnetischen Monopole</p>
+        <p><b>III. Induktionsgesetz:</b> Jedes sich zeitlich ändernde B-Feld ist von einem elektrischen Wirbelfeld umgeben. Die Richtung des Wirbelfelds kann man aus der linken Hand Regel erkennen.</p>
+        <p><b>IV. Durchflutungsgesetz:</b> Jeder stromdurchflossene Leiter, sowie jedes sich zeitlich ändernde elektrische Feld, ist von einem magnetischen Wirbelfeld umgeben (Rechte-Hand-Regel</p>
+
+      </div>
+    </div>
+
+    <!--5. Die Ausbreitungsgeschwindigkeit von elektromagnetischen Wellen-->
+    
+    <div class="topic-card">
+      <div class="topic-card-header">5. Die Ausbreitungsgeschwindigkeit von elektromagnetischen Wellen</div>
+      <div class="topic-card-body">
+
+        <h5>a) ein bewegtes Magnetfeld erzeugt ein elektrisches Feld</h5>
+        <p>ein homogenes magnetisches Feld \(B\) eines Hufeisenmagneten bewegt sich mit konstanter Geschwindigkeit \(v\) auf eine Leiterschleife der Breite \(d\) zu. Es wird eine Spannung \(U_{ind}\) induziert:</p>
+        <p>\[U_{ind} = Bdv\]</p>
+        <p>Für das entstehende E-Feld gilt:</p>
+        <p>\[
+          E = \frac{U}{d} = \frac{Bdv}{d} = Bv \tag{1}
+          \]</p>
+
+          <h5>b) Theoretische Betrachtung der Energien im E- und B-Feld</h5>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-6">
+                <h5 class="text-center">elektrisches Feld (z.B. Plattenkondensator)</h5>
+              </div>
+  
+              <div class="col-lg-6 order-lg-2 order-3">
+                <h5 class="text-center">Magnetfeld (z.B. schmale Spule)</h5>           
+              </div>
+  
+  
+              <div class="col-lg-6 order-lg-3 order-2">
+               
+                <p>\begin{align}
+                    W_{el} &= \frac{1}{2} C U^2\\[10pt]
+                    C &= \epsilon_0 \epsilon_r \frac{A}{d}\\[10pt]
+                    E & = \frac{U}{d}\\[10pt]
+                    W_{el} &= \frac{1}{2} \epsilon_0 \epsilon_r \frac{A}{d} U^2\\[10pt]
+                    &= \frac{1}{2} \epsilon_0 \epsilon_r \frac{A}{d} \cdot E^2 \cdot d^2\\[10pt]
+                    &= \frac{1}{2} \epsilon_0 \epsilon_r A d \cdot E^2
+                  \end{align}</p>
+
+                  <div class="d-flex">
+                    <p class="equation-border mx-auto">\[\rho := \frac{W_{mag}}{V} = \frac{1}{2} \epsilon_0 \epsilon_r E^2\]<b>elektrische Felddichte</b></p>
+                  </div>
+
+              </div>
+  
+  
+              <div class="col-lg-6 order-4">  
+
+                <p>\begin{align}
+                  W_{mag} &= \frac{1}{2} L I^2\\[10pt]
+                  L &= \mu_0 \mu_r N^2 \frac{A}{l}\\[10pt]
+                  B & = \mu_0 \mu_r N \frac{I}{l}\\[10pt]
+                  W_{mag} &= \frac{1}{2} \mu_0 \mu_r N^2 \frac{A}{l} \cdot I^2\\[10pt]
+                  &= \frac{1}{2} \mu_0 \mu_r N^2 \frac{A}{l} \cdot \Big(\frac{Bl}{\mu_0 \mu_r N}\Big)^2\\[10pt]
+                  &= \frac{1}{2} \frac{Al}{\mu_0 \mu_r} B^2
+                \end{align}</p>
+
+                <div class="d-flex">
+                  <p class="equation-border mx-auto">\[\rho := \frac{W_{mag}}{V} = \frac{1}{2\mu_0 \mu_r} \cdot B^2\]<b>elektrische Felddichte</b></p>
+                </div>
+
+              </div>
+  
+            </div>
+          </div>
+
+          <p>Elektrisches und magnetisches Feld kommen bei der elektromagnetischen Welle immer gemeinsam vor, keines der beiden dominiert das andere. Daher müssen die beiden Felddichten immer gleich groß sein. <br/> \(\Rightarrow \rho_{el} \stackrel{!}{=} \rho_{mag}\)</p>
+
+          <p>
+            \begin{align}
+            \rho_{el} &= \rho_{mag} \\
+            \frac{1}{2} \epsilon_0 \epsilon_r E^2 &= \frac{1}{2\mu_0 \mu_r} \cdot B^2\\
+            E^2 = \frac{1}{\epsilon_0 \epsilon_r \mu_0 \mu_r} \cdot B^2
+            \end{align}
+            mit (1) folgt
+            \begin{align}
+            v^2 = \frac{1}{\epsilon_0 \epsilon_r \mu_0 \mu_r} \Leftrightarrow v = \frac{1}{\sqrt{\epsilon_0 \epsilon_r \mu_0 \mu_r}}
+            \end{align}
+          </p>
+
+          <p>Für die Lichtgeschwindigkeit gilt im Vakuum \[c = \frac{1}{8,85 \cdot 10^{-12} \frac{\text{Vs}}{\text{Am}} \cdot 1,25 \cdot 10^{-6} \frac{\text{N}}{\text{A}^2}} \approx 3,0 \cdot 10^8  \frac{\text{m}}{\text{s}}\]</p>
+      
+          <div class="highlite-card-remember">
+            <div class="highlite-card-header-remember">
+              Merke
+            </div>
+            <div class="card-body">
+              <p>Im Vakuum ist \(\epsilon_r = 1\) und \(\mu_r = 1\), daher breiten sich elektromagnetische Wellen und auch Licht mit der <b>Lichtgeschwindigkeit</b> \(c\) aus.</p>
+              <div class="d-flex">
+                <p class="equation-border mx-auto">\[c = \frac{1}{\epsilon_0 \epsilon_r} = 2,99792458 \cdot 10^8 \frac{\text{m}}{\text{s}}\]</p>
+              </div>
+              Die Lichtgeschwindigkeit im Vakuum ist eine <b>Naturkonstante</b>. In <b>Materie</b> breiten sich elektromagnetische Wellen <b>langsamer</b> aus als im Vakuum, da in Materie \(\epsilon_r, \mu_r > 1\).
+            </div>
+          </div>
+        </div>
+    </div>
+
    
 
   <!------->
