@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site CSS, inkl. Bootstrap-->
+    <link href="/assets/css/site.min.css" rel="stylesheet">
+
+    <!--jQuery-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+    <!--MathJax Integration-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/img/logo.ico">
+    <title>Elektrisches Feld</title>
+  </head>
+
+  <body class="bg-lightgray">
+
+    <nav class="navbar shadow navbar-dark bg-gray text-white py-3">
+        <div class="container">
+          <a class="navbar-brand" href="/index.html">
+              <img class="img-fluid" src="/assets/img/logo_icon_xs.png"/>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/formelübersicht.html" style="font-size: large;">Formelübersicht</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/downloads.html" style="font-size: large;">Downloads</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/elektrisches-feld.html" style="font-size: large;">I. Elektrisches Feld</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/magnetische-feld.html" style="font-size: large;" >II. Magnetisches Feld</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/teilchen-in-feldern.html" style="font-size: large;">III. Teilchen in Feldern</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/induktion.html" style="font-size: large;">IV. Induktion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/schwingungen.html" style="font-size: large;">V. Schwingungen</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/wellen.html" style="font-size: large;">VI. Wellen</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/elektromagnetische-wellen.html" style="font-size: large;">VII. Elektromagnetische Wellen</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/interferenzphaenomene.html" style="font-size: large;">VIII. Interferenzphänomene</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/quantenphysik.html" style="font-size: large;">IX. Quantenphysik</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    
+    <div class="container">
+        
+      <h1 class="text-center my-4">Verfügbare Downloads</h1>
+
+      <div class="topic-card">
+        <div class="topic-card-header">
+          1. Ankikarten
+        </div>
+        <div class="topic-card-body">
+
+           <p>Hier sind die zur Verfügung stehenden Ankikarten zu finden:</p> 
+            <p>Es gibt Anki-Stapel für einzelne Kapitel - am Ende wird es aber auch einen kompletten Stapel geben.</p>
+            
+            <div class="highlite-card-experiment">
+                <div class="highlite-card-header-experiment">Ankistapel - einzelne Kapitel</div>
+                <div class="card-body">
+                  
+                    <a href="/assets/anki/anki_1-elektrischesFeld_2022_02_06_1.apkg" class=" mx-auto btn btn-green text-white">I. Elektrisches Feld (Stand 06.02.2022)</a>
+                </div> 
+              </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <br/>
+    <br/>
+
+
+    <div class="footer_container">
+
+    </div>
+
+    <!--Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <script>
+        $(".footer_container").load("/assets/common/footer.html"); 
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        CommonHTML: { linebreaks: { automatic: true } },
+        "HTML-CSS": { linebreaks: { automatic: true } },
+               SVG: { linebreaks: { automatic: true } }
+      });
+      </script>
+  </body>
+</html>
